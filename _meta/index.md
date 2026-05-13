@@ -1,0 +1,99 @@
+# Spec Meta
+
+This file defines how the specification is structured and how it should be read.
+
+## Core Principle
+
+The specification must always be read as the currently valid description of the intended product.
+
+It is not a draft snapshot. Even unresolved points are valid when they are explicitly marked as open decisions.
+
+## Two Layers
+
+The specification has two layers:
+
+1. Meta specification
+2. Domain specification
+
+The meta specification defines how the specification works.
+
+The domain specification defines the product itself.
+
+## Validity and Change
+
+Existing statements remain valid until they are explicitly replaced.
+
+New statements should be understood as one of these:
+
+- clarification
+- sharpening
+- extension
+- replacement
+
+Replacement must be explicit and clearly scoped.
+
+## Stable Terms
+
+Once a term has been defined, it keeps that meaning across the specification.
+
+A term may only change meaning if that change is stated explicitly.
+
+## Purpose
+
+The specification should guide different agents and humans toward the same product direction with high reliability.
+
+It should stay readable for humans and precise enough to minimize interpretation work.
+
+## Statement Types
+
+The specification uses these statement types:
+
+- definition
+- principle
+- rule
+- structure
+- interaction
+- derivation
+- open decision
+
+## Reading Rule
+
+Read the specification through its terminology, structure, and direction, not only sentence by sentence.
+
+Use these priorities:
+
+1. Definitions establish meaning.
+2. Principles guide interpretation.
+3. Rules define what is binding.
+4. Structures and interactions express that binding form in the product.
+5. Open decisions stay visible until they are resolved.
+
+## Agent Behavior
+
+Agents must treat the specification as the primary source of product truth.
+
+They should:
+
+- read terms in their defined meaning
+- respect statement types
+- make tensions explicit
+- not silently resolve open decisions
+
+## Language Rule
+
+The specification should prefer positive, goal-directed language.
+
+It should describe what applies, what should emerge, and what a structure is meant to achieve.
+
+## Domain Specification Shape
+
+The domain specification should usually be organized in these layers:
+
+1. DNA
+2. Core elements and composition
+3. Domain logic
+4. Interaction
+5. Presentation
+6. Implementation
+
+The exact file structure may vary as long as these layers remain recognizable.

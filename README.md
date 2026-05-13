@@ -1,184 +1,159 @@
-# Die Craft
+# Mr Riggs & Lucky Smith
 
-> *A high-speed probability roguelite about engineered luck, unstable systems, and inevitable collapse.*
-
----
-
-# Overview
-
-Die Craft is a fast-paced roguelite system-builder in which the player purchases, upgrades, combines, and manipulates dice to generate increasingly absurd chains of probability-driven events.
-
-At first, the game feels simple:
-
-* roll dice
-* earn currency
-* buy better dice
-* survive
-
-But over time:
-
-* roll speed accelerates dramatically
-* builds become unstable
-* synergies spiral out of control
-* the player begins engineering probability itself
-
-The game evolves from a casual dice simulator into a high-frequency chaos engine where optimization, greed, and instability compete against survival.
-
-The player is not merely gambling.
-
-The player is constructing a machine capable of collapsing under its own success.
-
-Humanity in a nutshell, honestly.
+> *A neon-noir probability hacking roguelite about manipulating luck, maintaining identities, and pushing unstable systems beyond their limits.*
 
 ---
 
-# Core Vision
+# Core Concept
 
-The game should feel like:
+The player lives two interconnected lives.
 
-* a casino
-* a stock market
-* an idle game
-* a bullet heaven
-* a physics experiment
-* a collapsing economy
-* a cyberpunk probability engine
+By day:
 
-all at once.
+## Mr Riggs
 
-The central emotional arc:
+A wealthy, careful, socially invisible investor operating inside the legal world.
 
-> "I learned how to manipulate luck."
+By night:
+
+## Lucky Smith
+
+An underground probability hacker manipulating casino machines through illegal custom-built hacking rigs.
+
+The game combines:
+
+* system building
+* probability manipulation
+* risk escalation
+* identity management
+* instability mechanics
+* economic survival
+* high-speed casino hacking
+
+The player is not simply gambling.
+
+The player is learning how to rewrite probability itself.
+
+---
+
+# Core Fantasy
+
+The emotional fantasy of the game is:
+
+> “I can see patterns others cannot.”
 >
-> followed by:
+> “I can bend systems.”
 >
-> "I can no longer control what I created."
+> “I can control luck.”
+>
+> “But the machine may collapse before I escape.”
 
 ---
 
-# Genre
+# Core Gameplay Structure
 
-* Roguelite
-* Probability Builder
-* System Simulation
-* Incremental Action
-* High-Speed Strategy
-* Synergy Sandbox
+The game is divided into two major gameplay phases.
 
 ---
 
-# Pillars
+# Phase 1: Mr Riggs
 
-## 1. Probability Manipulation
+## Strategic Preparation Phase
 
-The player alters:
+This phase is slower, calmer, and strategic.
 
-* dice distributions
-* rerolls
-* critical events
-* chain reactions
-* event frequencies
-* reward scaling
+The player:
 
-Probability becomes a resource.
+* upgrades hardware
+* buys illegal components
+* researches casino systems
+* tunes dice modules
+* installs software
+* launders money
+* manages suspicion
+* expands the workshop
+* maintains social camouflage
 
----
+This phase is about:
 
-## 2. Emergent Synergies
-
-The game should constantly create moments where:
-
-* systems unexpectedly combine
-* small bonuses become absurd
-* interactions create new strategies
-
-The player should frequently discover:
-
-> "Wait... this actually works?"
+* preparation
+* planning
+* optimization
+* long-term survival
 
 ---
 
-## 3. Escalating Speed
+# Phase 2: Lucky Smith
 
-The game accelerates continuously.
+## Active Casino Hacking Phase
 
-Example:
+This phase is fast, dangerous, and chaotic.
 
-* early game: 1 roll/sec
-* mid game: 20 rolls/sec
-* late game: 1000+ rolls/sec
+The player:
 
-Speed creates pressure:
+* infiltrates casino systems
+* hacks probability engines
+* manipulates slot machines
+* pushes unstable builds
+* exploits chain reactions
+* fights against system defenses
+* escapes before collapse or detection
 
-* information overload
-* instability
-* optimization challenges
-* uncontrollable chains
+This phase is about:
 
----
-
-## 4. Instability & Collapse
-
-Power creates risk.
-
-Every manipulation of probability increases:
-
-* instability
-* entropy
-* corruption
-* system stress
-
-The player eventually approaches:
-
-## TOTAL COLLAPSE
-
-Collapse is not simply death.
-
-It is:
-
-* statistical failure
-* chain implosion
-* economic collapse
-* corrupted probability
-* runaway feedback loops
+* speed
+* intuition
+* escalation
+* risk management
+* controlled chaos
 
 ---
 
-# Gameplay Loop
-
-## Main Loop
-
-1. Roll dice automatically
-2. Generate rewards/effects
-3. Defeat enemies/events
-4. Earn currency/resources
-5. Visit shop
-6. Buy/upgrade/combine dice
-7. Increase roll speed
-8. Survive instability
-9. Collapse
-10. Restart with progression/meta unlocks
+# Core Mechanics
 
 ---
 
-# Dice System
+# 1. Probability Hacking
 
-Dice are the core entities of the game.
+The central mechanic of the game.
 
-Each die has:
+The player does not directly cheat numbers.
 
-* sides
-* probability profile
+Instead:
+
+* probability distributions are manipulated
+* rerolls are injected
+* events are duplicated
+* chain reactions are engineered
+* statistical anomalies are created
+
+The player gradually transforms:
+
+> random chance
+> into
+> engineered probability.
+
+---
+
+# 2. Dice Modules
+
+Dice are modular probability processors.
+
+Each die contains:
+
+* a roll profile
 * modifiers
-* traits
-* bonuses
-* penalties
-* rarity/classification
-* instability value
+* risk factors
+* instability contribution
+* interactions with other dice
 
-Dice are not generic stat sticks.
+Dice are not merely items.
 
-Each die should feel unique.
+They are:
+
+* machine components
+* behavioral systems
+* probability engines
 
 ---
 
@@ -186,174 +161,382 @@ Each die should feel unique.
 
 ## Greed Dice
 
-* +300% gold generation
-* cannot roll above 3
-
----
-
-## Entropy Dice
-
-* gains power every minute
-* slowly corrupts nearby dice
-
----
-
-## Glass Dice
-
-* extremely powerful rolls
-* can permanently shatter
+* massively increases money generation
+* lowers maximum roll quality
 
 ---
 
 ## Echo Dice
 
-* repeats previous successful rolls
-* increases delay between events
-
----
-
-## Parasite Dice
-
-* gains strength from destroyed dice
-* reduces shop quality
+* repeats successful outcomes
+* creates event lag
 
 ---
 
 ## Quantum Dice
 
-* side values constantly mutate
+* mutates side values dynamically
 * may generate impossible outcomes
 
 ---
 
-# Dice Categories
+## Parasite Dice
 
-Avoid generic rarity systems.
-
-Instead, classify dice by behavior.
-
-## Suggested Classes
-
-| Class     | Description                  |
-| --------- | ---------------------------- |
-| Stable    | Reliable and predictable     |
-| Volatile  | High-risk spikes             |
-| Corrupted | Dangerous side effects       |
-| Ancient   | Rare rule-breaking mechanics |
-| Synthetic | Artificially optimized       |
-| Organic   | Evolves over time            |
-| Broken    | Defective but exploitable    |
-| Divine    | Statistically unfair         |
+* absorbs destroyed dice
+* destabilizes nearby systems
 
 ---
 
-# Shop System
+## Glass Dice
 
-The shop is one of the most important systems.
-
-The shop provides:
-
-* random dice
-* upgrades
-* modifiers
-* repair systems
-* instability tools
-* experimental artifacts
-
-The shop itself becomes a source of randomness.
-
-The player is constantly evaluating:
-
-* risk
-* synergy potential
-* instability cost
-* long-term scaling
+* extremely powerful
+* may permanently shatter
 
 ---
 
-# Upgrade Philosophy
+## Entropy Dice
 
-Avoid boring upgrades like:
-
-* +5 damage
-* +10% speed
-
-Prefer:
-
-* rule changes
-* conditional mechanics
-* probability interactions
-* systemic transformations
-
-Good upgrades:
-
-* "Even numbers trigger chain lightning"
-* "Rolling a 1 duplicates another die"
-* "Destroyed dice become ghost dice"
-* "6s increase future instability"
-* "Repeated values create combo multipliers"
+* scales infinitely over time
+* continuously increases instability
 
 ---
 
-# Instability System
+# 3. Synergy System
 
-Instability represents pressure placed on reality/probability.
+The most important long-term mechanic.
 
-Sources:
+Dice interact with:
 
-* excessive rerolls
-* manipulated distributions
+* other dice
+* machine states
+* instability
+* casino defenses
+* roll speed
+* chain events
+
+The game should constantly generate:
+
+## unexpected interactions.
+
+The player should frequently discover:
+
+> “This build should not work.”
+>
+> “But somehow it does.”
+
+---
+
+# 4. Roll Speed Escalation
+
+At the beginning:
+
+* rolls are slow
+* readable
+* understandable
+
+Later:
+
+* hundreds or thousands of rolls occur every second
+
+The game gradually becomes:
+
+* visually overloaded
+* statistically unstable
+* difficult to control
+
+This creates:
+
+* pressure
+* excitement
+* panic
+* collapse potential
+
+---
+
+# 5. Instability System
+
+Every manipulation creates instability.
+
+The stronger the player pushes probability:
+
+* the more unstable the machine becomes
+
+Instability is the central tension system.
+
+---
+
+# Instability Sources
+
+* rerolls
+* recursive effects
 * corrupted dice
-* recursive chains
-* extreme speed
-* impossible probability states
+* excessive roll speed
+* paradox combinations
+* probability distortion
+* illegal hacks
+* casino countermeasures
 
 ---
 
 # Instability Effects
 
-Low instability:
+## Low Instability
 
-* minor glitches
-* visual distortion
-* inconsistent rolls
-
-Medium instability:
-
-* delayed events
-* corrupted values
-* side mutations
-* UI noise
-
-High instability:
-
-* phantom rolls
-* negative rewards
-* chain failures
-* random destruction
-* paradox events
-
-Critical instability:
-
-## TOTAL COLLAPSE
+* visual flickers
+* inconsistent outputs
+* delayed rolls
 
 ---
 
-# Collapse
+## Medium Instability
 
-Collapse is the climax of a run.
+* corrupted values
+* false UI signals
+* side mutations
+* machine desynchronization
 
-Potential collapse effects:
+---
 
-* economic implosion
+## High Instability
+
+* phantom rolls
 * probability inversion
-* chain overload
+* recursive loops
+* random destruction
 * system corruption
-* catastrophic entropy spike
+
+---
+
+## Critical Instability
+
+# TOTAL COLLAPSE
+
+The machine breaks down completely.
+
+---
+
+# 6. Casino Counter-AI
+
+Modern casino systems are intelligent.
+
+Machines actively react to suspicious behavior.
+
+The casino AI:
+
+* tracks patterns
+* increases defensive entropy
+* injects false probabilities
+* locks systems
+* deploys anti-cheat protocols
+* triggers surveillance escalation
+
+The player is not fighting enemies.
+
+The player is fighting:
+
+> adaptive probability systems.
+
+---
+
+# 7. Identity System
+
+The player must maintain two identities.
+
+---
+
+# Mr Riggs
+
+Must:
+
+* appear legitimate
+* explain income
+* maintain reputation
+* avoid financial suspicion
+* hide illegal activity
+
+---
+
+# Lucky Smith
+
+Must:
+
+* avoid detection
+* remain anonymous
+* escape before tracing
+* minimize exposure time
+* prevent machine collapse
+
+---
+
+# Identity Risk
+
+If suspicion rises:
+
+* casinos track patterns
+* black markets react
+* access becomes restricted
+* law enforcement pressure increases
+
+The player is balancing:
+
+## wealth vs visibility.
+
+---
+
+# 8. Workshop / Hideout
+
+The player’s workshop evolves over time.
+
+Possible systems:
+
+* machine benches
+* dice laboratories
+* black market terminals
+* probability simulators
+* cooling systems
+* neural interfaces
+* instability containment
+
+The workshop is:
+
+* safe
+* strategic
+* personal
+
+It becomes the player’s evolving identity.
+
+---
+
+# 9. Machine Classes
+
+Different casino systems behave differently.
+
+---
+
+## Mechanical Slots
+
+* stable
+* readable
+* low reward
+
+---
+
+## Quantum Machines
+
+* chaotic
+* unpredictable
+* high scaling potential
+
+---
+
+## Corporate AI Tables
+
+* highly adaptive
+* dangerous
+* aggressively defensive
+
+---
+
+## Black Market Systems
+
+* unstable
+* illegal
+* highly profitable
+
+---
+
+## Experimental Probability Engines
+
+* reality-distorting
+* partially broken
+* capable of catastrophic collapse
+
+---
+
+# 10. Collapse Events
+
+Collapse is not simple failure.
+
+Collapse is:
+
+* systemic implosion
+* runaway probability
+* entropy overload
+* machine corruption
+* identity exposure
+* casino lockdown
+* catastrophic chain reaction
 
 The player should feel:
 
-> "I pushed the machine too far."
+> “I pushed the system too far.”
+
+---
+
+# Long-Term Progression
+
+Potential permanent progression:
+
+* new dice archetypes
+* advanced hacking modules
+* hidden casinos
+* identity tools
+* neural upgrades
+* forbidden probability systems
+* underground contacts
+* collapse resistance
+
+---
+
+# Emotional Experience
+
+The ideal emotional progression:
+
+## Early Game
+
+* curiosity
+* experimentation
+* small wins
+
+---
+
+## Mid Game
+
+* mastery
+* greed
+* optimization
+* confidence
+
+---
+
+## Late Game
+
+* overload
+* instability
+* panic
+* obsession
+* collapse
+
+---
+
+# Core Design Philosophy
+
+The game is fundamentally about:
+
+* control
+* greed
+* probability
+* identity
+* escalation
+* instability
+
+The player begins by:
+
+> manipulating machines.
+
+Eventually:
+
+> the machines begin manipulating the player.
 
 ---
 
@@ -361,211 +544,84 @@ The player should feel:
 
 ## Style
 
-* minimalistic
-* geometric
-* cyberpunk-inspired
-* neon accents
-* dark background
-* clean UI
-* highly readable chaos
+* comic-noir cyberpunk
+* neon interfaces
+* glitch effects
+* dark environments
+* stylized machinery
+* readable chaos
 
 ---
 
-# Visual Themes
+# Visual Evolution
 
-The game should gradually evolve visually:
-
-## Early Game
+## Early
 
 * clean
-* stable
-* readable
+* understandable
+* low complexity
 
-## Mid Game
+---
 
-* dense
-* energetic
-* overloaded
+## Mid
 
-## Late Game
+* overloaded UI
+* chain effects
+* visual stress
 
-* distorted
-* corrupted
-* reality breakdown
-* statistical noise
+---
+
+## Late
+
+* corruption
+* visual instability
+* broken interfaces
+* statistical hallucinations
 
 ---
 
 # Audio Direction
 
-Audio should scale with intensity.
+The machine should sound alive.
 
-## Early
+Audio evolves from:
 
 * mechanical clicks
-* subtle ambience
+  to:
+* layered computational chaos
+* recursive echoes
+* distorted machine harmonics
 
-## Mid
+The soundscape should increasingly feel like:
 
-* layered rhythmic systems
-* synchronized events
-
-## Late
-
-* overwhelming cascades
-* corrupted sounds
-* unstable harmonics
-
-The game should sound like:
-
-> a machine trying to think too fast.
+> a probability engine thinking too fast.
 
 ---
 
-# Meta Progression
+# Core Player Motivation
 
-Potential long-term systems:
+The player does not merely want money.
 
-* permanent unlocks
-* new dice archetypes
-* new instability mechanics
-* alternate collapse types
-* shop manipulation
-* probability research tree
+The player wants:
 
----
+* mastery
+* control
+* understanding
+* perfect systems
+* impossible builds
 
-# Technical Direction
+The ultimate fantasy:
 
-## Recommended Stack
-
-### Frontend
-
-* React
-* TypeScript
-* Canvas/WebGL rendering
-* Vite or Next.js
-
-### Rendering
-
-Prefer:
-
-* PixiJS
-  or
-* custom canvas renderer
-
-High roll counts require efficient rendering.
-
-DOM-heavy rendering will die screaming at 1000 rolls/sec. Browsers are cooperative right until they suddenly become medieval peasants with torches.
+> becoming someone capable of rewriting luck itself.
 
 ---
 
-# Performance Philosophy
+# Final Vision
 
-The game should:
+A small unknown man enters the underground casino world with homemade hardware and desperation.
 
-* simulate large event counts efficiently
-* batch calculations
-* aggregate effects visually
-* avoid rendering every single event literally
+Years later:
+he becomes a whispered legend capable of destabilizing entire probability systems through intuition, engineered chaos, and impossible machines.
 
-At high speed:
-
-* the player perceives patterns
-* not individual rolls
-
----
-
-# UI Philosophy
-
-The UI should prioritize:
-
-* clarity
-* readable synergies
-* controlled chaos
-* rapid comprehension
-
-Important:
-The player must always feel:
-
-> "The collapse was my fault."
-
-Not:
-
-> "The game cheated."
-
----
-
-# Inspirations
-
-Primary inspirations:
-
-* Balatro
-* Luck be a Landlord
-* Dicey Dungeons
-* Vampire Survivors
-
-But Dice Collapse should feel more:
-
-* systemic
-* unstable
-* philosophical
-* machine-like
-
----
-
-# Possible Future Features
-
-* online seeded runs
-* replay sharing
-* build exporting
-* collapse statistics
-* probability heatmaps
-* daily challenge seeds
-* asynchronous leaderboard systems
-* "forbidden" experimental dice
-
----
-
-# Prototype Goals (MVP)
-
-## Phase 1
-
-* automatic rolling
-* simple enemy/resource system
-* shop
-* 20 dice types
-* instability meter
-* basic collapse mechanic
-
----
-
-## Phase 2
-
-* visual effects
-* synergy systems
-* advanced shop logic
-* scaling difficulty
-* meta progression
-
----
-
-## Phase 3
-
-* massive speed scaling
-* visual corruption
-* deep build complexity
-* advanced collapse systems
-* content expansion
-
----
-
-# Final Design Goal
-
-The ideal player experience:
-
-> Start with a single harmless die.
->
-> End with a screaming probabilistic reactor consuming reality at 1400 rolls per second while the UI disintegrates under recursive quantum gambling logic.
-
-Civilization simulator, basically.
+And eventually:
+even he may lose control over what he created.
