@@ -38,9 +38,9 @@ This means `_builds` should carry the implementation path itself, not only the s
 
 When implementation work should follow a specific variant, the instruction should explicitly name the file, for example:
 
-- use `_builds/web-react.md`
-- use `_builds/godot.md`
-- use `_builds/terminal-prototype.md`
+- use `_builds/web-react/index.md`
+- use `_builds/godot/index.md`
+- use `_builds/terminal-prototype/index.md`
 
 When stepwise execution is desired, the instruction should name both the build path and the step, for example:
 
