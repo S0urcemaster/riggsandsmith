@@ -44,11 +44,11 @@ He is drawn by curiosity, technical fascination, risk, and the thrill of pushing
 
 After work, he returns home and devotes himself to his rigging hobby.
 
-He tunes his machine, experiments with dice, and prepares illegal probability runs.
+At home, he tunes his machine, experiments with dice, and studies illegal probability methods.
 
-After that, he takes the rig out to target slot machines and similar systems for limited profit.
+He uses this hidden part of his life to chase limited profit, technical satisfaction, and the feeling that he can still act on the world instead of only serving it.
 
-Then the cycle begins again.
+This double life repeats from day to day and slowly pulls him deeper into the rig scene.
 
 ## Tone Rule
 
