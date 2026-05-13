@@ -1,6 +1,6 @@
 # Build Definitions
 
-This directory contains selectable build variants for implementation work.
+This directory contains selectable build paths for implementation work.
 
 It does not define the product by itself.
 
@@ -23,6 +23,17 @@ This layer exists so that the project can keep multiple technical build variants
 - a prototype build
 - an experimental architecture path
 
+## Build Path Rule
+
+`_builds` is not only a place for isolated technology notes.
+
+Each build path may contain both:
+
+- a main build definition
+- a sequence of bounded build steps
+
+This means `_builds` should carry the implementation path itself, not only the stack choice.
+
 ## Usage
 
 When implementation work should follow a specific variant, the instruction should explicitly name the file, for example:
@@ -30,6 +41,11 @@ When implementation work should follow a specific variant, the instruction shoul
 - use `_builds/web-react.md`
 - use `_builds/godot.md`
 - use `_builds/terminal-prototype.md`
+
+When stepwise execution is desired, the instruction should name both the build path and the step, for example:
+
+- use `_builds/web-react/index.md` and execute `_builds/web-react/steps/002-core-state.md`
+- use `_builds/godot/index.md` and execute `_builds/godot/steps/001-foundation.md`
 
 ## Expected Content of a Build File
 
@@ -40,6 +56,25 @@ A build file should usually define:
 - the architecture direction
 - the build scope
 - build-specific agent instructions
+
+## Expected Structure of a Build Path
+
+A build path will usually be shaped like this:
+
+1. one main definition file such as `index.md`
+2. an optional `steps/` directory
+3. step files that define bounded implementation tasks
+
+## Step Rule
+
+Build work should usually be assigned in bounded steps rather than as one undivided total build request.
+
+This improves:
+
+- implementation reliability
+- planning clarity
+- comparison across runs
+- the chance to feed corrections back into `_spec` or the active build path
 
 ## Current State
 
