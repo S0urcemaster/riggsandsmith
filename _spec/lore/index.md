@@ -11,8 +11,9 @@ It establishes the minimum lore needed to make the vertical slice coherent and r
 This lore currently focuses on:
 
 1. [World Scenario](./world.md)
-2. [The Dice](./die.md)
-3. [The Rig](./rig.md)
+2. [John Riggs / Lucky Smith](./riggs.md)
+3. [The Dice](./die.md)
+4. [The Rig](./rig.md)
 
 ## Core Premise
 
