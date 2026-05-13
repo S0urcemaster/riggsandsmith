@@ -1,627 +1,121 @@
 # Mr Riggs & Lucky Smith
 
-> *A neon-noir probability hacking roguelite about manipulating luck, maintaining identities, and pushing unstable systems beyond their limits.*
+> A neon-noir probability hacking game about preparing a risky casino intrusion, pushing an unstable machine, and surviving the consequences.
 
----
+## Core Slice
 
-# Core Concept
+The vertical slice is built around one compact gameplay loop:
 
-The player lives two interconnected lives.
+1. Prep
+2. Run
+3. Result
 
-By day:
+The player lives two connected roles:
 
-## Mr Riggs
+- Mr Riggs prepares the operation
+- Lucky Smith executes it inside the casino
 
-A wealthy, careful, socially invisible investor operating inside the legal world.
+The slice should prove that this loop is fun, readable, and expandable.
 
-By night:
+## 1. Prep
 
-## Lucky Smith
+Prep is the slower planning phase.
 
-An underground probability hacker manipulating casino machines through illegal custom-built hacking rigs.
+Here the player prepares the next casino run.
 
-The game combines:
+Core actions:
 
-* system building
-* probability manipulation
-* risk escalation
-* identity management
-* instability mechanics
-* economic survival
-* high-speed casino hacking
+- choose or upgrade a small set of dice modules
+- buy or equip a few hacking tools
+- tune the build toward profit, speed, or stability
+- accept tradeoffs between power and safety
 
-The player is not simply gambling.
+Prep should feel:
 
-The player is learning how to rewrite probability itself.
+- controlled
+- strategic
+- readable
 
----
+The purpose of Prep is to build intent before pressure begins.
 
-# Core Fantasy
+## 2. Run
 
-The emotional fantasy of the game is:
+Run is the active casino hacking phase.
 
-> “I can see patterns others cannot.”
->
-> “I can bend systems.”
->
-> “I can control luck.”
->
-> “But the machine may collapse before I escape.”
+Here the player uses the prepared build inside a live machine.
 
----
+Core actions:
 
-# Core Gameplay Structure
+- manipulate probability through dice and tools
+- trigger stronger rewards through combinations
+- push the machine toward higher output
+- react to instability and rising detection
+- decide when to continue and when to get out
 
-The game is divided into two major gameplay phases.
+Core pressures:
 
----
+- instability can destroy the run
+- detection can escalate toward police response
 
-# Phase 1: Mr Riggs
+Run should feel:
 
-## Strategic Preparation Phase
+- fast
+- risky
+- escalating
+- slightly chaotic but still understandable
 
-This phase is slower, calmer, and strategic.
+## 3. Result
 
-The player:
+Result is the consequence phase after the run.
 
-* upgrades hardware
-* buys illegal components
-* researches casino systems
-* tunes dice modules
-* installs software
-* launders money
-* manages suspicion
-* expands the workshop
-* maintains social camouflage
+The player returns from the run with an outcome that affects the next Prep phase.
 
-This phase is about:
+Possible outcomes:
 
-* preparation
-* planning
-* optimization
-* long-term survival
+- successful escape with money
+- partial success with damage or suspicion
+- collapse during the run
+- police escalation after too much exposure
 
----
+Result should make the player feel that every run leaves a mark.
 
-# Phase 2: Lucky Smith
+It should feed back into the next loop through:
 
-## Active Casino Hacking Phase
+- earned money
+- lost equipment
+- increased suspicion
+- changed strategic options
 
-This phase is fast, dangerous, and chaotic.
+## Vertical Slice Scope
 
-The player:
+The slice should stay intentionally small.
 
-* infiltrates casino systems
-* hacks probability engines
-* manipulates slot machines
-* pushes unstable builds
-* exploits chain reactions
-* fights against system defenses
-* escapes before collapse or detection
+Suggested scope:
 
-This phase is about:
+- 2 switching UIs: Prep and Run
+- 1 core casino machine type
+- 1 compact workshop / loadout screen
+- a small set of dice modules
+- a small set of hacking tools
+- 1 instability system
+- 1 detection / police pressure system
+- clear run outcomes that lead back into Prep
 
-* speed
-* intuition
-* escalation
-* risk management
-* controlled chaos
+## Success Condition for the Slice
 
----
+The slice succeeds if the player can clearly experience this loop:
 
-# Core Mechanics
+1. build a setup in Prep
+2. risk it in Run
+3. suffer or profit in Result
+4. want to try again with a better plan
 
----
+## Design Priority
 
-# 1. Probability Hacking
+The first goal is not feature breadth.
 
-The central mechanic of the game.
+The first goal is a strong loop with:
 
-The player does not directly cheat numbers.
-
-Instead:
-
-* probability distributions are manipulated
-* rerolls are injected
-* events are duplicated
-* chain reactions are engineered
-* statistical anomalies are created
-
-The player gradually transforms:
-
-> random chance
-> into
-> engineered probability.
-
----
-
-# 2. Dice Modules
-
-Dice are modular probability processors.
-
-Each die contains:
-
-* a roll profile
-* modifiers
-* risk factors
-* instability contribution
-* interactions with other dice
-
-Dice are not merely items.
-
-They are:
-
-* machine components
-* behavioral systems
-* probability engines
-
----
-
-# Example Dice
-
-## Greed Dice
-
-* massively increases money generation
-* lowers maximum roll quality
-
----
-
-## Echo Dice
-
-* repeats successful outcomes
-* creates event lag
-
----
-
-## Quantum Dice
-
-* mutates side values dynamically
-* may generate impossible outcomes
-
----
-
-## Parasite Dice
-
-* absorbs destroyed dice
-* destabilizes nearby systems
-
----
-
-## Glass Dice
-
-* extremely powerful
-* may permanently shatter
-
----
-
-## Entropy Dice
-
-* scales infinitely over time
-* continuously increases instability
-
----
-
-# 3. Synergy System
-
-The most important long-term mechanic.
-
-Dice interact with:
-
-* other dice
-* machine states
-* instability
-* casino defenses
-* roll speed
-* chain events
-
-The game should constantly generate:
-
-## unexpected interactions.
-
-The player should frequently discover:
-
-> “This build should not work.”
->
-> “But somehow it does.”
-
----
-
-# 4. Roll Speed Escalation
-
-At the beginning:
-
-* rolls are slow
-* readable
-* understandable
-
-Later:
-
-* hundreds or thousands of rolls occur every second
-
-The game gradually becomes:
-
-* visually overloaded
-* statistically unstable
-* difficult to control
-
-This creates:
-
-* pressure
-* excitement
-* panic
-* collapse potential
-
----
-
-# 5. Instability System
-
-Every manipulation creates instability.
-
-The stronger the player pushes probability:
-
-* the more unstable the machine becomes
-
-Instability is the central tension system.
-
----
-
-# Instability Sources
-
-* rerolls
-* recursive effects
-* corrupted dice
-* excessive roll speed
-* paradox combinations
-* probability distortion
-* illegal hacks
-* casino countermeasures
-
----
-
-# Instability Effects
-
-## Low Instability
-
-* visual flickers
-* inconsistent outputs
-* delayed rolls
-
----
-
-## Medium Instability
-
-* corrupted values
-* false UI signals
-* side mutations
-* machine desynchronization
-
----
-
-## High Instability
-
-* phantom rolls
-* probability inversion
-* recursive loops
-* random destruction
-* system corruption
-
----
-
-## Critical Instability
-
-# TOTAL COLLAPSE
-
-The machine breaks down completely.
-
----
-
-# 6. Casino Counter-AI
-
-Modern casino systems are intelligent.
-
-Machines actively react to suspicious behavior.
-
-The casino AI:
-
-* tracks patterns
-* increases defensive entropy
-* injects false probabilities
-* locks systems
-* deploys anti-cheat protocols
-* triggers surveillance escalation
-
-The player is not fighting enemies.
-
-The player is fighting:
-
-> adaptive probability systems.
-
----
-
-# 7. Identity System
-
-The player must maintain two identities.
-
----
-
-# Mr Riggs
-
-Must:
-
-* appear legitimate
-* explain income
-* maintain reputation
-* avoid financial suspicion
-* hide illegal activity
-
----
-
-# Lucky Smith
-
-Must:
-
-* avoid detection
-* remain anonymous
-* escape before tracing
-* minimize exposure time
-* prevent machine collapse
-
----
-
-# Identity Risk
-
-If suspicion rises:
-
-* casinos track patterns
-* black markets react
-* access becomes restricted
-* law enforcement pressure increases
-
-The player is balancing:
-
-## wealth vs visibility.
-
----
-
-# 8. Workshop / Hideout
-
-The player’s workshop evolves over time.
-
-Possible systems:
-
-* machine benches
-* dice laboratories
-* black market terminals
-* probability simulators
-* cooling systems
-* neural interfaces
-* instability containment
-
-The workshop is:
-
-* safe
-* strategic
-* personal
-
-It becomes the player’s evolving identity.
-
----
-
-# 9. Machine Classes
-
-Different casino systems behave differently.
-
----
-
-## Mechanical Slots
-
-* stable
-* readable
-* low reward
-
----
-
-## Quantum Machines
-
-* chaotic
-* unpredictable
-* high scaling potential
-
----
-
-## Corporate AI Tables
-
-* highly adaptive
-* dangerous
-* aggressively defensive
-
----
-
-## Black Market Systems
-
-* unstable
-* illegal
-* highly profitable
-
----
-
-## Experimental Probability Engines
-
-* reality-distorting
-* partially broken
-* capable of catastrophic collapse
-
----
-
-# 10. Collapse Events
-
-Collapse is not simple failure.
-
-Collapse is:
-
-* systemic implosion
-* runaway probability
-* entropy overload
-* machine corruption
-* identity exposure
-* casino lockdown
-* catastrophic chain reaction
-
-The player should feel:
-
-> “I pushed the system too far.”
-
----
-
-# Long-Term Progression
-
-Potential permanent progression:
-
-* new dice archetypes
-* advanced hacking modules
-* hidden casinos
-* identity tools
-* neural upgrades
-* forbidden probability systems
-* underground contacts
-* collapse resistance
-
----
-
-# Emotional Experience
-
-The ideal emotional progression:
-
-## Early Game
-
-* curiosity
-* experimentation
-* small wins
-
----
-
-## Mid Game
-
-* mastery
-* greed
-* optimization
-* confidence
-
----
-
-## Late Game
-
-* overload
-* instability
-* panic
-* obsession
-* collapse
-
----
-
-# Core Design Philosophy
-
-The game is fundamentally about:
-
-* control
-* greed
-* probability
-* identity
-* escalation
-* instability
-
-The player begins by:
-
-> manipulating machines.
-
-Eventually:
-
-> the machines begin manipulating the player.
-
----
-
-# Visual Direction
-
-## Style
-
-* comic-noir cyberpunk
-* neon interfaces
-* glitch effects
-* dark environments
-* stylized machinery
-* readable chaos
-
----
-
-# Visual Evolution
-
-## Early
-
-* clean
-* understandable
-* low complexity
-
----
-
-## Mid
-
-* overloaded UI
-* chain effects
-* visual stress
-
----
-
-## Late
-
-* corruption
-* visual instability
-* broken interfaces
-* statistical hallucinations
-
----
-
-# Audio Direction
-
-The machine should sound alive.
-
-Audio evolves from:
-
-* mechanical clicks
-  to:
-* layered computational chaos
-* recursive echoes
-* distorted machine harmonics
-
-The soundscape should increasingly feel like:
-
-> a probability engine thinking too fast.
-
----
-
-# Core Player Motivation
-
-The player does not merely want money.
-
-The player wants:
-
-* mastery
-* control
-* understanding
-* perfect systems
-* impossible builds
-
-The ultimate fantasy:
-
-> becoming someone capable of rewriting luck itself.
-
----
-
-# Final Vision
-
-A small unknown man enters the underground casino world with homemade hardware and desperation.
-
-Years later:
-he becomes a whispered legend capable of destabilizing entire probability systems through intuition, engineered chaos, and impossible machines.
-
-And eventually:
-even he may lose control over what he created.
+- understandable preparation
+- exciting escalation
+- meaningful consequences
