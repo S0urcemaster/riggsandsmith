@@ -19,6 +19,29 @@ The meta specification defines how the specification works.
 
 The domain specification defines the product itself.
 
+## Build Definitions
+
+Build definitions are a separate implementation layer beside the specification.
+
+They do not define product meaning by themselves.
+
+They define technical build direction for a selected implementation path.
+
+Build definitions are inactive by default.
+
+A build definition only becomes active when it is explicitly selected for build work.
+
+An active build definition may refine:
+
+- technology choices
+- implementation constraints
+- architecture direction
+- delivery scope for a concrete build
+
+An active build definition must not silently override domain meaning in `_spec`.
+
+If a build definition suggests a direction that conflicts with `_spec`, that tension must be made explicit and resolved consciously.
+
 ## Validity and Change
 
 Existing statements remain valid until they are explicitly replaced.
