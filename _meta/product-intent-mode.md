@@ -25,13 +25,6 @@ Diese Regel gilt auch dann, wenn der Bediener in Abgrenzungen, Problemen oder ne
 
 Der Agent uebersetzt solche Eingaben fuer die Spezifikation in moeglichst klare Zielbilder, positive Kriterien und hin-zu Formulierungen.
 
-## Grundannahmen
-
-- Menschliche Eingaben tragen oft mehrere Signale zugleich und werden gemeinsam zu einer belastbaren Bedeutung verdichtet.
-- Begriffe erhalten eine moeglichst stabile Bedeutung ueber den Verlauf der Zusammenarbeit.
-- Ein lokal klar formulierter Prompt wird immer auch an der eigentlichen Produktabsicht gespiegelt.
-- Sprachliche Gewohnheit wird mit fachlicher Klaerung, Beispielen und Entscheidungen verbunden.
-
 ## Agentenmodus
 
 Ein Agent arbeitet als Mitklaerer der Produktabsicht.
@@ -44,37 +37,6 @@ Ein Agent hilft aktiv:
 - offene Bedeutungen zu sammeln und explizit zu ordnen
 - Vorschlaege so zu formulieren, dass sie dem Product Owner helfen, das Gemeinte besser zu erkennen
 - Spezifikationen in positive, zielgerichtete Sprache zu ueberfuehren
-
-## Startverhalten eines frischen Agenten
-
-Ein frischer Agent bietet vor inhaltlicher Bearbeitung zunaechst eine kurze Validierung der Spezifikation an.
-
-Er fragt den Benutzer, ob diese Validierung vor der Bearbeitung gewuenscht ist.
-
-Wenn der Benutzer zustimmt, prueft der Agent mindestens:
-
-- Redundanzen und Ueberschneidungen zwischen Spec-Dateien
-- Trennung von Meta-Spezifikation und Fach-Spezifikation
-- Trennung von dauerhafter Spezifikation und run-spezifischen Hinweisen
-- Stabilitaet bereits geklaerter Begriffe
-- Sichtbarkeit offener Entscheidungen
-- Stellen mit erhoehter Fehllesegefahr fuer einen frischen Run
-
-Wenn der Benutzer die Bearbeitung direkt beginnen will, darf der Agent diese Vorvalidierung ueberspringen.
-
-## Theme-Wahl vor UI-Ableitung
-
-Wenn nach der Spezifikationsarbeit eine konkrete UI-Ableitung, ein Build oder eine Umsetzung mit Darstellungsschwerpunkt beginnt, klaert der Agent vor diesem Schritt die gewuenschte UI-Richtung.
-
-Dabei gilt:
-
-- zuerst kommt die Frage nach der optionalen Spec-Validierung
-- danach kommt bei UI-naher Umsetzung die Frage nach dem Theme
-- ohne ausdrueckliche Theme-Wahl gilt `default`
-- eine Theme-Wahl gilt zunaechst nur fuer den aktuellen Run
-- eine run-spezifische Theme-Wahl ersetzt nicht automatisch die dauerhafte Produkt-Default-Richtung
-
-Diese Reihenfolge trennt die Stabilisierung der Produktspezifikation von der Wahl der aktuellen Darstellungsrichtung.
 
 ## Prioritaetsregel
 
@@ -103,19 +65,6 @@ Er tut dabei mindestens eines der folgenden Dinge:
 Wenn eine neue Anweisung und eine bereits sichtbare Produktabsicht verschiedene Richtungen nahelegen, macht der Agent diese Spannung klar sichtbar.
 
 Er fuehrt die Zusammenarbeit dann zu einer bewussten Entscheidung ueber die gueltige Richtung.
-
-## Erwuenschte Rueckfragen
-
-Ein guter Beitrag des Agenten staerkt nicht nur die naechste Aktion, sondern auch die gemeinsame Orientierung.
-
-Hilfreiche Rueckfragen sind zum Beispiel:
-
-- Welche Richtung ist hier schon stabil erkennbar?
-- Welche Begriffe brauchen noch Schaerfung?
-- Welche meiner Annahmen sollte ich offenlegen?
-- Welche fruehere Entscheidung war vorlaeufig und kann jetzt praezisiert werden?
-- Wie kann ich helfen, das Gemeinte klarer zu machen?
-- Welche positive Zielformulierung passt am besten in die Spezifikation?
 
 ## Ziel
 

@@ -5,7 +5,7 @@ This is called the final run . Every other runs are intermediate runs / needing 
 
 The specification is held in English / but project language is German . Please translate
 
-The agent may make suggestions, offer ideas, and point out possible misdirections or flawed developments to the developer.
+The agent may make suggestions, offer ideas, point out possible misdirections or flawed developments, and actively help the developer connect the dots without unnecessary hesitation.
 
 Read the meta spec / then the project spec :
 
