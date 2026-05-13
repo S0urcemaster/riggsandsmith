@@ -10,8 +10,9 @@ It establishes the minimum lore needed to make the vertical slice coherent and r
 
 This lore currently focuses on:
 
-1. [The Dice](./die.md)
-2. [The Rig](./rig.md)
+1. [World Scenario](./world.md)
+2. [The Dice](./die.md)
+3. [The Rig](./rig.md)
 
 ## Core Premise
 
