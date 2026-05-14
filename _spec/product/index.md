@@ -295,6 +295,8 @@ The rig state includes at minimum:
 - cooling or thermal strain
 - signature or traceability
 
+Rig operating rules are defined in [Rig Operation](./rig-operation.md).
+
 ### Dice State
 
 Each die should be describable at minimum by:
