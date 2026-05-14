@@ -322,6 +322,10 @@ Dice must not be only passive stat bonuses.
 
 A die should be defined as a rule-active component that produces field behavior and shapes other states.
 
+The first slice should make dice understandable through a small set of learnable physical forces.
+
+Those forces are defined in [Dice Physics](./dice-physics.md).
+
 A die can therefore, among other things:
 
 - reinforce tendencies

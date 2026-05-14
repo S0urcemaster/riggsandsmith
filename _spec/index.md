@@ -7,5 +7,6 @@
 3. [Product](./product/index.md)
 4. [Game Loop](./product/game-loop.md)
 5. [Hack View](./product/hack-view.md)
-6. [Content](./content/index.md)
-7. [Agent](./agent/index.md)
+6. [Dice Physics](./product/dice-physics.md)
+7. [Content](./content/index.md)
+8. [Agent](./agent/index.md)
