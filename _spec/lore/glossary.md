@@ -10,6 +10,12 @@ Lucky Smith is the illegal identity used by John Riggs in his hidden rigging lif
 
 It is not a separate person.
 
+## Home
+
+Home is the private combined living, sleeping, and work space in which John Riggs operates his hidden rig life.
+
+It is cramped, technology-dense, slightly messy, and organized according to his own internal logic rather than clean presentation.
+
 ## Fate Dice
 
 Fate dice are rare probability modules from an advanced future-era technology.
@@ -35,3 +41,9 @@ It is a field manipulation platform that directs the effect of the dice into a t
 A hack is an illegal attack against a target machine, especially a gambling machine, carried out through the use of a rig.
 
 In world terms, it is the forbidden attempt to bend the target system toward distorted outcomes, profit, or disruption.
+
+It is also a state of intense perceptual narrowing and bodily control in which Lucky Smith focuses almost entirely on keeping the operation stable and away from the red zone.
+
+## Red Zone
+
+The red zone is the dangerous operating condition in which strain, instability, or overload approaches the point where control begins to fail.

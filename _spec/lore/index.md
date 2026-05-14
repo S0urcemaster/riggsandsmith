@@ -13,8 +13,10 @@ This lore currently focuses on:
 1. [Glossary](./glossary.md)
 2. [World Scenario](./world.md)
 3. [John Riggs / Lucky Smith](./riggs.md)
-4. [The Dice](./die.md)
-5. [The Rig](./rig.md)
+4. [Home](./home.md)
+5. [Hack](./hack.md)
+6. [The Dice](./die.md)
+7. [The Rig](./rig.md)
 
 ## Core Premise
 
@@ -35,6 +37,16 @@ The lore must support three things:
 - why dice exist as real components inside the machine
 - why different dice types can reinforce or disrupt each other
 - why building and operating such rigs happens through hidden underground networks
+
+## Representation Boundary
+
+Lore may define world reality more richly than the first playable build visibly presents it.
+
+Lore therefore may describe places, objects, room details, habits, and background conditions that exceed the visible equipment or environmental detail of the current product slice.
+
+That does not by itself make every lore detail a required visible element of the build.
+
+What the player must actually see, access, or interact with in a given implementation must be defined in the product specification.
 
 ## Tone
 
