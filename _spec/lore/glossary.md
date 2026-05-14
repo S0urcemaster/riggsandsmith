@@ -12,15 +12,23 @@ It is not a separate person.
 
 ## Fate Dice
 
-Fate dice are rare future-era probability units that generate localized fields which influence surrounding systems and event outcomes.
+Fate dice are rare probability modules from an advanced future-era technology.
+
+When they are correctly suspended and brought to high rotational speed, they generate a local field that can bend event distributions in a limited space by a small amount.
 
 They are real in-world components rather than ordinary gambling dice.
 
+## Fate Constant
+
+The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.
+
+In its normal state, that order remains practically neutral and indifferently distributed.
+
 ## Rig
 
-A rig is an illegal probability hacking machine built to host and drive fate dice.
+A rig is an illegal fate-hacking machine that magnetically suspends, drives, and concentrates the field effect of fate dice.
 
-It is a field manipulation platform that tunes, powers, and combines dice so their effects can be directed into a target system.
+It is a field manipulation platform that directs the effect of the dice into a target system.
 
 ## Hack
 
