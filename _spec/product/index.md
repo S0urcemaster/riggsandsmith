@@ -113,6 +113,7 @@ The first global resources are:
 
 - money
 - casino heat
+- cover
 
 Money is the player's spendable operational resource.
 
@@ -130,11 +131,21 @@ When casino heat rises above a casino's tolerance threshold, that casino or cate
 
 A player with high casino heat may still find work, but increasingly through casinos or target conditions with higher risk, stronger attention, or worse safety margins.
 
+Cover is the stability of John Riggs's ordinary visible life around the illegal operation.
+
+For the first product direction, Cover is a global resource rather than a personal John Riggs attribute.
+
+It can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+
+John Riggs should not receive a separate set of personal manipulable attributes in the first slice.
+
+His ordinary identity matters through view tone, equipment access, money, cover, and consequence pressure rather than through an RPG-like character sheet.
+
 ### Global Resource Display
 
 The product should provide a persistent global resource display across views.
 
-Money and casino heat should remain visible or immediately readable because the player needs them for planning.
+Money, casino heat, and cover should remain visible or immediately readable because the player needs them for planning.
 
 This display is a product-level requirement, not only a Home app detail.
 
@@ -144,10 +155,23 @@ Acceptance checks:
 
 - Money is visible or immediately readable in the main product views where planning or consequence reading occurs.
 - Casino heat is visible or immediately readable in the main product views where planning or consequence reading occurs.
+- Cover is visible or immediately readable in the main product views where planning or consequence reading occurs.
 - The player can compare current money against shopping or upgrade decisions without leaving the planning context.
 - The player can compare current casino heat against target access or target risk without leaving the planning context.
-- When a hack result changes money or casino heat, the persistent display reflects the updated value before the next planning decision.
+- The player can compare current cover against suspicious shopping or preparation decisions without leaving the planning context.
+- When a hack result or preparation action changes money, casino heat, or cover, the persistent display reflects the updated value before the next planning decision.
 - The display can be adapted visually to each view's tone, but the player can recognize that it represents the same global resources.
+
+### Cover Pressure
+
+Cover can be reduced by preparation behavior that makes John Riggs's normal life less plausible or less quiet.
+
+Acceptance checks:
+
+- Cover is visible as a persistent player or external-pressure value.
+- Buying too many illegal, rare, or suspicious items through darknet-like sources can reduce cover.
+- Cover consequences are tied to global operational exposure rather than to a separate John Riggs character attribute sheet.
+- The player can read that aggressive preparation can create risk before the next hack begins.
 
 ### Casino Heat Access Pressure
 
@@ -168,8 +192,8 @@ The player state includes at minimum:
 
 - money
 - casino heat
+- cover
 - suspicion
-- strain or stress
 - available knowledge or access
 - day progression
 
@@ -420,5 +444,5 @@ The following points remain open for now, but from this point onward they should
 
 - how granularly Hack is shown step by step
 - how strongly the field logic is exposed numerically
-- how exactly stress, suspicion, and access are coupled
+- how exactly body pressure, suspicion, and access are coupled
 - what minimum number of dice and target archetypes the first slice needs

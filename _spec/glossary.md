@@ -44,6 +44,14 @@ Casino heat is not the same as rig thermal heat.
 
 High casino heat pushes future work toward higher-risk casinos, machines, or operating conditions.
 
+## Cover
+
+Cover is the persistent stability of John Riggs's ordinary visible life around the illegal operation.
+
+It is a global resource, not a personal John Riggs attribute.
+
+Cover can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+
 ## Fallback Die
 
 The fallback die is the player's permanent baseline die.

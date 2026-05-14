@@ -21,7 +21,7 @@ Catch is an exception view that appears only when the player crosses a boundary 
 
 The product should keep plan-critical global resources readable across the main views.
 
-Money and casino heat are needed for planning, target judgment, and consequence reading.
+Money, casino heat, and cover are needed for planning, target judgment, preparation judgment, and consequence reading.
 
 They should therefore not be hidden inside one isolated app or one isolated phase.
 
