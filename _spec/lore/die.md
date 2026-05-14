@@ -4,7 +4,7 @@
 
 The dice are real in-world components.
 
-They are not symbolic UI elements and not ordinary gambling dice.
+They are not ordinary gambling dice.
 
 They are fate dice: rare future-era probability units that generate localized fields which influence surrounding systems and event outcomes.
 

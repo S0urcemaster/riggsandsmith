@@ -61,6 +61,16 @@ Once a term has been defined, it keeps that meaning across the specification.
 
 A term may only change meaning if that change is stated explicitly.
 
+Avoiding ambiguity in term usage is a high-priority specification concern.
+
+The specification should place strong value on minimizing overlapping, drifting, or context-dependent meanings for the same term.
+
+If a term risks becoming ambiguous, its meaning should be stabilized explicitly instead of being left to local interpretation.
+
+Terms that become important, overloaded, or repeatedly reused across files should be added to a glossary.
+
+The glossary should serve as a central reference point for stable product terminology.
+
 ## Purpose
 
 The specification should guide different agents and humans toward the same product direction with high reliability.
