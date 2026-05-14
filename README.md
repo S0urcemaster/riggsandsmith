@@ -1,90 +1,98 @@
-# Mr Riggs & Lucky Smith
+# John Riggs & Lucky Smith
 
 > A neon-noir probability hacking game about preparing a risky casino intrusion, pushing an unstable machine, and surviving the consequences.
 
 ## Core Slice
 
-The vertical slice is built around one compact gameplay loop:
+The vertical slice is built around a compact state-based product flow:
 
-1. Prep
-2. Run
-3. Result
+1. Start
+2. Home
+3. Hack
+4. Catch
 
 The player lives two connected roles:
 
-- Mr Riggs prepares the operation
+- John Riggs prepares the operation at home
 - Lucky Smith executes it inside the casino
 
-The slice should prove that this loop is fun, readable, and expandable.
+The slice should prove that rig composition, target choice, escalating pressure, and persistent consequences create a readable and expandable game core.
 
-## 1. Prep
+## 1. Start
 
-Prep is the slower planning phase.
+Start is the entry view.
 
-Here the player prepares the next casino run.
+It frames access into the current playable state and leads into Home.
+
+## 2. Home
+
+Home is the central decision phase.
+
+Here the player prepares the next illegal hack through the home computer, rig work area, and supporting apps.
 
 Core actions:
 
-- choose or upgrade a small set of dice modules
-- buy or equip a few hacking tools
-- tune the build toward profit, speed, or stability
+- install and arrange fate dice in the rig
+- inspect load, instability, heat, and signature
+- buy dice, upgrades, and die modifications
+- select an individual slot machine as the next target
 - accept tradeoffs between power and safety
 
-Prep should feel:
+Home should feel:
 
 - controlled
 - strategic
 - readable
+- technically dense
 
-The purpose of Prep is to build intent before pressure begins.
+The purpose of Home is to build a concrete operational configuration before pressure begins.
 
-## 2. Run
+## 3. Hack
 
-Run is the active casino hacking phase.
+Hack is the active casino operation.
 
-Here the player uses the prepared build inside a live machine.
+Here Lucky Smith carries the prepared rig to the chosen target machine, attaches it in concealed form, and pushes the target system through a live pressure console.
 
 Core actions:
 
-- manipulate probability through dice and tools
-- trigger stronger rewards through combinations
-- push the machine toward higher output
-- react to instability and rising detection
-- decide when to continue and when to get out
+- push yield for stronger profit
+- stabilize channels under pressure
+- manage heat, instability, signature, and body pressure
+- react to red-zone proximity
+- cash out before control collapses
 
 Core pressures:
 
-- instability can destroy the run
-- detection can escalate toward police response
+- instability can damage the rig or dice
+- suspicion can escalate toward direct response
+- body pressure can weaken control
 
-Run should feel:
+Hack should feel:
 
 - fast
 - risky
 - escalating
-- slightly chaotic but still understandable
+- compressed
+- understandable through visible cause and effect
 
-## 3. Result
+## 4. Catch
 
-Result is the consequence phase after the run.
+Catch is the exception view.
 
-The player returns from the run with an outcome that affects the next Prep phase.
+It appears when the player crosses a boundary severe enough to trigger exposure, intervention, or capture pressure.
 
-Possible outcomes:
+## Consequence Carry-Over
 
-- successful escape with money
-- partial success with damage or suspicion
-- collapse during the run
-- police escalation after too much exposure
+Each hack outcome affects the next Home phase.
 
-Result should make the player feel that every run leaves a mark.
+Possible carry-over effects:
 
-It should feed back into the next loop through:
-
-- earned money
-- lost equipment
+- money gain or loss
+- damaged dice
+- rig defects
 - increased suspicion
-- changed strategic options
+- stress or strain
+- changed access and available equipment
 
 ## Vertical Slice Scope
 
@@ -92,23 +100,25 @@ The slice should stay intentionally small.
 
 Suggested scope:
 
-- 2 switching UIs: Prep and Run
-- 1 core casino machine type
-- 1 compact workshop / loadout screen
+- Start, Home, Hack, and Catch views
+- a dominant home computer as the main operating element
+- a Rigging App with visible dice slots and module states
+- a Targeting App focused on individual slot machines
+- a Shopping App for dice, upgrades, and die modifications
+- a small set of distinct target machines
 - a small set of dice modules
-- a small set of hacking tools
-- 1 instability system
-- 1 detection / police pressure system
-- clear run outcomes that lead back into Prep
+- visible instability, suspicion, heat, and body-pressure systems
+- clear hack outcomes that lead back into Home
 
 ## Success Condition for the Slice
 
 The slice succeeds if the player can clearly experience this loop:
 
-1. build a setup in Prep
-2. risk it in Run
-3. suffer or profit in Result
-4. want to try again with a better plan
+1. build a rig configuration in Home
+2. choose a target machine
+3. risk the configuration in Hack
+4. carry consequences into the next day
+5. want to try again with a better plan
 
 ## Design Priority
 
