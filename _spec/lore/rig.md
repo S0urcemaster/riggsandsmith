@@ -6,11 +6,15 @@ The rig is an illegal fate-hacking machine built to hold, guide, and operate fat
 
 It is neither a normal computer nor a simple cheating tool.
 
-It is a field manipulation platform that combines magnetic guidance, energy, cooling, and dice arrangement so that the effect of the dice can be directed into a target system.
+It is a portable field manipulation platform that combines magnetic guidance, energy, cooling, and dice arrangement so that the effect of the dice can be directed into a target system.
 
 ## Purpose
 
 A rig exists to interfere with real machines, especially gambling machines, by pushing local probability distortions into their immediate operating reality.
+
+For that reason, a rig is not normally operated from a distant home setup alone.
+
+During a hack, it must be brought physically close to the target machine and attached in concealed form so that its active field can couple into the machine's local operating state.
 
 In practical terms, the rig allows the user to:
 
@@ -38,6 +42,8 @@ The rig does not create that curvature from nothing.
 
 It forces the dice into a state in which their slight bending of the fate constant becomes practically usable.
 
+Because this effect is local, successful operation depends on close placement against the target machine rather than remote influence from across a city or room.
+
 ## Construction
 
 Rigs are built from a mix of:
@@ -48,6 +54,7 @@ Rigs are built from a mix of:
 - shielding and cooling parts
 - forbidden or unstable dice interfaces
 - magnetic suspension and drive assemblies
+- concealment housings and mounting solutions
 
 No fully legitimate market openly sells complete rigs.
 
@@ -69,6 +76,7 @@ A more expensive or more carefully built rig can:
 - dissipate heat more effectively
 - control electrical spikes more cleanly
 - mask signature more effectively
+- attach more cleanly and remain less noticeable during a live operation
 
 For that reason, not only the die itself is valuable, but also the quality of the rig that makes it operable.
 
@@ -104,3 +112,7 @@ Even a well-built machine carries the risk of:
 - catastrophic collapse
 
 The player should understand that using a rig means operating a forbidden machine that bends luck at real personal risk.
+
+In practice, that risk begins before the field is even pushed hard.
+
+The user must carry the rig, hide it on the target machine, and keep it operating at close range without drawing attention.

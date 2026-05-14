@@ -16,6 +16,8 @@ The room, the noise around him, and everything not immediately connected to the 
 
 What remains is directed control under pressure.
 
+To maintain that control, he relies on a wearable viewing aid such as illegal AR glasses that keep rig state, warning signals, and target feedback directly in front of his eyes while he stays physically near the machine.
+
 ## Time Pressure
 
 This state is not calm in a detached sense.

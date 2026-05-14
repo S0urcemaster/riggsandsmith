@@ -49,7 +49,17 @@ A meaningful hack is one in which pressure creates tradeoffs.
 
 The first Hack view should be primarily interface-driven.
 
-It should center on the target machine as the current operational subject, with surrounding rig state, danger state, and action controls arranged around it.
+It should present the target machine as the current operational subject together with a large manipulable rig representation that exposes the deployed rig's active internals.
+
+The target machine and the rig representation should share the view at the same time rather than replacing one another.
+
+The target machine should communicate the physical site of the hack.
+
+The rig representation should carry most of the readable system interaction weight.
+
+This can be read as AR-assisted perception from Riggs's point of view even when the interface scales the rig larger than its literal physical size.
+
+Riggs should feel physically present at the machine while the player receives an expanded operational picture.
 
 It should feel live, compressed, and dangerous, but still readable.
 
@@ -58,6 +68,7 @@ It should feel live, compressed, and dangerous, but still readable.
 The first Hack view should keep at minimum these live elements visible:
 
 - the target machine or target state
+- the deployed rig representation with visible dice slots and module states
 - current profit or extractable gain
 - current risk pressure
 - current red-zone proximity
@@ -138,6 +149,8 @@ Suitable presentation tools include:
 - short layout jolts
 - signal noise
 - temporary information pressure
+
+The composition may place Riggs and the machine on one side and the enlarged rig operating surface on the other side if that helps preserve both physical context and clear manipulation space.
 
 The prototype should not require elaborate 3D object behavior in order to feel stressful.
 

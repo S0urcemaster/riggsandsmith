@@ -63,12 +63,16 @@ The first slice should therefore include at its core:
 - a dominant home computer as the main visible operating element
 - a Rigging App with visible dice slots and module states
 - a Targeting App focused on individual slot machines rather than full casino spaces
-- a Shopping App for rigs, dice, upgrades, and die modifications
+- a Shopping App for dice, upgrades, and die modifications
 - a small set of distinct dice
 - a small set of distinct target systems
 - a Hack view with readable cause-and-effect relationships
 - a Catch view for player boundary violations
 - persistent consequences across multiple days
+
+The first slice should assume one starting rig model.
+
+Different rig models may become a later expansion axis, but they are not required to prove the first product core.
 
 The named views should map clearly onto the named phases they present.
 
@@ -105,6 +109,7 @@ The player state includes at minimum:
 
 The rig state includes at minimum:
 
+- rig model
 - available slots
 - energy or load level
 - stability
@@ -174,7 +179,7 @@ The casino around them may exist as framing fiction or decorative presentation, 
 
 From the Targeting App in Home, the player selects which machine the next hack will target.
 
-That choice defines the next operational objective.
+That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
 
 ## Shopping App Definition
 
@@ -184,24 +189,27 @@ It is the place where the player can spend money to acquire or improve operation
 
 The first slice Shopping App should support at minimum:
 
-- buying rigs
 - buying dice
 - buying upgrades
 - buying die modifications
 
 The Shopping App should therefore express progression through equipment access rather than through abstract unlock language alone.
 
+Additional rig models may be introduced later, but the first slice does not require rig shopping.
+
 ## Hack Definition
 
 In the first product definition, Hack is not primarily a freely unfolding action sequence.
 
-Hack is the product view in which the home-built configuration is played against a target system.
+Hack is the product view in which the home-built configuration is physically deployed onto a target machine and then played against that target system through an intensified operational interface.
 
 Its outcome should not feel arbitrary.
 
 It should be understandable as a readable consequence of build, target choice, load, risk, and variance.
 
 The first implementation direction for Hack should be a pressure console built around escalating reward-versus-risk decisions rather than around expensive object animation.
+
+The player should understand that Riggs is standing at or near the machine, operating through AR-assisted telemetry while the view presents an enlarged and manipulable rig representation for readability.
 
 ## Catch Definition
 
@@ -241,6 +249,8 @@ The interface should not hide the systemics behind generic number panels.
 The rig should be visible and readable as the central object.
 
 Dice, slots, load, instability, and signature should appear as part of a diegetic technical operating world.
+
+In Hack, the target machine and the rig representation should be shown together so that the player can read both the physical subject of the attack and the internal state of the deployed machine.
 
 ## Open Refinements
 

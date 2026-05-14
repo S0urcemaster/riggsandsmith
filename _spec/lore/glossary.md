@@ -32,9 +32,9 @@ In its normal state, that order remains practically neutral and indifferently di
 
 ## Rig
 
-A rig is an illegal fate-hacking machine that magnetically suspends, drives, and concentrates the field effect of fate dice.
+A rig is an illegal portable fate-hacking machine that magnetically suspends, drives, and concentrates the field effect of fate dice.
 
-It is a field manipulation platform that directs the effect of the dice into a target system.
+It is attached in concealed form to a target machine during a hack so that the effect of the dice reaches the machine's immediate operating reality.
 
 ## Hack
 
