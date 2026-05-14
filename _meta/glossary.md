@@ -21,3 +21,9 @@ It contains the currently valid product meaning unless a statement is explicitly
 A build definition is a separate implementation-layer definition beside the specification.
 
 It may refine technical build direction for a selected implementation path, but must not silently override domain meaning in `_spec`.
+
+## Behavior Contract
+
+A behavior contract is a compact product function declaration written through observable acceptance checks.
+
+Its checks are the testable form of the function itself.

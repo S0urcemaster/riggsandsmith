@@ -24,7 +24,19 @@ They must not define gameplay loops, product flow, UI structure, implementation 
 
 If lore suggests or motivates product structure, that structure must still be defined in product files outside `lore/`.
 
-## Rule 3: Product Agent Rules Stay Product-Specific
+## Rule 3: Behavior Contracts Declare Product Functions
+
+When a product function can be stated through observable behavior, agents should prefer a behavior contract.
+
+A behavior contract should keep the function declaration short and attach acceptance checks directly to it.
+
+Those checks are part of the product function definition.
+
+Agents should keep product-level test meaning inside the behavior contract that declares the function.
+
+Technical automated tests may be derived inside an active build path, but they must remain subordinate to the product behavior contract.
+
+## Rule 4: Product Agent Rules Stay Product-Specific
 
 This section is reserved for product-specific agent rules only.
 

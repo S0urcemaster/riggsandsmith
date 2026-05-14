@@ -8,6 +8,8 @@ The dominant glossary for meta-level terms is [Glossary](./glossary.md).
 
 Meta terms that become important, overloaded, or repeatedly reused across `_meta` should be stabilized there.
 
+Behavior contracts are defined in [Behavior Contracts](./behavior-contracts.md).
+
 ## Core Principle
 
 The specification must always be read as the currently valid description of the intended product.
@@ -92,6 +94,7 @@ The specification uses these statement types:
 - rule
 - structure
 - interaction
+- behavior contract
 - derivation
 - open decision
 

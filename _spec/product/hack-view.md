@@ -164,3 +164,63 @@ The first Hack view is successful when the player can clearly feel:
 - that the build prepared in Home shaped what happened
 
 If those feelings are present, the first prototype is doing its job even without advanced animation.
+
+## Behavior Contracts
+
+The following contracts declare first-slice Hack functions through observable behavior.
+
+### Push Yield
+
+The player can push the active hack for stronger profit during Hack.
+
+Acceptance checks:
+
+- When the player pushes yield, current profit or extractable gain rises visibly.
+- Repeated yield pushes increase at least one pressure state such as risk, heat, instability, signature, red-zone proximity, or body pressure.
+- A greedier push creates a stronger chance of damage, suspicion, instability, or collapse than a safer action.
+- The player can read which pressure became worse after the push.
+
+### Cash Out
+
+The player can voluntarily end the active hack before control collapses.
+
+Acceptance checks:
+
+- A cash-out action is visible during Hack.
+- When the player cashes out, the hack ends and its result carries into the next Home phase.
+- Earlier cash-out usually produces a smaller but safer outcome than staying under pressure.
+- Cashing out near the red zone can still carry consequences from the pressure already accumulated.
+
+### Stabilize Channel
+
+The player can spend an action window to make the active operation more controllable.
+
+Acceptance checks:
+
+- When the player stabilizes a channel, at least one danger state improves or rises more slowly.
+- Stabilizing trades immediate profit potential for control.
+- Stabilizing is most valuable when pressure is already visible.
+- The player can read the tradeoff between immediate safety and immediate gain.
+
+### Regulate Body Pressure
+
+The player can actively reduce pulse, breathing pressure, or a comparable body-control state during Hack.
+
+Acceptance checks:
+
+- Body pressure is visible during Hack.
+- When the player regulates body pressure, that state improves or rises more slowly.
+- Improved body pressure reduces the chance of mistakes, instability, or loss of control.
+- Regulating body pressure competes with more profitable or more technical actions.
+
+### Active Die Braking
+
+The player can slow an active die during Hack by clicking and holding it.
+
+Acceptance checks:
+
+- When the player clicks and holds an active die, the die slows down visibly.
+- While the die is slowed, its field output decreases.
+- While the die is slowed, at least one pressure state such as heat or instability improves or rises more slowly.
+- Slowing a die weakens profit pressure, combination strength, or another beneficial field effect.
+- When the player releases the die, it accelerates toward its active operating speed again.
