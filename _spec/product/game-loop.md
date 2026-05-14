@@ -62,9 +62,9 @@ Hack is the executed operational phase and the second view of the playable game 
 
 Here the home-built configuration is carried to the chosen target machine, attached in concealed form, and used against that target system.
 
-Hack should not primarily be defined as a real-time action sequence.
+Hack should read primarily as a consequence of build, target choice, risk, strain, and variance.
 
-It should read as a consequence of build, target choice, risk, strain, and variance.
+Real-time pressure may shape the phase, but it serves consequence reading rather than becoming the main product form.
 
 Riggs operates under direct local pressure and reads the run through AR-assisted rig telemetry rather than through a calm remote desktop situation.
 

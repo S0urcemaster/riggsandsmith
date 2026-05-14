@@ -20,9 +20,9 @@ In its first viable state, the product is:
 - atmospheric rather than abstract
 - focused on build composition, risk, and consequence
 
-It should not primarily be defined as a real-time action game.
+Its primary product form is a state-based systems game in which planning, configuration, and consequence carry the main decision weight.
 
-It should also not primarily be defined as a freely explorable world.
+Real-time pressure may appear inside Hack, and spatial fiction may support the views, but those elements serve the systems loop rather than replacing it.
 
 ## Core Player Action
 
@@ -52,9 +52,9 @@ It should specifically show:
 
 ## First Binding Scope Boundary
 
-The first vertical slice should not require an open world, a large story campaign, or a complex infiltration simulation.
-
 The slice should prove the core product logic with limited content.
+
+For that reason, the first vertical slice excludes open-world exploration, a large story campaign, and complex infiltration simulation from its required build scope.
 
 The first slice should therefore include at its core:
 
@@ -131,15 +131,35 @@ When casino heat rises above a casino's tolerance threshold, that casino or cate
 
 A player with high casino heat may still find work, but increasingly through casinos or target conditions with higher risk, stronger attention, or worse safety margins.
 
-Cover is the stability of John Riggs's ordinary visible life around the illegal operation.
+Cover is the persistent plausibility and quietness of John Riggs's ordinary visible life around the illegal operation.
 
 For the first product direction, Cover is a global resource rather than a personal John Riggs attribute.
 
 It can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
 
-John Riggs should not receive a separate set of personal manipulable attributes in the first slice.
+For the first slice, John Riggs's ordinary identity is represented through view tone, equipment access, money, cover, and consequence pressure.
 
-His ordinary identity matters through view tone, equipment access, money, cover, and consequence pressure rather than through an RPG-like character sheet.
+This excludes a separate RPG-like character sheet for personal John Riggs attributes from the required first-slice scope, because it would split the current Cover function into a second overlapping progression surface.
+
+### State Persistence Boundary
+
+The product should distinguish persistent global resources from live operational pressure states.
+
+Persistent global resources carry across Home, Hack, and later planning decisions.
+
+Operational pressure states describe current or near-current danger during preparation or Hack execution.
+
+Operational pressure states can convert into persistent consequences when a result is resolved, but they should not replace the global resources that carry long-term planning meaning.
+
+This boundary keeps the game state from becoming volatile, where important consequence exists only inside one view, one app, or one unresolved Hack moment.
+
+Acceptance checks:
+
+- Money, casino heat, and cover persist after Hack resolves into the next Home phase.
+- Rig instability, thermal strain, signature, red-zone proximity, body pressure, and suspicion may change during Hack or preparation as operational pressure states.
+- When an operational pressure state creates lasting consequence, that consequence is written into a persistent state before the next planning decision.
+- A player can leave Hack and still read the lasting consequences that matter for the next Home decision.
+- Every resolved game state preserves a viable fallback path made from Loser's Rig, Loser's Die, and at least one simple target.
 
 ### Global Resource Display
 
@@ -206,7 +226,7 @@ The rig state includes at minimum:
 - top speed
 - whether it is protected as the player's fallback rig
 - energy or load level
-- stability
+- rig stability
 - cooling or thermal strain
 - signature or traceability
 
@@ -295,6 +315,10 @@ Other dice may be damaged, lost, corrupted, or otherwise removed from practical 
 
 Loser's Die is the baseline component that remains after those consequences.
 
+This protection is intentionally narrow.
+
+It prevents an unrecoverable volatile state, but it does not protect profit level, strong equipment, target access beyond the fallback path, or the consequences of risky play.
+
 ### Fallback Die Recovery
 
 The player can always recover into a small viable hack loop with Loser's Die and Loser's Rig.
@@ -311,9 +335,9 @@ Acceptance checks:
 
 ## Home Definition
 
-In the first product definition, Home is not only a thematic location.
-
 It is the central operating interface of the game.
+
+Home also carries thematic location meaning, but in the first product definition its binding function is the operating interface where the next hack is prepared.
 
 Home is the product view most closely associated with John Riggs as the ordinary working programmer.
 
@@ -331,9 +355,9 @@ These apps should include at minimum:
 - the Targeting App
 - the Shopping App
 
-The first slice does not need to present a large navigable apartment.
+The first slice presents Home through the operating presence of the room, with the computer and rig area carrying most of the visible interaction weight.
 
-It should instead present Home through the operating presence of the room, with the computer and rig area carrying most of the visible interaction weight.
+A large navigable apartment is excluded from the required first-slice scope because it would add spatial exploration without proving the core Home-to-Hack systems loop.
 
 ## Target Selection Definition
 
@@ -375,8 +399,6 @@ Additional rig models may be introduced later, but the first slice does not requ
 
 ## Hack Definition
 
-In the first product definition, Hack is not primarily a freely unfolding action sequence.
-
 Hack is the product view in which the home-built configuration is physically deployed onto a target machine and then played against that target system through an intensified operational interface.
 
 Hack is the product view most closely associated with Lucky Smith as Riggs's illegal operating identity.
@@ -389,21 +411,21 @@ Its outcome should not feel arbitrary.
 
 It should be understandable as a readable consequence of build, target choice, load, risk, and variance.
 
-The first implementation direction for Hack should be a pressure console built around escalating reward-versus-risk decisions rather than around expensive object animation.
+The first implementation direction for Hack should be a pressure console built around escalating reward-versus-risk decisions.
+
+Freely unfolding action sequencing and expensive object animation are outside the required first-slice scope because the first build must prove readable cause and effect between build, pressure, greed, cash-out, and consequence.
 
 The player should understand that Riggs is standing at or near the machine, operating through AR-assisted telemetry while the view presents an enlarged and manipulable rig representation for readability.
 
 ## Catch Definition
 
-Catch is not a standard progression step of the normal loop.
-
 It is the exception view that appears when the player crosses a boundary severe enough to trigger direct response, exposure, or capture pressure.
+
+Catch sits outside the standard Home-to-Hack progression loop so that severe boundary violations remain exceptional consequences rather than a normal daily step.
 
 ## Failure
 
-Failure is not only money loss.
-
-Failure can also mean:
+Failure can mean money loss and also:
 
 - damaged dice
 - rig defects
@@ -417,8 +439,6 @@ Failure consequences may affect all practical dice except Loser's Die.
 Failure consequences may affect other rig equipment while Loser's Rig remains available.
 
 ## Progression
-
-Progression is not only wealth accumulation.
 
 Progression includes at minimum:
 

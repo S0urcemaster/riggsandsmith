@@ -25,6 +25,10 @@ This rule also applies when the user speaks in distinctions, problems, or negati
 
 The agent translates such inputs for the specification into clear target descriptions, positive criteria, and toward-oriented formulations wherever possible.
 
+Negative or exclusionary formulations may remain in the specification when they protect a concrete product boundary, prevent a likely wrong implementation, or separate two terms that could otherwise drift into each other.
+
+In those cases, the agent should pair the exclusion with the positive target state that should be built.
+
 ## Agent Mode
 
 An agent works as a co-clarifier of product intent.

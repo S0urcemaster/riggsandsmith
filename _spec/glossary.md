@@ -34,6 +34,28 @@ Money is the player's persistent spendable operational resource.
 
 It is gained or lost through hacks and spent in Home on operational tools such as dice, upgrades, and die modifications.
 
+## Global Resource
+
+A global resource is a persistent state value that carries across the Home-to-Hack loop and shapes later planning.
+
+The first global resources are money, casino heat, and cover.
+
+Global resources remain readable across the main product views because they define continuing consequence, not only momentary interface feedback.
+
+## Operational Pressure State
+
+An operational pressure state is a live or near-live danger value generated during preparation or Hack execution.
+
+Examples include suspicion, rig instability, thermal strain, signature, red-zone proximity, and body pressure.
+
+Operational pressure states may influence persistent consequences, but they are not automatically the same thing as global resources.
+
+## Continuity Rule
+
+A continuity rule protects the minimum viable loop from collapsing into an unrecoverable or undefined state.
+
+For the first slice, the protected continuity rules are the permanent availability of Loser's Die, the permanent availability of Loser's Rig, and the presence of at least one simple viable target for that fallback pair.
+
 ## Casino Heat
 
 Casino heat is the persistent degree to which Lucky Smith has become known, watched, or recognizable across casino operations.
@@ -46,11 +68,19 @@ High casino heat pushes future work toward higher-risk casinos, machines, or ope
 
 ## Cover
 
-Cover is the persistent stability of John Riggs's ordinary visible life around the illegal operation.
+Cover is the persistent plausibility and quietness of John Riggs's ordinary visible life around the illegal operation.
 
 It is a global resource, not a personal John Riggs attribute.
 
 Cover can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+
+## Rig Stability
+
+Rig stability is the current controllability of the rig's operating field under load.
+
+It belongs to rig state and Hack pressure, not to John Riggs's ordinary social cover.
+
+Low rig stability raises the chance of field disruption, component damage, collapse, or loss of control.
 
 ## Fallback Die
 

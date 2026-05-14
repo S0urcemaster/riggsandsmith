@@ -127,6 +127,12 @@ The specification should prefer positive, goal-directed language.
 
 It should describe what applies, what should emerge, and what a structure is meant to achieve.
 
+Negative or exclusionary wording is justified when it prevents a likely misbuild, resolves an observed ambiguity, protects a scope boundary, or distinguishes a defined term from a nearby term.
+
+When such wording is used, the same section should make the intended positive direction readable.
+
+An exclusion should not stand alone as product meaning if the intended buildable behavior can be stated directly.
+
 ## Domain Specification Shape
 
 The domain specification should usually be organized in these layers:
