@@ -60,7 +60,10 @@ The first slice should therefore include at its core:
 
 - a Start view that leads into the current playable state
 - a Home view as the central interaction and decision layer
+- a dominant home computer as the main visible operating element
 - a rig interface with visible dice slots and module states
+- a target list focused on individual slot machines rather than full casino spaces
+- a shop interface for rigs, dice, upgrades, and die modifications
 - a small set of distinct dice
 - a small set of distinct target systems
 - a Hack view with readable cause-and-effect relationships
@@ -142,6 +145,51 @@ A die can therefore, among other things:
 - tip into corrupted states
 
 The product identity depends on dice remaining readable as active probability modules.
+
+## Home Definition
+
+In the first product definition, Home is not only a thematic location.
+
+It is the central operating interface of the game.
+
+Inside Home, the computer is the dominant visible element.
+
+Its screen can switch between the main operating surfaces needed for the next decision.
+
+These surfaces should include at minimum:
+
+- the rig configuration surface
+- the target selection surface
+- the shop surface
+
+The first slice does not need to present a large navigable apartment.
+
+It should instead present Home through the operating presence of the room, with the computer and rig area carrying most of the visible interaction weight.
+
+## Target Selection Definition
+
+For the first product slice, target selection should be represented primarily as a list of individual slot machines with different difficulty levels.
+
+The casino around them may exist as framing fiction or decorative presentation, but the actionable target in the first slice is the machine, not the full venue.
+
+From Home, the player selects which machine the next hack will target.
+
+That choice defines the next operational objective.
+
+## Shop Definition
+
+The shop is part of the Home decision layer.
+
+It is the place where the player can spend money to acquire or improve operational tools before the next hack.
+
+The first slice shop should support at minimum:
+
+- buying rigs
+- buying dice
+- buying upgrades
+- buying die modifications
+
+The shop should therefore express progression through equipment access rather than through abstract unlock language alone.
 
 ## Hack Definition
 
