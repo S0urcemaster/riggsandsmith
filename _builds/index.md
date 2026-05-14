@@ -19,6 +19,7 @@ If no build file has been explicitly selected, `_builds` remains inactive.
 This layer exists so that the project can keep multiple technical build variants in parallel, for example:
 
 - a web build
+- a terminal simulation build
 - a game engine build
 - a prototype build
 - an experimental architecture path
@@ -39,13 +40,22 @@ This means `_builds` should carry the implementation path itself, not only the s
 When implementation work should follow a specific variant, the instruction should explicitly name the file, for example:
 
 - use `_builds/web-react/index.md`
+- use `_builds/terminal-sim/index.md`
 - use `_builds/godot/index.md`
 - use `_builds/terminal-prototype/index.md`
 
 When stepwise execution is desired, the instruction should name both the build path and the step, for example:
 
 - use `_builds/web-react/index.md` and execute `_builds/web-react/steps/002-core-state.md`
+- use `_builds/terminal-sim/index.md` and execute `_builds/terminal-sim/steps/003-autoruns.md`
 - use `_builds/godot/index.md` and execute `_builds/godot/steps/001-foundation.md`
+
+## Available Build Paths
+
+The currently defined build paths are:
+
+- [Web React Build](./web-react/index.md)
+- [Terminal Simulation Build](./terminal-sim/index.md)
 
 ## Expected Content of a Build File
 
