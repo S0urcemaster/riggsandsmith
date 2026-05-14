@@ -105,7 +105,8 @@ The first prototype should use a small set of immediate actions rather than a br
 
 These actions may include functions such as:
 
-- cooling or bleeding heat
+- applying rig die manipulators
+- cooling or bleeding heat where the active rig supports it
 - masking signature
 - pushing yield
 - stabilizing a channel
@@ -115,6 +116,14 @@ These actions may include functions such as:
 The exact action names may still change.
 
 The important point is that the player has a compact action set with clearly different risk intentions.
+
+Rig die manipulators should use a keypad-and-target interaction.
+
+The player selects a manipulator mode from the active rig's keypad and then clicks or taps the target die.
+
+The first manipulator modes are accelerate, brake, and cool, but the available set depends on the active rig.
+
+For the first slice, Loser's Rig exposes only accelerate.
 
 ## Timing Model
 
@@ -213,14 +222,16 @@ Acceptance checks:
 - Improved body pressure reduces the chance of mistakes, instability, or loss of control.
 - Regulating body pressure competes with more profitable or more technical actions.
 
-### Active Die Braking
+### Rig Die Manipulation
 
-The player can slow an active die during Hack by clicking and holding it.
+The player can apply a rig-supported manipulator to an active die during Hack.
 
 Acceptance checks:
 
-- When the player clicks and holds an active die, the die slows down visibly.
-- While the die is slowed, its field output decreases.
-- While the die is slowed, at least one pressure state such as heat or instability improves or rises more slowly.
-- Slowing a die weakens profit pressure, combination strength, or another beneficial field effect.
-- When the player releases the die, it accelerates toward its active operating speed again.
+- A rig manipulator keypad is visible during Hack.
+- The player can select an available manipulator mode.
+- When the player clicks or taps an active die, the selected manipulator applies to that die.
+- If accelerate is applied, the die speeds up or output rises and at least one pressure state worsens.
+- If brake is available and applied, the die slows down, heat or instability improves, and output decreases.
+- If cool is available and applied, the die heat improves and a visible cost, charge, cooldown, energy, or pressure tradeoff is consumed.
+- Loser's Rig exposes accelerate as its only available die manipulator in the first slice.

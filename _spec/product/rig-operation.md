@@ -37,6 +37,7 @@ The first slice should define rigs through these properties:
 7. stability control
 8. signature masking
 9. rig perks
+10. die manipulators
 
 These properties should remain readable in Home before the player commits to a Hack.
 
@@ -154,6 +155,66 @@ Perks should usually affect one clear force or one clear material family.
 
 Perks should not make a rig universally better at everything unless the rig is intentionally a later high-end progression item.
 
+## Die Manipulators
+
+Die manipulators are active rig features that let the player apply an effect to a selected die during Hack.
+
+They belong to the rig's equipment, manufacturer profile, upgrades, or modification history.
+
+They are not universal actions that every rig automatically has.
+
+The first interaction model is:
+
+1. The player selects a manipulator mode from a small rig keypad.
+2. The player clicks or taps an active die.
+3. The selected manipulator effect is applied to that die.
+
+The keypad should show only the manipulators currently available on the active rig.
+
+Unavailable manipulators may be hidden or shown as locked only when that helps planning.
+
+The first manipulator set is:
+
+- accelerate
+- brake
+- cool
+
+### Accelerate
+
+Accelerate pushes the selected die to spin faster for a short time or until the next state change.
+
+It increases field output or response opportunity.
+
+It also increases heat, energy load, instability, signature, or red-zone pressure.
+
+### Brake
+
+Brake slows the selected die.
+
+It reduces heat buildup or lets the die cool.
+
+It also reduces field output, profit pressure, and combination strength while the die is slowed.
+
+### Cool
+
+Cool applies a direct cooling effect to the selected die or its slot.
+
+It reduces heat without necessarily reducing speed as strongly as braking.
+
+It should cost a limited resource, create cooldown, consume rig energy, or increase another pressure so that it does not replace braking.
+
+## First Slice Manipulator Scope
+
+For the first slice, Loser's Rig has only the accelerate manipulator.
+
+This makes Loser's Rig risky and simple.
+
+The player can push for output, but cannot directly brake or cool through rig features unless later equipment adds those manipulators.
+
+Brake and cool should exist as understandable future rig features, upgrades, or stronger rig identities.
+
+The first build may still represent passive cooling or natural slowdown, but direct player-applied brake and cool are rig feature access, not universal baseline actions.
+
 ## Rig Compensation Rules
 
 Rigs may compensate for dice weaknesses.
@@ -219,6 +280,7 @@ The player can judge whether a rig fits a dice build before starting Hack.
 Acceptance checks:
 
 - Each rig exposes active slots, top speed, guidance, cooling, stability, and any perks.
+- Each rig exposes its available die manipulators.
 - The build view shows when installed dice create high energy load, high guidance demand, high heat pressure, or high signature pressure.
 - A rig perk is visible before it affects the build.
 - A rig perk clearly names the force or material family it modifies.
@@ -237,3 +299,18 @@ Acceptance checks:
 - Better signature masking reduces signature or casino-heat pressure from visible field output.
 - Better stability control makes complex or resonant dice combinations safer.
 - A compensation effect reduces or slows a danger state, but the original die tradeoff remains readable.
+
+## Behavior Contract: Die Manipulator Keypad
+
+The player can apply rig-specific die manipulation through a keypad-and-target interaction.
+
+Acceptance checks:
+
+- During Hack, the active rig exposes a small manipulator keypad.
+- Selecting a manipulator mode makes that mode visibly active.
+- Clicking or tapping an active die applies the selected manipulator to that die.
+- The keypad contains only manipulators available on the active rig, or clearly marks unavailable manipulators as locked.
+- Accelerate increases selected die speed or output and worsens at least one pressure state.
+- Brake reduces selected die speed and improves heat or instability while reducing output.
+- Cool reduces selected die heat and consumes a visible cost, cooldown, charge, energy, or pressure tradeoff.
+- Loser's Rig exposes accelerate as its only direct die manipulator in the first slice.
