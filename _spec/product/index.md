@@ -130,6 +130,25 @@ When casino heat rises above a casino's tolerance threshold, that casino or cate
 
 A player with high casino heat may still find work, but increasingly through casinos or target conditions with higher risk, stronger attention, or worse safety margins.
 
+### Global Resource Display
+
+The product should provide a persistent global resource display across views.
+
+Money and casino heat should remain visible or immediately readable because the player needs them for planning.
+
+This display is a product-level requirement, not only a Home app detail.
+
+It may change visual treatment between Home and Hack, but it should preserve continuity of the same underlying values.
+
+Acceptance checks:
+
+- Money is visible or immediately readable in the main product views where planning or consequence reading occurs.
+- Casino heat is visible or immediately readable in the main product views where planning or consequence reading occurs.
+- The player can compare current money against shopping or upgrade decisions without leaving the planning context.
+- The player can compare current casino heat against target access or target risk without leaving the planning context.
+- When a hack result changes money or casino heat, the persistent display reflects the updated value before the next planning decision.
+- The display can be adapted visually to each view's tone, but the player can recognize that it represents the same global resources.
+
 ### Casino Heat Access Pressure
 
 Casino heat can push the player out of lucrative lower-risk casino options and toward higher-risk work.

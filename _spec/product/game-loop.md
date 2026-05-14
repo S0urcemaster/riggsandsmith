@@ -17,6 +17,16 @@ Home and Hack form the logical playable game loop.
 
 Catch is an exception view that appears only when the player crosses a boundary that triggers it.
 
+## Cross-View Planning Display
+
+The product should keep plan-critical global resources readable across the main views.
+
+Money and casino heat are needed for planning, target judgment, and consequence reading.
+
+They should therefore not be hidden inside one isolated app or one isolated phase.
+
+The display may be calmer in Home and more pressured in Hack, but it should remain recognizable as the same global resource state.
+
 ## Core Loop
 
 The logical playable loop begins at Home.
