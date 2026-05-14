@@ -29,7 +29,7 @@ Autoruns should support:
 - optional seeded randomness
 - summary metrics
 - comparison between at least two configurations or strategies
-- a fallback recovery scenario using only the starting one-slot rig and Loser's Die
+- a fallback recovery scenario using only Loser's Rig and Loser's Die
 
 ## Expected Output
 

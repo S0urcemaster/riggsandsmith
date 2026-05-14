@@ -48,6 +48,26 @@ A rig is an illegal portable fate-hacking machine that magnetically suspends, dr
 
 It is attached in concealed form to a target machine during a hack so that the effect of the dice reaches the machine's immediate operating reality.
 
+## Named Rig
+
+A named rig is an individual rig machine with a recognizable identity in the world.
+
+It may have a known owner relationship, modification history, defect profile, slot layout, or field behavior.
+
+## Loser's Rig
+
+Loser's Rig is the first named rig tied to John Riggs's hidden life as Lucky Smith.
+
+It is a small, cheap, familiar rig with two active die slots.
+
+## Rig Top Speed
+
+Rig top speed is the highest shared rotation speed a rig can physically sustain for its active dice.
+
+## Die Max Speed
+
+Die max speed is the highest rotation speed an individual fate die can safely tolerate under rig operation.
+
 ## Hack
 
 A hack is an illegal attack against a target machine, especially a gambling machine, carried out through the use of a rig.

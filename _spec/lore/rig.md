@@ -34,6 +34,14 @@ Depending on design, effort, and price, a rig may have more or less precise slot
 
 During operation, the dice are spun up.
 
+A rig drives its active dice through one shared rotation regime rather than independently spinning every die at a separate speed.
+
+The rig's top speed is the highest shared speed its drive, suspension, shielding, and cooling can sustain.
+
+Each die still has its own max speed.
+
+When dice with different limits are installed together, the shared operating speed must respect the lowest die limit and the rig's own top speed.
+
 This creates heat, electrical overload, and field stress.
 
 From this forced operating state, a small invisible bubble emerges beneath the device or in front of its emission side, within which fate-space is bent locally.
@@ -72,6 +80,7 @@ A more expensive or more carefully built rig can:
 
 - carry more slots
 - hold higher rotational speeds in stable operation
+- provide a higher top speed
 - concentrate more field load
 - dissipate heat more effectively
 - control electrical spikes more cleanly
@@ -116,3 +125,27 @@ The player should understand that using a rig means operating a forbidden machin
 In practice, that risk begins before the field is even pushed hard.
 
 The user must carry the rig, hide it on the target machine, and keep it operating at close range without drawing attention.
+
+## Named Rigs
+
+Named rigs are individual rig machines with a recognizable identity in the world.
+
+They are concrete illegal devices rather than only abstract rig models.
+
+A named rig can have a known owner relationship, modification history, defect profile, slot layout, or field behavior.
+
+The product may represent named rigs as unique equipment while still allowing other rigs to be generic, purchased, damaged, modified, or replaced.
+
+### Loser's Rig
+
+Loser's Rig is the first named rig tied to John Riggs's hidden life as Lucky Smith.
+
+It is a small, cheap, familiar machine built around limited means and repeated improvised maintenance.
+
+It has two active die slots.
+
+Its field behavior is modest and constrained, but understandable.
+
+It can operate simple dice against simple machines and gives Riggs a baseline way to keep working from limited equipment.
+
+Its value comes from familiarity, repair history, and the fact that Riggs knows how to keep it alive under poor conditions.

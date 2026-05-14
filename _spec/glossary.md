@@ -37,3 +37,27 @@ For the first slice, the fallback die is Loser's Die.
 It remains in the player's inventory across all outcomes and keeps a small viable hack loop available.
 
 The permanent availability of Loser's Die is a product continuity rule.
+
+## Fallback Rig
+
+The fallback rig is the player's permanent baseline rig.
+
+For the first slice, the fallback rig is Loser's Rig.
+
+It remains available across all outcomes and keeps a small viable hack loop available.
+
+The permanent availability of Loser's Rig is a product continuity rule.
+
+## Rig Top Speed
+
+Rig top speed is the highest shared rotation speed a rig can drive across its active dice.
+
+## Die Max Speed
+
+Die max speed is the highest rotation speed a die can safely tolerate.
+
+The lowest max speed among installed active dice can limit the build's maximum usable shared speed.
+
+## Shared Rig Speed
+
+Shared rig speed is the one active rotation speed at which the rig operates all installed active dice during a hack.

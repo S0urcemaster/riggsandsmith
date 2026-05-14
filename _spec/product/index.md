@@ -72,9 +72,15 @@ The first slice should therefore include at its core:
 
 The first slice should assume one starting rig model.
 
-The first starting rig should be small and simple.
+For the first slice, this starting rig is Loser's Rig.
 
-It should have one active die slot.
+Loser's Rig should be small and simple.
+
+It should have two active die slots.
+
+Loser's Rig remains available across all outcomes.
+
+The permanent availability of Loser's Rig is a product-level continuity rule.
 
 Different rig models may become a later expansion axis, but they are not required to prove the first product core.
 
@@ -115,6 +121,8 @@ The rig state includes at minimum:
 
 - rig model
 - available slots
+- top speed
+- whether it is protected as the player's fallback rig
 - energy or load level
 - stability
 - cooling or thermal strain
@@ -127,6 +135,7 @@ Each die should be describable at minimum by:
 - type
 - field behavior
 - probability bias
+- max speed
 - risk
 - relationship to other dice
 - whether it is protected as the player's fallback die
@@ -156,6 +165,34 @@ A die can therefore, among other things:
 
 The product identity depends on dice remaining readable as active probability modules.
 
+## Shared Rig Speed Rule
+
+A rig operates all active dice at one shared rotation speed.
+
+The rig's top speed defines the highest shared speed the rig can drive.
+
+Each die's max speed defines the highest rotation speed that die can safely tolerate.
+
+The maximum usable shared speed of a build is limited by the rig's top speed and by the lowest max speed among installed active dice.
+
+A die can operate below its max speed.
+
+Shared speed affects field output, heat, instability, signature, and pressure generation.
+
+### Shared Speed Constraint
+
+The player configures dice under a shared rig speed constraint.
+
+Acceptance checks:
+
+- The rig state exposes top speed.
+- Each die exposes max speed.
+- Installing a die with lower max speed can lower the build's maximum usable shared speed.
+- Increasing shared speed increases field output.
+- Increasing shared speed also increases at least one pressure state such as heat, instability, signature, or red-zone proximity.
+- A high-max-speed die reaches its potential only when the rig top speed and the rest of the installed dice support that speed.
+- A low-max-speed die can still be valuable when its field behavior or stability profile fits the build.
+
 ## Fallback Die Rule
 
 The product should give the player one permanent fallback die.
@@ -178,13 +215,14 @@ Loser's Die is the baseline component that remains after those consequences.
 
 ### Fallback Die Recovery
 
-The player can always recover into a small viable hack loop with Loser's Die.
+The player can always recover into a small viable hack loop with Loser's Die and Loser's Rig.
 
 Acceptance checks:
 
 - After any hack result, Loser's Die remains in the player's inventory.
+- After any hack result, Loser's Rig remains available.
 - If all other practical dice are damaged, lost, or unusable, the player can still equip Loser's Die.
-- The starting one-slot rig can run with Loser's Die.
+- Loser's Rig can run with Loser's Die.
 - At least one simple target machine remains viable for Loser's Die.
 - Successful fallback runs produce modest earnings.
 - Fallback runs preserve recovery without matching the earning potential or strategic depth of stronger builds.
@@ -219,7 +257,7 @@ From the Targeting App in Home, the player selects which machine the next hack w
 
 That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
 
-The first target set should include a simple low-yield slot machine that can be attacked with the starting one-slot rig and Loser's Die.
+The first target set should include a simple low-yield slot machine that can be attacked with Loser's Rig and Loser's Die.
 
 This simple target should provide a reliable recovery path with limited profit and limited strategic depth.
 
@@ -273,6 +311,8 @@ Failure can also mean:
 - catastrophic collapse of a configuration
 
 Failure consequences may affect all practical dice except Loser's Die.
+
+Failure consequences may affect other rig equipment while Loser's Rig remains available.
 
 ## Progression
 
