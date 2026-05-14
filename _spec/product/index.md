@@ -190,12 +190,43 @@ Acceptance checks:
 
 Police heat can be raised by preparation behavior that makes John Riggs's illegal activity more visible to police.
 
+The Shopping App represents darknet acquisition.
+
+All shop items therefore carry some degree of police risk.
+
+Some items expose known police risk before purchase.
+
+Some items expose unknown darknet risk before purchase.
+
+Unknown darknet risk marks that the purchase is suspicious, but hides the exact police heat consequence until later.
+
+Unknown-risk items are the Home-side form of gambling.
+
+The player may buy an unknown-risk item because it could make the next run segment much more profitable, while knowing that the delayed police heat result may later create a police catch.
+
+The intended decision question is:
+
+Can this item make enough money before the risk comes due, and can the current catch count survive a bad police heat reveal.
+
+For the first slice, unknown darknet risk resolves at the next Home entry after the following Hack resolves and before the player makes the next planning decision.
+
+This timing makes the mistake belong to Home planning without turning Home into a complex investigation simulation.
+
 Acceptance checks:
 
 - Police heat is visible as a persistent player or external-pressure value.
 - Buying too many illegal, rare, or suspicious items through darknet-like sources can increase police heat.
 - Police heat consequences are tied to global operational exposure rather than to a separate John Riggs character attribute sheet.
 - The player can read that aggressive preparation can create risk before the next hack begins.
+- Shop items expose either known police risk or unknown darknet risk before purchase.
+- Known-risk shop items expose their police heat consequence before purchase.
+- Unknown-risk shop items show `unknown risk` instead of an exact police heat value.
+- Buying an unknown-risk shop item creates a pending unknown darknet risk.
+- Pending unknown darknet risk remains visible or immediately readable until it resolves.
+- The player can compare pending unknown darknet risk against current catch count before committing to the next Hack.
+- Unknown darknet risk resolves at the next Home entry after the following Hack resolves.
+- When unknown darknet risk resolves, its police heat consequence is applied before the next planning decision.
+- Resolving unknown darknet risk can trigger Catch if police heat reaches maximum.
 
 ### Catch and Run End
 
@@ -419,7 +450,9 @@ This simple target should provide a reliable recovery path with limited profit a
 
 The Shopping App is part of the Home decision layer.
 
-It is the place where the player can spend money to acquire or improve operational tools before the next hack.
+It represents darknet acquisition.
+
+It is the place where the player can spend money to acquire or improve illegal operational tools before the next hack.
 
 The first slice Shopping App should support at minimum:
 
@@ -428,6 +461,12 @@ The first slice Shopping App should support at minimum:
 - buying die modifications
 
 The Shopping App should therefore express progression through equipment access rather than through abstract unlock language alone.
+
+Shopping entries should distinguish known-risk items from unknown-risk items.
+
+Known-risk items make their police heat consequence readable before purchase.
+
+Unknown-risk items show that risk exists, but the exact police heat consequence is revealed later at the next Home entry after the following Hack resolves.
 
 Additional rig models may be introduced later, but the first slice does not require rig shopping.
 

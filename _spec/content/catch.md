@@ -99,3 +99,25 @@ final, rough, punitive
 
 Variables:
 none
+
+## Third Police Catch Run End
+
+Status: accepted
+
+Use:
+Shown when the third catch is caused by police.
+
+Context:
+Police heat reaches maximum, Catch is triggered, catch count reaches three, and the run ends.
+
+Text:
+This time you pushed it too far. That means a long break for you.
+
+Intent:
+The player should understand that being caught by police for the third time ends the run.
+
+Tone:
+final, procedural, punitive
+
+Variables:
+none

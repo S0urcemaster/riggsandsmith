@@ -78,6 +78,26 @@ Police heat can be raised by suspicious preparation behavior, especially buying 
 
 When police heat reaches its maximum, the player is caught by police and enters Catch.
 
+## Known Police Risk
+
+Known police risk is a visible police heat consequence shown before the player commits to an item purchase or preparation action.
+
+Known police risk may be low, high, or otherwise clearly communicated, but its police heat effect is not hidden from the player.
+
+## Unknown Darknet Risk
+
+Unknown darknet risk is a pending police heat consequence attached to a shop item whose source risk is not fully knowable at purchase time.
+
+The player can see that the item carries unknown risk, but the exact police heat effect is revealed later.
+
+Unknown darknet risk is the Shopping App's gambling axis.
+
+It lets the player accept uncertain police exposure in exchange for a potentially more lucrative or powerful short-term opportunity.
+
+For the first slice, unknown darknet risk resolves at the next Home entry after the following Hack resolves.
+
+When it resolves, it may add little, moderate, or severe police heat depending on how hot the item or source turns out to have been.
+
 ## Catch Count
 
 Catch count is the persistent number of times the player has been caught in the current run.
