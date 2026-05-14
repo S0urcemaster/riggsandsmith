@@ -6,7 +6,7 @@ The product is a singleplayer systems game with a small scope.
 
 It should first be defined as a vertical slice, not as a full large-scale production.
 
-The first reliable product core is a repeatable structure of Prep and Hack, framed by Start as the entry view and Catch as an exception view.
+The first reliable product core is a repeatable structure of Home and Hack, framed by Start as the entry view and Catch as an exception view.
 
 In this product specification, a phase is a gameplay step in the product flow, while a view is the UI representation through which such a phase is presented to the player.
 
@@ -59,7 +59,7 @@ The slice should prove the core product logic with limited content.
 The first slice should therefore include at its core:
 
 - a Start view that leads into the current playable state
-- a Prep view as the central interaction and decision layer
+- a Home view as the central interaction and decision layer
 - a rig interface with visible dice slots and module states
 - a small set of distinct dice
 - a small set of distinct target systems
@@ -74,7 +74,7 @@ The named views should map clearly onto the named phases they present.
 In its first reliable implementation, the product should contain at minimum these system layers:
 
 1. Game state
-2. Preparation system
+2. Home system
 3. Hack execution and outcome system
 4. Consequence system
 5. Progression system
@@ -147,7 +147,7 @@ The product identity depends on dice remaining readable as active probability mo
 
 In the first product definition, Hack is not primarily a freely unfolding action sequence.
 
-Hack is the product view in which the prepared configuration is played against a target system.
+Hack is the product view in which the home-built configuration is played against a target system.
 
 Its outcome should not feel arbitrary.
 

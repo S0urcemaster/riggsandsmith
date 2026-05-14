@@ -8,19 +8,19 @@ Terms should be added here when they become central, overloaded, or vulnerable t
 
 Start is the entry view that precedes the playable game loop.
 
-It frames access into the current game state and leads into Prep.
+It frames access into the current game state and leads into Home.
 
-## Prep
+## Home
 
-Prep is the first view of the logical game loop.
+Home is the first view of the logical game loop.
 
-It is the home-based preparation view in which the player configures the rig, installs dice, checks risk, and sets up the next hack.
+It is the home-based operating view in which the player configures the rig, installs dice, checks risk, and sets up the next hack.
 
 ## Hack
 
 Hack is the second view of the logical game loop.
 
-It is the product-level view in which the prepared configuration is executed against a target system and translated into visible outcome.
+It is the product-level view in which the home-built configuration is executed against a target system and translated into visible outcome.
 
 ## Catch
 
