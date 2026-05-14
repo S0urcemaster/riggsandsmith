@@ -38,7 +38,7 @@ It frames access into the current game state and leads into Home without being p
 
 Home is the home phase and the first view of the playable game loop.
 
-Here the player works on the rig inside the safety and constraints of home, changes the build composition, installs dice, checks load and instability, uses the home computer, shops for equipment, and sets up the next illegal hack.
+Here the player works on the rig inside the safety and constraints of home, changes the build composition, installs dice, checks load and instability, uses computer apps, shops for equipment, and sets up the next illegal hack.
 
 Home is the most important decision phase of the product.
 

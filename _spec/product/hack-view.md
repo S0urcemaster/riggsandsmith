@@ -1,0 +1,153 @@
+# Hack View
+
+## Definition
+
+The first Hack view should be built as a pressure console rather than as a spectacle-driven animation scene.
+
+Its purpose is to create stress, greed, and risk judgment through readable system pressure.
+
+The core emotional question of the view is:
+
+Should the player keep pushing for more profit, or cash out and leave safely before control collapses.
+
+## Prototype Direction
+
+For the first prototype, the Hack view should not depend on complex physical animation, realistic spinning dice presentation, or explosive simulation as the primary source of tension.
+
+The first prototype should instead create tension through:
+
+- escalating risk
+- short decision windows
+- competing priorities
+- visible cause and effect
+- the constant possibility of voluntary exit
+
+## Core Tension Rule
+
+Profit potential should rise together with operational risk.
+
+A safer run should usually produce smaller gains.
+
+A greedier run should expose the player to stronger chances of damage, trace, instability, or collapse.
+
+The player should therefore feel that more reward is usually still possible, but never free.
+
+## Core Decision Rule
+
+The Hack view should repeatedly force the player to choose between:
+
+- stabilizing the run
+- pushing the run harder
+- taking a smaller but safer outcome
+- aborting before a worse failure occurs
+
+The player should not be able to maximize all desirable outcomes at once.
+
+A meaningful hack is one in which pressure creates tradeoffs.
+
+## View Form
+
+The first Hack view should be primarily interface-driven.
+
+It should center on the target machine as the current operational subject, with surrounding rig state, danger state, and action controls arranged around it.
+
+It should feel live, compressed, and dangerous, but still readable.
+
+## Minimum Visible State
+
+The first Hack view should keep at minimum these live elements visible:
+
+- the target machine or target state
+- current profit or extractable gain
+- current risk pressure
+- current red-zone proximity
+- current pulse or body-control pressure
+- rig instability and/or heat
+- available immediate actions
+- an explicit safe-exit or cash-out option
+
+## Red Zone Rule
+
+The red zone should be the main visible danger threshold of the view.
+
+It is the point at which the operation is close to slipping out of control.
+
+Remaining near that threshold may improve gain potential, but it should also sharply raise the chance of failure or damage.
+
+The player should understand that surviving near the red zone can be profitable, but staying there too long is reckless.
+
+## Body Pressure Rule
+
+The Hack view should not treat bodily stress as flavor only.
+
+Pulse, breathing control, or a comparable body-pressure signal should participate in the operational state.
+
+If body pressure rises too far, mistakes, instability, or loss of control should become more likely.
+
+This does not require a realistic biometrics simulation.
+
+It requires only that body control be legible as one of the pressures the player is managing.
+
+## Action Model
+
+The first prototype should use a small set of immediate actions rather than a broad command space.
+
+These actions may include functions such as:
+
+- cooling or bleeding heat
+- masking signature
+- pushing yield
+- stabilizing a channel
+- regulating breath or pulse
+- aborting the run
+
+The exact action names may still change.
+
+The important point is that the player has a compact action set with clearly different risk intentions.
+
+## Timing Model
+
+The Hack view should operate in short live decision intervals.
+
+It does not need to be twitch-action, but it should feel time-pressured.
+
+A good first prototype can therefore use repeated short ticks, pulses, or event windows in which state changes and the player must respond.
+
+## Build Expression Rule
+
+The player build prepared in Home must visibly shape the Hack view.
+
+The hack should not feel like the same minigame regardless of loadout.
+
+Different rigs, dice, and modifications should change at minimum:
+
+- what kinds of pressure rise fastest
+- what opportunities appear
+- how safely profit can be pushed
+- which failures are most likely
+
+## Prototype Presentation Rule
+
+For the first prototype, presentation should rely on interface rhythm rather than expensive effects.
+
+Suitable presentation tools include:
+
+- warning color escalation
+- compressed timers
+- blinking thresholds
+- short layout jolts
+- signal noise
+- temporary information pressure
+
+The prototype should not require elaborate 3D object behavior in order to feel stressful.
+
+## Success Condition
+
+The first Hack view is successful when the player can clearly feel:
+
+- that pushing longer can earn more
+- that pushing longer can also ruin the run
+- that cashing out early is sometimes the smart choice
+- that the build prepared in Home shaped what happened
+
+If those feelings are present, the first prototype is doing its job even without advanced animation.

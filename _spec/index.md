@@ -6,4 +6,5 @@
 2. [Product Glossary](./glossary.md)
 3. [Product](./product/index.md)
 4. [Game Loop](./product/game-loop.md)
-5. [Agent](./agent/index.md)
+5. [Hack View](./product/hack-view.md)
+6. [Agent](./agent/index.md)
