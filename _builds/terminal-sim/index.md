@@ -83,6 +83,30 @@ The fixed-screen UI remains an adapter over the domain logic.
 
 Product rules, hack algorithms, and consequence resolution remain in domain logic.
 
+## Terminal Input Direction
+
+The terminal simulation should prefer immediate key input across the whole terminal experience.
+
+When an on-screen action can be represented as a compact command key, pressing that key should execute the action directly without requiring an additional Enter confirmation.
+
+This applies to Hack actions, Home actions, Start actions, Catch continuation choices, app navigation, list selection shortcuts, and other command-like terminal interactions.
+
+This input direction is important because the terminal simulation should feel like a compact control console rather than a line-prompt form.
+
+Enter-confirmed input remains acceptable only for:
+
+- text values
+- numeric values
+- longer command strings
+- batch simulation command-line arguments
+- fallback environments where raw key input is not available
+
+If a terminal environment cannot technically support raw single-key input, the implementation should fall back to Enter-confirmed input while keeping the same command labels and documenting that limitation locally.
+
+The input adapter owns this terminal behavior.
+
+Domain logic must not depend on whether an action came from raw key input, Enter-confirmed input, a scripted strategy, or an autorun.
+
 ## Build Scope
 
 The first meaningful scope for this build path is:

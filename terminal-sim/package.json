@@ -1,0 +1,15 @@
+{
+  "name": "riggsandsmith-terminal-sim",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Terminal mechanics lab for the John Riggs & Lucky Smith core loop.",
+  "scripts": {
+    "play": "node src/cli.ts play",
+    "autorun": "node src/cli.ts autorun",
+    "compare": "node src/cli.ts compare"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
