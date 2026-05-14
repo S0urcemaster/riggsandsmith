@@ -6,7 +6,7 @@ The product is a singleplayer systems game with a small scope.
 
 It should first be defined as a vertical slice, not as a full large-scale production.
 
-The first reliable product core is a repeatable cycle of home phase, illegal preparation, run resolution, and resulting state.
+The first reliable product core is a repeatable structure of Start, Prep, and Hack, with Catch as an exception view outside the normal loop.
 
 ## Product Form
 
@@ -44,7 +44,7 @@ The first implementable vertical slice should prove that the product fantasy wor
 It should specifically show:
 
 - that dice are understandable and gameplay-relevant as real modules
-- that rig construction produces meaningfully different run outcomes
+- that rig construction produces meaningfully different hack outcomes
 - that profit always remains coupled to instability, suspicion, or damage
 - that the multi-day cycle creates readable tension
 
@@ -56,12 +56,14 @@ The slice should prove the core product logic with limited content.
 
 The first slice should therefore include at its core:
 
-- a home phase as the central interaction and decision layer
+- a Start view that leads into the current playable state
+- a Prep view as the central interaction and decision layer
 - a rig interface with visible dice slots and module states
 - a small set of distinct dice
 - a small set of distinct target systems
-- a run resolution with readable cause-and-effect relationships
-- a result phase with persistent consequences across multiple days
+- a Hack view with readable cause-and-effect relationships
+- a Catch view for player boundary violations
+- persistent consequences across multiple days
 
 ## Core Systems
 
@@ -69,7 +71,7 @@ In its first reliable implementation, the product should contain at minimum thes
 
 1. Game state
 2. Preparation system
-3. Run resolution
+3. Hack execution and outcome system
 4. Consequence system
 5. Progression system
 
@@ -137,15 +139,21 @@ A die can therefore, among other things:
 
 The product identity depends on dice remaining readable as active probability modules.
 
-## Run Definition
+## Hack Definition
 
-In the first product definition, a run is not a freely running action sequence.
+In the first product definition, Hack is not primarily a freely running action sequence.
 
-A run is a resolved operational phase in which the prepared configuration is played against a target system.
+Hack is the product view in which the prepared configuration is played against a target system through a run.
 
-The resolution should not feel arbitrary.
+Its outcome should not feel arbitrary.
 
 It should be understandable as a readable consequence of build, target choice, load, risk, and variance.
+
+## Catch Definition
+
+Catch is not a standard progression step of the normal loop.
+
+It is the exception view that appears when the player crosses a boundary severe enough to trigger direct response, exposure, or capture pressure.
 
 ## Failure
 
@@ -184,7 +192,7 @@ Dice, slots, load, instability, and signature should appear as part of a diegeti
 
 The following points remain open for now, but from this point onward they should be treated as explicit refinement axes:
 
-- how granularly a run is shown step by step
+- how granularly Hack is shown step by step
 - how strongly the field logic is exposed numerically
 - how exactly stress, suspicion, and access are coupled
 - what minimum number of dice and target archetypes the first slice needs
