@@ -27,6 +27,9 @@ The result should provide:
 - a runnable command entry point
 - a basic source structure that separates domain logic from terminal input/output
 - a minimal game state model for Home, Hack, and next-day carry-over
+- a starting one-slot rig
+- Loser's Die as the permanent fallback die
+- a simple low-yield target machine
 - a first interactive path that lets the user start a hack, take simple actions, and see a result
 
 ## Expected Output
@@ -50,6 +53,7 @@ The result should provide:
 Record any ambiguity around:
 
 - minimum state required for algorithm testing
+- how Loser's Die should be represented in inventory and consequences
 - relationship between Home configuration and Hack pressure
 - result carry-over into the next day
 

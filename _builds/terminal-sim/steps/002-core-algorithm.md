@@ -14,7 +14,9 @@ Implement a first inspectable hack algorithm that expresses the product's risk, 
 
 - the terminal simulation foundation
 - the Hack behavior contracts
-- provisional dice and target definitions suitable for algorithm testing
+- Loser's Die
+- the simple low-yield target machine
+- provisional additional dice and target definitions suitable for algorithm testing
 
 ## Task
 
@@ -28,6 +30,7 @@ Implement the first core algorithm for:
 - suspicion or signature pressure
 - cash-out and collapse resolution
 - carry-over consequences
+- preservation of Loser's Die across all outcomes
 
 The implementation should make each action's tradeoff visible in state deltas.
 
@@ -53,6 +56,7 @@ Record any ambiguity around:
 
 - how quickly pressure should escalate
 - how dice should modify pressure and profit
+- how modest Loser's Die's recovery earnings should be
 - how collapse, damage, suspicion, and catch pressure relate
 - which behavior needs stronger product contracts
 

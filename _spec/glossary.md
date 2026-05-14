@@ -27,3 +27,13 @@ It is the product-level view in which the home-built configuration is executed a
 Catch is an exception view.
 
 It appears only if the player crosses a boundary that triggers direct intervention, exposure, or capture pressure.
+
+## Fallback Die
+
+The fallback die is the player's permanent baseline die.
+
+For the first slice, the fallback die is Loser's Die.
+
+It remains in the player's inventory across all outcomes and keeps a small viable hack loop available.
+
+The permanent availability of Loser's Die is a product continuity rule.

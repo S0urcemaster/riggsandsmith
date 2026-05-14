@@ -24,6 +24,18 @@ When they are correctly suspended and brought to high rotational speed, they gen
 
 They are real in-world components rather than ordinary gambling dice.
 
+## Named Die
+
+A named die is an individual fate die with a recognizable identity in the world.
+
+It may have a known history, reputation, defect, field character, or relationship to an owner.
+
+## Loser's Die
+
+Loser's Die is the first named fate die tied to John Riggs's rigging life.
+
+It is weak but stubborn, suited to modest recovery work on simple machines rather than spectacular probability breaks.
+
 ## Fate Constant
 
 The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.

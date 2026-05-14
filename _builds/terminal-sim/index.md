@@ -60,7 +60,9 @@ The preferred direction is:
 The first meaningful scope for this build path is:
 
 - a minimal starting player state
-- one starting rig model
+- one starting rig model with one active die slot
+- Loser's Die as the permanent fallback die in the player's inventory
+- one simple low-yield target machine suitable for the starting rig and Loser's Die
 - a small set of provisional dice types
 - a small set of target machine archetypes
 - a Hack simulation with repeated pressure ticks
@@ -97,5 +99,7 @@ The following implementation choices remain open inside this build path:
 - exact command interface shape
 - first dice type set for algorithm testing
 - first target archetype set
+- exact Loser's Die parameters
+- exact simple target parameters
 - whether autorun strategies are scripted as config files, command flags, or both
 - which metrics define a promising first algorithm

@@ -72,6 +72,10 @@ The first slice should therefore include at its core:
 
 The first slice should assume one starting rig model.
 
+The first starting rig should be small and simple.
+
+It should have one active die slot.
+
 Different rig models may become a later expansion axis, but they are not required to prove the first product core.
 
 The named views should map clearly onto the named phases they present.
@@ -125,6 +129,7 @@ Each die should be describable at minimum by:
 - probability bias
 - risk
 - relationship to other dice
+- whether it is protected as the player's fallback die
 
 ### External Pressure
 
@@ -150,6 +155,39 @@ A die can therefore, among other things:
 - tip into corrupted states
 
 The product identity depends on dice remaining readable as active probability modules.
+
+## Fallback Die Rule
+
+The product should give the player one permanent fallback die.
+
+For the first slice, this fallback die is Loser's Die.
+
+Loser's Die remains in the player's inventory across all outcomes.
+
+The permanence of Loser's Die is a product-level continuity rule.
+
+The fallback die ensures that the player can always return to a small viable hack loop after damage, loss, collapse, or poor play.
+
+The fallback die should support modest earnings against simple target machines.
+
+It should preserve the possibility of recovery without making stronger dice, riskier builds, or progression irrelevant.
+
+Other dice may be damaged, lost, corrupted, or otherwise removed from practical use by hack consequences.
+
+Loser's Die is the baseline component that remains after those consequences.
+
+### Fallback Die Recovery
+
+The player can always recover into a small viable hack loop with Loser's Die.
+
+Acceptance checks:
+
+- After any hack result, Loser's Die remains in the player's inventory.
+- If all other practical dice are damaged, lost, or unusable, the player can still equip Loser's Die.
+- The starting one-slot rig can run with Loser's Die.
+- At least one simple target machine remains viable for Loser's Die.
+- Successful fallback runs produce modest earnings.
+- Fallback runs preserve recovery without matching the earning potential or strategic depth of stronger builds.
 
 ## Home Definition
 
@@ -180,6 +218,10 @@ The casino around them may exist as framing fiction or decorative presentation, 
 From the Targeting App in Home, the player selects which machine the next hack will target.
 
 That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
+
+The first target set should include a simple low-yield slot machine that can be attacked with the starting one-slot rig and Loser's Die.
+
+This simple target should provide a reliable recovery path with limited profit and limited strategic depth.
 
 ## Shopping App Definition
 
@@ -229,6 +271,8 @@ Failure can also mean:
 - loss of access
 - forced interruption of the next hack
 - catastrophic collapse of a configuration
+
+Failure consequences may affect all practical dice except Loser's Die.
 
 ## Progression
 

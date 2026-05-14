@@ -108,3 +108,33 @@ It is both:
 - the readable gameplay language of probability manipulation
 
 The player should understand that the machine is built around real dice modules because those modules are the source of the field itself.
+
+## Named Dice
+
+Named dice are individual fate dice with a recognizable identity in the world.
+
+They are concrete artifacts beyond abstract type examples.
+
+A named die can have a known history, reputation, defect, field character, or owner relationship.
+
+The product may represent named dice as unique components while still allowing other dice to be generic, modified, damaged, purchased, or replaced.
+
+### Loser's Die
+
+Loser's Die is the first named fate die tied to John Riggs's rigging life.
+
+It is ordinary, low-status, and weak by serious rig-scene standards.
+
+It is the kind of die that remains with someone who has little leverage, little money, and no better access.
+
+Its field character is weak but stubborn.
+
+Under load, Loser's Die tends to produce small recoverable bends rather than dramatic breaks in probability.
+
+It can help a cheap rig pull modest value from simple machines.
+
+Stronger targets call for stronger dice, better rig support, or more demanding field compositions.
+
+In the rig scene, a die like this would be easy to underestimate because it does not promise spectacular runs.
+
+For Riggs, its importance comes from familiarity, reliability, and the fact that it is still there when better options are gone.

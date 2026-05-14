@@ -29,12 +29,14 @@ Autoruns should support:
 - optional seeded randomness
 - summary metrics
 - comparison between at least two configurations or strategies
+- a fallback recovery scenario using only the starting one-slot rig and Loser's Die
 
 ## Expected Output
 
 - a command path for running batch simulations
 - aggregate metrics for profit, collapse rate, cash-out rate, suspicion gain, damage, and variance
 - readable output for comparing builds or strategies
+- readable output for the fallback recovery scenario
 - a short note about what the current algorithm appears to reward
 
 ## Out of Scope
