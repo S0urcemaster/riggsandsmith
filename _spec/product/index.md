@@ -59,6 +59,7 @@ For that reason, the first vertical slice excludes open-world exploration, a lar
 The first slice should therefore include at its core:
 
 - a Start view that leads into the current playable state
+- a Start view highscore list for completed runs
 - a Home view as the central interaction and decision layer
 - a dominant home computer as the main visible operating element
 - a Rigging App with visible dice slots and module states
@@ -69,6 +70,7 @@ The first slice should therefore include at its core:
 - a Hack view with readable cause-and-effect relationships
 - a Catch view for player boundary violations
 - persistent consequences across multiple days
+- run ending after the third catch
 
 The first slice should assume one starting rig model.
 
@@ -113,7 +115,7 @@ The first global resources are:
 
 - money
 - casino heat
-- cover
+- police heat
 
 Money is the player's spendable operational resource.
 
@@ -131,15 +133,17 @@ When casino heat rises above a casino's tolerance threshold, that casino or cate
 
 A player with high casino heat may still find work, but increasingly through casinos or target conditions with higher risk, stronger attention, or worse safety margins.
 
-Cover is the persistent plausibility and quietness of John Riggs's ordinary visible life around the illegal operation.
+Police heat is the persistent degree to which police attention has accumulated around Lucky Smith, John Riggs, his purchases, traces, and repeated illegal activity.
 
-For the first product direction, Cover is a global resource rather than a personal John Riggs attribute.
+For the first product direction, police heat is a global resource rather than a personal John Riggs attribute.
 
-It can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+It can be raised by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
 
-For the first slice, John Riggs's ordinary identity is represented through view tone, equipment access, money, cover, and consequence pressure.
+When police heat reaches its maximum, the player is caught by police and enters Catch.
 
-This excludes a separate RPG-like character sheet for personal John Riggs attributes from the required first-slice scope, because it would split the current Cover function into a second overlapping progression surface.
+For the first slice, John Riggs's ordinary identity is represented through view tone, equipment access, money, police heat, and consequence pressure.
+
+This excludes a separate RPG-like character sheet for personal John Riggs attributes from the required first-slice scope, because police pressure currently carries the relevant ordinary-life exposure function.
 
 ### State Persistence Boundary
 
@@ -155,7 +159,7 @@ This boundary keeps the game state from becoming volatile, where important conse
 
 Acceptance checks:
 
-- Money, casino heat, and cover persist after Hack resolves into the next Home phase.
+- Money, casino heat, and police heat persist after Hack resolves into the next Home phase.
 - Rig instability, thermal strain, signature, red-zone proximity, body pressure, and suspicion may change during Hack or preparation as operational pressure states.
 - When an operational pressure state creates lasting consequence, that consequence is written into a persistent state before the next planning decision.
 - A player can leave Hack and still read the lasting consequences that matter for the next Home decision.
@@ -165,7 +169,7 @@ Acceptance checks:
 
 The product should provide a persistent global resource display across views.
 
-Money, casino heat, and cover should remain visible or immediately readable because the player needs them for planning.
+Money, casino heat, and police heat should remain visible or immediately readable because the player needs them for planning.
 
 This display is a product-level requirement, not only a Home app detail.
 
@@ -175,23 +179,53 @@ Acceptance checks:
 
 - Money is visible or immediately readable in the main product views where planning or consequence reading occurs.
 - Casino heat is visible or immediately readable in the main product views where planning or consequence reading occurs.
-- Cover is visible or immediately readable in the main product views where planning or consequence reading occurs.
+- Police heat is visible or immediately readable in the main product views where planning or consequence reading occurs.
 - The player can compare current money against shopping or upgrade decisions without leaving the planning context.
 - The player can compare current casino heat against target access or target risk without leaving the planning context.
-- The player can compare current cover against suspicious shopping or preparation decisions without leaving the planning context.
-- When a hack result or preparation action changes money, casino heat, or cover, the persistent display reflects the updated value before the next planning decision.
+- The player can compare current police heat against suspicious shopping or preparation decisions without leaving the planning context.
+- When a hack result or preparation action changes money, casino heat, or police heat, the persistent display reflects the updated value before the next planning decision.
 - The display can be adapted visually to each view's tone, but the player can recognize that it represents the same global resources.
 
-### Cover Pressure
+### Police Heat Pressure
 
-Cover can be reduced by preparation behavior that makes John Riggs's normal life less plausible or less quiet.
+Police heat can be raised by preparation behavior that makes John Riggs's illegal activity more visible to police.
 
 Acceptance checks:
 
-- Cover is visible as a persistent player or external-pressure value.
-- Buying too many illegal, rare, or suspicious items through darknet-like sources can reduce cover.
-- Cover consequences are tied to global operational exposure rather than to a separate John Riggs character attribute sheet.
+- Police heat is visible as a persistent player or external-pressure value.
+- Buying too many illegal, rare, or suspicious items through darknet-like sources can increase police heat.
+- Police heat consequences are tied to global operational exposure rather than to a separate John Riggs character attribute sheet.
 - The player can read that aggressive preparation can create risk before the next hack begins.
+
+### Catch and Run End
+
+The run tracks how many times the player has been caught.
+
+A catch occurs when casino heat reaches maximum or police heat reaches maximum.
+
+Casino heat reaching maximum means the player is caught by casino security.
+
+Police heat reaching maximum means the player is caught by police.
+
+The first and second catches continue the run after consequences are applied.
+
+The third catch ends the run.
+
+When the run ends, the completed result is written to the highscore list.
+
+For the first slice, run score is the total amount of money successfully extracted across the run.
+
+Acceptance checks:
+
+- Casino heat has a readable maximum threshold.
+- Police heat has a readable maximum threshold.
+- Reaching maximum casino heat sends the player to Catch as a casino-security catch.
+- Reaching maximum police heat sends the player to Catch as a police catch.
+- Each Catch increments catch count by one.
+- Catch count remains visible or immediately readable after the run continues.
+- After the first or second Catch, the heat value that caused the catch is resolved below maximum before the player returns to Home.
+- The third Catch ends the run.
+- A completed run creates or updates an entry in the highscore list with its run score.
 
 ### Casino Heat Access Pressure
 
@@ -212,7 +246,7 @@ The player state includes at minimum:
 
 - money
 - casino heat
-- cover
+- police heat
 - suspicion
 - available knowledge or access
 - day progression
@@ -247,7 +281,7 @@ Each die should be describable at minimum by:
 External pressure includes at minimum:
 
 - pressure from casinos or operators
-- police attention
+- police heat
 - market and supply conditions
 - quality of available contacts or sources
 

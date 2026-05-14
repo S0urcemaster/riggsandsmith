@@ -38,7 +38,7 @@ It is gained or lost through hacks and spent in Home on operational tools such a
 
 A global resource is a persistent state value that carries across the Home-to-Hack loop and shapes later planning.
 
-The first global resources are money, casino heat, and cover.
+The first global resources are money, casino heat, and police heat.
 
 Global resources remain readable across the main product views because they define continuing consequence, not only momentary interface feedback.
 
@@ -66,19 +66,45 @@ Casino heat is not the same as rig thermal heat.
 
 High casino heat pushes future work toward higher-risk casinos, machines, or operating conditions.
 
-## Cover
+When casino heat reaches its maximum, the player is caught by casino security and enters Catch.
 
-Cover is the persistent plausibility and quietness of John Riggs's ordinary visible life around the illegal operation.
+## Police Heat
+
+Police heat is the persistent degree to which police attention has accumulated around Lucky Smith, John Riggs, his purchases, traces, and repeated illegal activity.
 
 It is a global resource, not a personal John Riggs attribute.
 
-Cover can be strained by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+Police heat can be raised by suspicious preparation behavior, especially buying too many illegal or unusual things through darknet sources.
+
+When police heat reaches its maximum, the player is caught by police and enters Catch.
+
+## Catch Count
+
+Catch count is the persistent number of times the player has been caught in the current run.
+
+A catch can be caused by police heat reaching maximum or by casino heat reaching maximum.
+
+The third catch ends the run.
+
+## Highscore
+
+Highscore is the saved record of completed runs.
+
+When a run ends, its final score is added to the highscore list.
+
+The Start view may show the highscore list before the player enters the current game state.
+
+## Run Score
+
+Run score is the score written to the highscore list when a run ends.
+
+For the first slice, run score is the total amount of money successfully extracted across the run.
 
 ## Rig Stability
 
 Rig stability is the current controllability of the rig's operating field under load.
 
-It belongs to rig state and Hack pressure, not to John Riggs's ordinary social cover.
+It belongs to rig state and Hack pressure, not to police heat or casino heat.
 
 Low rig stability raises the chance of field disruption, component damage, collapse, or loss of control.
 

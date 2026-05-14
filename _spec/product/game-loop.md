@@ -21,7 +21,7 @@ Catch is an exception view that appears only when the player crosses a boundary 
 
 The product should keep plan-critical global resources readable across the main views.
 
-Money, casino heat, and cover are needed for planning, target judgment, preparation judgment, and consequence reading.
+Money, casino heat, and police heat are needed for planning, target judgment, preparation judgment, and consequence reading.
 
 They should therefore not be hidden inside one isolated app or one isolated phase.
 
@@ -43,6 +43,12 @@ The resulting state carries forward and leads into the next Home view.
 Start is the entry view that precedes the playable game loop.
 
 It frames access into the current game state and leads into Home without being part of the logical game loop.
+
+Start may also show the highscore list.
+
+The highscore list records ended runs and gives the player a readable long-term comparison point before entering the current game state.
+
+For the first slice, the highscore list ranks runs by total money successfully extracted.
 
 ## Home
 
@@ -76,6 +82,18 @@ These consequences carry into the next cycle and change the starting condition o
 
 Catch is a special-case view.
 
-It is shown only when the player crosses a boundary severe enough to trigger direct response, exposure, or capture pressure.
+It is shown when casino heat reaches maximum or police heat reaches maximum.
+
+Maximum casino heat means the player is caught by casino security.
+
+Maximum police heat means the player is caught by police.
 
 Catch sits outside the normal Home-to-Hack loop and expresses a breached limit rather than a standard cycle step.
+
+Each Catch increases catch count by one.
+
+The first and second catches return to the continuing run with consequences.
+
+Before the run continues, the heat value that caused the catch is resolved below its maximum so that Catch does not immediately retrigger.
+
+The third catch ends the run and sends the completed result to the highscore list.
