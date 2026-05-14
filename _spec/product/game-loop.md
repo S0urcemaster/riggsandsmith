@@ -28,7 +28,7 @@ Run is the executed operational phase.
 
 Here the prepared configuration is used against a target system.
 
-In the first reliable product state, Run should primarily be defined as a system resolution, not as a real-time action sequence.
+In product terms, this phase centers on the resolution of the run, not on a real-time action sequence.
 
 The run should read as a consequence of build, target choice, risk, strain, and variance.
 

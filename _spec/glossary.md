@@ -1,13 +1,13 @@
 # Glossary
 
-This file stabilizes important recurring terms used across the specification.
+This file stabilizes important recurring product and technical terms used across the specification.
 
-Terms should be added here when they become central, overloaded, or vulnerable to ambiguity across files.
+Terms should be added here when they become central, overloaded, or vulnerable to ambiguity across files, but do not primarily belong to the meaning-bearing lore glossary.
 
-## Run
+## Run Resolution
 
-Run is the executed operational phase in which the prepared configuration is used against a target system.
+Run resolution is the system-level resolution of a run inside the product model.
 
-In the first product definition, a run is primarily a system resolution, not a freely running real-time action sequence.
+It determines how the prepared configuration, target choice, load, risk, strain, and variance produce an outcome.
 
-Its outcome should read as a consequence of build, target choice, load, risk, strain, and variance.
+In the first product definition, run resolution is primarily systemic rather than a freely running real-time action sequence.
