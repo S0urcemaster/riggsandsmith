@@ -2,7 +2,13 @@
 
 This section holds concrete in-game text material.
 
-The specification remains written in English, but in-game text should be written in German unless a specific fictional reason requires another language.
+The client language is English.
+
+In-game text should be written in English.
+
+The first product direction does not include localization.
+
+Content entries should therefore define the English client text directly rather than storing German source text for later translation.
 
 Content files should be agent-operable source material rather than loose notes.
 

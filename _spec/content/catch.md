@@ -89,7 +89,7 @@ Context:
 Casino heat reaches maximum, Catch is triggered, catch count reaches three, and the run ends.
 
 Text:
-Die Casinowache hat dir eine ordentliche Lektion erteilt. Das war's für dich in dieser Stadt!
+Casino security taught you a hard lesson. You're done in this city!
 
 Intent:
 The player should understand that being caught by casino security for the third time ends the run.
