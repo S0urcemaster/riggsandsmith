@@ -22,8 +22,8 @@ A rig is an illegal probability hacking machine built to host and drive fate dic
 
 It is a field manipulation platform that tunes, powers, and combines dice so their effects can be directed into a target system.
 
-## Run
+## Hack
 
-A run is an illegal attack against a target machine, especially a gambling machine, carried out through the use of a rig.
+A hack is an illegal attack against a target machine, especially a gambling machine, carried out through the use of a rig.
 
 In world terms, it is the forbidden attempt to bend the target system toward distorted outcomes, profit, or disruption.

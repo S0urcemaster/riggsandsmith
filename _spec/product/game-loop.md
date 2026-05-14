@@ -13,32 +13,32 @@ These views are the UI representations of the corresponding game phases.
 
 Start precedes the playable game loop.
 
-Prep and Hack form the normal playable game loop.
+Prep and Hack form the logical playable game loop.
 
 Catch is an exception view that appears only when the player crosses a boundary that triggers it.
 
 ## Core Loop
 
-The playable loop begins when John Riggs gets home and enters Prep.
+The logical playable loop begins at Prep.
 
 The normal loop is:
 
 1. Prep
 2. Hack
 
-The following day continues outside direct play and leads into the next playable Prep view.
+The resulting state carries forward and leads into the next Prep view.
 
 ## Start
 
 Start is the entry view that precedes the playable game loop.
 
-It frames access into the current game state and leads into Prep.
+It frames access into the current game state and leads into Prep without being part of the logical game loop.
 
 ## Prep
 
 Prep is the home phase and the first view of the playable game loop.
 
-Here the player works on the rig, changes the build composition, installs dice, checks load and instability, and sets up the next illegal run.
+Here the player works on the rig, changes the build composition, installs dice, checks load and instability, and sets up the next illegal hack.
 
 Prep is the most important decision phase of the product.
 
@@ -48,7 +48,7 @@ This is where the operational configuration for the upcoming hack is created.
 
 Hack is the executed operational phase and the second view of the playable game loop.
 
-Here the prepared configuration is used against a target system in the form of a run.
+Here the prepared configuration is used against a target system.
 
 Hack should not primarily be defined as a real-time action sequence.
 

@@ -12,15 +12,15 @@ It frames access into the current game state and leads into Prep.
 
 ## Prep
 
-Prep is the first view of the playable game loop.
+Prep is the first view of the logical game loop.
 
 It is the home-based preparation view in which the player configures the rig, installs dice, checks risk, and sets up the next hack.
 
 ## Hack
 
-Hack is the second and ending view of the normal playable game loop.
+Hack is the second view of the logical game loop.
 
-It is the product-level view in which a run is executed against a target system and translated into visible outcome.
+It is the product-level view in which the prepared configuration is executed against a target system and translated into visible outcome.
 
 ## Catch
 

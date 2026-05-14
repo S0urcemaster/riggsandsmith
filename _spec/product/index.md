@@ -6,7 +6,7 @@ The product is a singleplayer systems game with a small scope.
 
 It should first be defined as a vertical slice, not as a full large-scale production.
 
-The first reliable product core is a repeatable structure of Start, Prep, and Hack, with Catch as an exception view outside the normal loop.
+The first reliable product core is a repeatable structure of Prep and Hack, framed by Start as the entry view and Catch as an exception view.
 
 In this product specification, a phase is a gameplay step in the product flow, while a view is the UI representation through which such a phase is presented to the player.
 
@@ -26,11 +26,11 @@ It should also not primarily be defined as a freely explorable world.
 
 ## Core Player Action
 
-The central player action is to configure an illegal probability rig and use that configuration to perform a risky run against a target system.
+The central player action is to configure an illegal probability rig and use that configuration to perform a risky hack against a target system.
 
 The gameplay decision unit is not only the individual button press.
 
-The actual decision unit is an operational configuration for the next run.
+The actual decision unit is an operational configuration for the next hack.
 
 Such a configuration includes at minimum:
 
@@ -145,9 +145,9 @@ The product identity depends on dice remaining readable as active probability mo
 
 ## Hack Definition
 
-In the first product definition, Hack is not primarily a freely running action sequence.
+In the first product definition, Hack is not primarily a freely unfolding action sequence.
 
-Hack is the product view in which the prepared configuration is played against a target system through a run.
+Hack is the product view in which the prepared configuration is played against a target system.
 
 Its outcome should not feel arbitrary.
 
@@ -169,7 +169,7 @@ Failure can also mean:
 - rig defects
 - escalating suspicion
 - loss of access
-- forced interruption of the next run
+- forced interruption of the next hack
 - catastrophic collapse of a configuration
 
 ## Progression
