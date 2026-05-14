@@ -233,6 +233,12 @@ In the first product definition, Home is not only a thematic location.
 
 It is the central operating interface of the game.
 
+Home is the product view most closely associated with John Riggs as the ordinary working programmer.
+
+Its visual expression may include clutter, pressure, and improvised technical density, but it should still feel comparatively adapted to normal life.
+
+Home should therefore read as controlled, habitual, and lived-in even when it is chaotic.
+
 Inside Home, the computer is the dominant visible element.
 
 Within Home, the player uses a small set of computer apps as the main operating tools for the next decision.
@@ -282,6 +288,12 @@ Additional rig models may be introduced later, but the first slice does not requ
 In the first product definition, Hack is not primarily a freely unfolding action sequence.
 
 Hack is the product view in which the home-built configuration is physically deployed onto a target machine and then played against that target system through an intensified operational interface.
+
+Hack is the product view most closely associated with Lucky Smith as Riggs's illegal operating identity.
+
+Its visual expression may differ noticeably from Home.
+
+Compared with Home, Hack may be wilder, sharper, more unstable, and more visibly pulled toward pressure, risk, and illegal momentum.
 
 Its outcome should not feel arbitrary.
 
