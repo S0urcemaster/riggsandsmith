@@ -24,6 +24,29 @@ This layer exists so that the project can keep multiple technical build variants
 - a prototype build
 - an experimental architecture path
 
+## Parallel Build Directory Rule
+
+Build paths should remain parallel and independently runnable.
+
+Each selected implementation path should have its own concrete implementation directory instead of sharing one mixed source tree with other build paths.
+
+The build definition directory in `_builds/<build-path>/` describes the path.
+
+The concrete implementation directory should use a matching, recognizable path name so another agent can connect implementation work back to its active build definition.
+
+Examples:
+
+- `_builds/terminal-sim/` defines the terminal simulation build path.
+- `terminal-sim/` may contain the concrete terminal simulation implementation.
+- `_builds/web-react/` defines the web React build path.
+- `web-react/` may contain the concrete web React implementation.
+
+Parallel build directories may duplicate small amounts of setup when that keeps each build path easier to run, inspect, and compare.
+
+Shared product meaning should remain in `_spec`.
+
+Shared implementation code should only be introduced after a concrete need appears across build paths.
+
 ## Build Path Rule
 
 `_builds` is not only a place for isolated technology notes.

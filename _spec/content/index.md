@@ -6,6 +6,10 @@ The client language is English.
 
 In-game text should be written in English.
 
+Terminal build output is also client-facing product text for this project.
+
+Terminal commands, prompts, action labels, warnings, summaries, and result text should therefore be written in English.
+
 The first product direction does not include localization.
 
 Content entries should therefore define the English client text directly rather than storing German source text for later translation.

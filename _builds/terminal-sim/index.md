@@ -41,9 +41,18 @@ The build should avoid framework weight unless a concrete implementation step ju
 - The terminal build is an algorithm and mechanics lab.
 - It should remain directly runnable by another agent.
 - It should preserve product terms from `_spec`.
+- Its terminal output, prompts, action labels, warnings, summaries, and result text should be written in English.
 - It should expose state changes clearly through text output.
 - It should support both interactive play and batch simulation.
 - It should keep product logic separate from terminal input/output code.
+
+## Implementation Directory
+
+The concrete terminal simulation implementation should live in a dedicated parallel build directory named `terminal-sim/`.
+
+That directory should be runnable on its own and should not be mixed with the web React implementation or other future build paths.
+
+When an agent works on this build path, `_builds/terminal-sim/` remains the build definition source, while `terminal-sim/` is the expected concrete implementation workspace.
 
 ## Architecture Direction
 
