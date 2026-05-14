@@ -105,11 +105,50 @@ The game state should keep at least these layers visible and mutable:
 - dice state
 - external pressure
 
+### Global Resources
+
+The product should include game-global resources that persist across the Home-to-Hack loop and shape future options.
+
+The first global resources are:
+
+- money
+- casino heat
+
+Money is the player's spendable operational resource.
+
+It is gained or lost through hacks and spent in Home on dice, upgrades, and die modifications.
+
+Casino heat is the degree to which Lucky Smith has become known, watched, or recognizable across casino operations.
+
+It is not only a local alarm state for one hack.
+
+It is a broader reputation and attention value that can restrict future access.
+
+Casino heat is not the same as the rig's thermal heat.
+
+When casino heat rises above a casino's tolerance threshold, that casino or category of casino should become unavailable as a safe or normal target choice.
+
+A player with high casino heat may still find work, but increasingly through casinos or target conditions with higher risk, stronger attention, or worse safety margins.
+
+### Casino Heat Access Pressure
+
+Casino heat can push the player out of lucrative lower-risk casino options and toward higher-risk work.
+
+Acceptance checks:
+
+- Casino heat is visible as a persistent player or external-pressure value.
+- Hack results can increase casino heat.
+- Target choices expose whether a casino or machine is available under the current casino heat level.
+- If casino heat exceeds a target's tolerance threshold, that target becomes excluded, locked, or marked as too watched for normal work.
+- Higher-risk targets can remain available at higher casino heat levels.
+- The player can read that becoming too known changes future target access rather than only affecting the current hack.
+
 ### Player State
 
 The player state includes at minimum:
 
 - money
+- casino heat
 - suspicion
 - strain or stress
 - available knowledge or access
@@ -262,6 +301,14 @@ The casino around them may exist as framing fiction or decorative presentation, 
 From the Targeting App in Home, the player selects which machine the next hack will target.
 
 That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
+
+Target selection should account for casino heat.
+
+Some lucrative casinos or machines should have a casino-heat tolerance threshold.
+
+When the player's casino heat exceeds that threshold, those targets should become unavailable or unsafe enough that they are excluded from normal selection.
+
+At higher casino heat, available work should shift toward casinos, machines, or conditions with greater operational risk.
 
 The first target set should include a simple low-yield slot machine that can be attacked with Loser's Rig and Loser's Die.
 

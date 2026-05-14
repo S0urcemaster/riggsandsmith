@@ -28,6 +28,22 @@ Catch is an exception view.
 
 It appears only if the player crosses a boundary that triggers direct intervention, exposure, or capture pressure.
 
+## Money
+
+Money is the player's persistent spendable operational resource.
+
+It is gained or lost through hacks and spent in Home on operational tools such as dice, upgrades, and die modifications.
+
+## Casino Heat
+
+Casino heat is the persistent degree to which Lucky Smith has become known, watched, or recognizable across casino operations.
+
+It can restrict access to lucrative lower-risk casinos or machines once it exceeds their tolerance threshold.
+
+Casino heat is not the same as rig thermal heat.
+
+High casino heat pushes future work toward higher-risk casinos, machines, or operating conditions.
+
 ## Fallback Die
 
 The fallback die is the player's permanent baseline die.
