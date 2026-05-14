@@ -8,6 +8,8 @@ It should first be defined as a vertical slice, not as a full large-scale produc
 
 The first reliable product core is a repeatable structure of Start, Prep, and Hack, with Catch as an exception view outside the normal loop.
 
+In this product specification, a phase is a gameplay step in the product flow, while a view is the UI representation through which such a phase is presented to the player.
+
 ## Product Form
 
 In its first viable state, the product is:
@@ -64,6 +66,8 @@ The first slice should therefore include at its core:
 - a Hack view with readable cause-and-effect relationships
 - a Catch view for player boundary violations
 - persistent consequences across multiple days
+
+The named views should map clearly onto the named phases they present.
 
 ## Core Systems
 

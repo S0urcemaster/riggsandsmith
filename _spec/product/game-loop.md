@@ -9,6 +9,8 @@ The product currently uses four views:
 3. Hack
 4. Catch
 
+These views are the UI representations of the corresponding game phases.
+
 Start precedes the playable game loop.
 
 Prep and Hack form the normal playable game loop.

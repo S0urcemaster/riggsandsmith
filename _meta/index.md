@@ -2,6 +2,12 @@
 
 This file defines how the specification is structured and how it should be read.
 
+## Glossary
+
+The dominant glossary for meta-level terms is [Glossary](./glossary.md).
+
+Meta terms that become important, overloaded, or repeatedly reused across `_meta` should be stabilized there.
+
 ## Core Principle
 
 The specification must always be read as the currently valid description of the intended product.
