@@ -64,6 +64,25 @@ The preferred direction is:
 - terminal adapters that call domain logic rather than owning product rules
 - summary reporting for autoruns
 
+## Terminal Interface Direction
+
+The terminal simulation should be built as a fixed-screen terminal UI.
+
+A fixed-screen terminal UI redraws stable screen regions during normal play.
+
+This direction makes the simulation feel like a compact control console while still remaining a mechanics lab.
+
+The fixed-screen layout should preserve clear state readability:
+
+- global resources remain in a stable top or header region
+- Home or Hack state remains in a stable main region
+- available actions remain in a stable command region
+- recent event messages remain in a short bounded log region
+
+The fixed-screen UI remains an adapter over the domain logic.
+
+Product rules, hack algorithms, and consequence resolution remain in domain logic.
+
 ## Build Scope
 
 The first meaningful scope for this build path is:
