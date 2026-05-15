@@ -68,7 +68,11 @@ It should feel live, compressed, and dangerous, but still readable.
 The first Hack view should keep at minimum these live elements visible:
 
 - the target machine or target state
+- the target machine probability wave or equivalent target-wave state
+- the rig field wave or equivalent rig-wave state
+- the current sync relationship between target wave and rig wave
 - the deployed rig representation with visible dice slots and module states
+- the current field energy level or throttle state
 - current profit or extractable gain
 - current risk pressure
 - current red-zone proximity
@@ -110,6 +114,8 @@ These actions may include functions such as:
 - masking signature
 - pushing yield
 - stabilizing a channel
+- improving or holding wave sync
+- raising or lowering field energy
 - regulating breath or pulse
 - aborting the run
 
@@ -124,6 +130,34 @@ The player selects a manipulator mode from the active rig's keypad and then clic
 The first manipulator modes are accelerate, brake, and cool, but the available set depends on the active rig.
 
 For the first slice, Loser's Rig exposes only accelerate.
+
+## Wave Sync Opening
+
+The Hack view should begin with, or quickly expose, a compact sync problem between the target machine and the rig.
+
+The player should be able to see the target machine's probability wave and the rig's field wave as two alignable rhythms, or as one overlay that makes their relationship readable.
+
+The intended feeling is similar to matching two waveforms before increasing pressure.
+
+Once the rig is acceptably synced to the machine, the player can drive the dice field toward a more profitable range through field energy and available rig actions.
+
+Perfect sync should not be mandatory for every hack attempt, but better sync should make the run more controllable or profitable.
+
+Poor sync should make later pressure noisier, riskier, less efficient, or harder to read.
+
+## Field Energy Throttle
+
+The Hack view should expose a control for regulating the active energy level of the rig's dice field.
+
+This control should feel like a throttle, fader, or comparable continuous pressure control.
+
+Raising field energy should help the rig amplify favorable probability moments and push the target machine toward player-favorable outcomes.
+
+Raising field energy should also make the operation more dangerous by increasing pressure such as heat, instability, signature, red-zone proximity, body pressure, or damage risk.
+
+Lowering field energy should reduce danger or slow pressure growth, while also reducing the rig's ability to exploit favorable wave states.
+
+The field energy throttle should therefore support the core Hack question: how hard should the player drive the rig before cashing out or losing control.
 
 ## Timing Model
 
@@ -210,6 +244,30 @@ Acceptance checks:
 - Stabilizing trades immediate profit potential for control.
 - Stabilizing is most valuable when pressure is already visible.
 - The player can read the tradeoff between immediate safety and immediate gain.
+
+### Sync Waves
+
+The player can improve the operating alignment between the target machine probability wave and the rig field wave.
+
+Acceptance checks:
+
+- The target machine wave and rig field wave, or an equivalent alignment display, are visible during the opening or early Hack state.
+- The player can take an action or adjust controls to improve their sync relationship.
+- Improved sync makes favorable timing windows more readable, more stable, more efficient, or easier to exploit.
+- Poor sync makes the operation noisier, less efficient, more unstable, or harder to time.
+- A stale blueprint can cause the live sync problem to differ from the Home simulation.
+
+### Control Field Energy
+
+The player can regulate how hard the rig drives the active dice field during Hack.
+
+Acceptance checks:
+
+- A field energy throttle, fader, or equivalent control is visible during Hack.
+- Raising field energy increases profit pressure, wave influence, or the chance to force a favorable machine decision.
+- Raising field energy worsens at least one danger state such as heat, instability, signature, red-zone proximity, body pressure, or damage risk.
+- Lowering field energy reduces or slows at least one danger state.
+- Lowering field energy also reduces profit pressure, wave influence, or the ability to hold a favorable probability condition.
 
 ### Regulate Body Pressure
 

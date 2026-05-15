@@ -48,6 +48,26 @@ A rig is an illegal portable fate-hacking machine that magnetically suspends, dr
 
 It is attached in concealed form to a target machine during a hack so that the effect of the dice reaches the machine's immediate operating reality.
 
+## Machine Blueprint
+
+A machine blueprint is an illicit technical description of a target machine type or known individual machine.
+
+It contains enough structural, timing, payout, and probability-behavior information to simulate that machine at Home.
+
+A blueprint is not required to hack a machine in person.
+
+It is required to simulate that machine before the hack.
+
+## Probability Wave
+
+A probability wave is the readable oscillating probability condition of a gambling machine.
+
+It expresses whether the machine's near-future decision state is leaning toward the player or against the player.
+
+The wave is not purely visual decoration.
+
+It is a field-readable condition that a rig can expose, amplify, and sometimes exploit.
+
 ## Named Rig
 
 A named rig is an individual rig machine with a recognizable identity in the world.

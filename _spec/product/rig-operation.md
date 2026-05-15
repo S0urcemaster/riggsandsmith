@@ -32,12 +32,13 @@ The first slice should define rigs through these properties:
 2. rig top speed
 3. guidance strength
 4. energy efficiency
-5. cooling capacity
-6. heat tolerance
-7. stability control
-8. signature masking
-9. rig perks
-10. die manipulators
+5. field energy control
+6. cooling capacity
+7. heat tolerance
+8. stability control
+9. signature masking
+10. rig perks
+11. die manipulators
 
 These properties should remain readable in Home before the player commits to a Hack.
 
@@ -88,6 +89,48 @@ Example perk:
 Energy efficiency should not erase mass as a tradeoff.
 
 It should make a rig better suited to a class of build.
+
+## Field Energy Control
+
+Field energy control is the player's direct control over the active energy level of the rig's dice field.
+
+It should read as a throttle or fader rather than as a one-time command.
+
+The player can raise or lower the field energy level during relevant rig work.
+
+Higher field energy should make the dice field stronger, more readable, or more capable of pushing a target machine's probability wave toward the player.
+
+Higher field energy should also increase at least one operating pressure such as heat, instability, signature, red-zone proximity, body pressure, energy load, or damage risk.
+
+Lower field energy should make the operation calmer and safer, but should reduce field strength, profit pressure, wave influence, or the ability to hold a favorable probability condition.
+
+The field energy throttle is not the same as a die manipulator.
+
+Die manipulators apply a selected effect to a selected die.
+
+The field energy throttle changes the overall operating level of the active dice field.
+
+The player should be able to read the current energy level and its likely consequences before and during Hack.
+
+## Wave Sync
+
+Wave sync is the act of aligning the rig's field rhythm with the target machine's probability wave before pushing hard for profit.
+
+It should feel closer to beatmatching or overlaying two waveforms than to entering a password.
+
+The player first reads the target machine's wave and the rig's current field wave.
+
+The player then brings those waves into usable alignment through field energy, shared speed, timing, stabilizing actions, or rig-supported controls.
+
+A good sync should make later pressure more efficient, make favorable windows more readable, or make the rig better able to amplify a positive machine wave.
+
+A poor sync should make the hack noisier, less efficient, less predictable, or more dangerous.
+
+Wave sync should not become a large separate simulation game that replaces the Home-to-Hack loop.
+
+It should be a compact first step in rig work that establishes whether the rig is properly coupled to the machine before the player drives the dice field into a profitable range.
+
+Blueprint simulation can teach or preview the expected wave shape, but live sync may still differ when the blueprint is stale, incomplete, or the machine behaves differently on site.
 
 ## Cooling Capacity
 
@@ -280,6 +323,7 @@ The player can judge whether a rig fits a dice build before starting Hack.
 Acceptance checks:
 
 - Each rig exposes active slots, top speed, guidance, cooling, stability, and any perks.
+- Each rig exposes its field energy control range or throttle behavior.
 - Each rig exposes its available die manipulators.
 - The build view shows when installed dice create high energy load, high guidance demand, high heat pressure, or high signature pressure.
 - A rig perk is visible before it affects the build.
@@ -299,6 +343,33 @@ Acceptance checks:
 - Better signature masking reduces signature or casino-heat pressure from visible field output.
 - Better stability control makes complex or resonant dice combinations safer.
 - A compensation effect reduces or slows a danger state, but the original die tradeoff remains readable.
+
+## Behavior Contract: Field Energy Throttle
+
+The player can regulate the active energy level of the rig's dice field.
+
+Acceptance checks:
+
+- The active rig exposes a readable field energy throttle, fader, or equivalent control.
+- Raising field energy visibly increases field strength, wave influence, profit pressure, or ability to hold a favorable probability condition.
+- Raising field energy worsens at least one pressure state such as heat, instability, signature, red-zone proximity, body pressure, energy load, or damage risk.
+- Lowering field energy visibly reduces at least one danger state or slows its growth.
+- Lowering field energy also reduces field strength, profit pressure, wave influence, or the ability to hold a favorable probability condition.
+- The player can read the current field energy level while making Hack decisions.
+- Field energy control affects the overall dice field rather than only a single selected die.
+
+## Behavior Contract: Wave Sync
+
+The player can align the rig's field wave with the target machine's probability wave before driving for profit.
+
+Acceptance checks:
+
+- The Hack setup or early Hack state shows both the rig field wave and the target machine probability wave, or shows an equivalent overlay of their alignment.
+- The player can act to improve alignment before pushing the dice field into a stronger profit-driving range.
+- Better alignment makes favorable probability windows more readable, more stable, more efficient, or easier to amplify.
+- Poor alignment increases noise, inefficiency, instability, pressure, or missed timing.
+- A stale or incomplete blueprint can cause the live target wave or machine interface to differ from the simulated expectation.
+- Wave sync remains a compact operational step and does not replace the main Hack pressure loop.
 
 ## Behavior Contract: Die Manipulator Keypad
 

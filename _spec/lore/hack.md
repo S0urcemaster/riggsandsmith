@@ -52,6 +52,54 @@ It is the felt edge beyond which control begins to break down.
 
 Avoiding that edge becomes a core survival instinct.
 
+## Gambling Machine Probability
+
+A gambling machine does not present fate as a flat number.
+
+Under rig perception, it produces an oscillating probability wave.
+
+That wave expresses the machine's near-future leaning between a decision favorable to the player and a decision favorable to the house.
+
+Different machine types can share the same simulation form and operating logic while still having individual displays and individual waveforms.
+
+The visible display can therefore be both familiar by type and specific by machine.
+
+Many machines are biased against the player by a built-in house edge.
+
+For example, a machine with a seven percent house edge may effectively sit around a 43 to 57 probability relation against the player before rig influence.
+
+The exact numbers belong to the machine's operating profile, but the world rule is that a normal machine is already tilted away from the player.
+
+The rig does not simply replace that machine logic.
+
+It reads and pushes against the machine's existing probability wave.
+
+With the right dice, timing, and stability, the rig can amplify a favorable moment enough to move the operative probability above an even split and toward the player.
+
+When Lucky Smith reaches that condition and acts at the correct moment, the machine can be forced into a payout event.
+
+The payout is usually guaranteed once that favorable decision is successfully forced, but the payout amount may still be random.
+
+Some machines expose or hide a second manipulable layer: not only whether a win occurs, but how large the win becomes when the win state is reached.
+
+Those machines are more valuable and more dangerous because they create another probability surface for the rig to read or distort.
+
+## Timing and the Lever
+
+The player-facing moment of a machine hack is not only abstract probability control.
+
+Lucky Smith still has to act on the physical machine at the right moment.
+
+On lever-based or lever-represented machines, this means pulling the lever when the displayed or perceived probability wave is favorable enough.
+
+The rig can provide aids for this timing.
+
+It may expose the wave, strengthen its readable peaks, stabilize a positive interval, or help Lucky Smith recognize the moment when the machine is most vulnerable to a player-favorable decision.
+
+Those aids do not remove the need for timing and bodily control.
+
+They turn the timing problem into a dangerous cooperation between the machine's wave, the rig's configuration, the dice field, and Lucky Smith's hand.
+
 ## World Meaning
 
 A hack matters in the lore because it reveals the true cost of using the rig.

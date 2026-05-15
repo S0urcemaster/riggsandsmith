@@ -100,6 +100,7 @@ These networks distribute:
 - slot standards
 - illegal firmware
 - target notes on casinos and machines
+- machine blueprints
 - modified field-control modules
 
 Some plans are reliable.
@@ -107,6 +108,40 @@ Some plans are reliable.
 Some are traps, scams, sabotage, or half-understood copies.
 
 This makes the rig scene powerful, secretive, and dangerous.
+
+## Machine Blueprints and Simulation
+
+The underground rig scene also trades machine blueprints.
+
+A machine blueprint is not the same as a rig plan.
+
+It describes a gambling machine well enough that its behavior can be simulated at Home.
+
+Blueprints may describe a machine type or a known individual machine.
+
+Some machine types share the same simulation form and operating logic, while still having individual displays, payout character, and probability-wave behavior.
+
+A blueprint is not strictly required to hack a machine.
+
+Lucky Smith can attack an unknown machine directly if he is willing to accept the uncertainty.
+
+A blueprint is required when he wants to simulate a machine before the hack.
+
+At Home, the same station where Riggs configures the rig can use a known blueprint to run a local simulation of that machine.
+
+This lets him test whether the current rig setup can read, amplify, or survive that machine's probability behavior before he risks a live attachment.
+
+Blueprint offers in the underground market may expose useful information about a machine before purchase, including its baseline house edge, payout behavior, and how legible its probability wave is expected to be.
+
+Blueprints can still be incomplete, stale, poisoned, or misleading.
+
+A stale blueprint may still run a plausible Home simulation while no longer matching the live machine precisely.
+
+After preparing against such a simulation, Lucky Smith may arrive at the actual machine and be surprised by a different machine interface, a changed display rhythm, a shifted probability wave, or payout behavior that no longer matches the simulated expectation.
+
+This makes blueprint age and source reliability part of the underground risk.
+
+They reduce unknowns, but they do not make live hacking safe.
 
 ## World Rule
 
