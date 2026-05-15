@@ -56,6 +56,8 @@ The first slice should therefore include at its core:
 - a Rigging App with visible dice slots and module states
 - a Targeting App focused on individual slot machines rather than full casino spaces
 - a Shopping App for dice, upgrades, and die modifications
+- a protected first-success onboarding path
+- a first post-onboarding equipment fork
 - a small set of distinct dice
 - a small set of distinct target systems
 - a Hack view with readable cause-and-effect relationships

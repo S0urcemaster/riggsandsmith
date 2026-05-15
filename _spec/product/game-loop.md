@@ -38,6 +38,10 @@ The normal loop is:
 
 The resulting state carries forward and leads into the next Home view.
 
+The protected new-player path before full control is defined in [Onboarding and First Fork](./onboarding-and-first-fork.md).
+
+That path may temporarily constrain Home and repeat the first simple target until the first successful hack has taught the loop.
+
 ## Start
 
 Start is the entry view that precedes the playable game loop.
@@ -61,6 +65,8 @@ Home is the most important decision phase of the product.
 This is where the operational configuration for the upcoming hack is created.
 
 This also is where the player selects the next target machine.
+
+The first full-control Home entry happens after the protected first successful hack and should expose the first meaningful equipment fork.
 
 ## Hack
 

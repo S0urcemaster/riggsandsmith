@@ -9,6 +9,7 @@ Add batch simulation so the algorithm can be tested across many runs and longer 
 - `_builds/terminal-sim/index.md`
 - `_builds/terminal-sim/steps/001-foundation.md`
 - `_builds/terminal-sim/steps/002-core-algorithm.md`
+- `_spec/product/onboarding-and-first-fork.md`
 
 ## Inputs
 
@@ -30,6 +31,7 @@ Autoruns should support:
 - summary metrics
 - comparison between at least two configurations or strategies
 - a fallback recovery scenario using only Loser's Rig and Loser's Die
+- a first-fork comparison scenario for the first rig improvement, second die, and rig function opening
 
 ## Expected Output
 

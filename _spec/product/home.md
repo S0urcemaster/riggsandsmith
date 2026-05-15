@@ -22,6 +22,7 @@ It defines what Home is for, how it should read as a product view, and which fir
 - [Game Loop](./game-loop.md)
 - [Global Resources](./state/global-resources.md)
 - [Rig Operation](./rig-operation.md)
+- [Onboarding and First Fork](./onboarding-and-first-fork.md)
 
 ## Exports
 
@@ -55,6 +56,10 @@ These apps should include at minimum:
 The first slice presents Home through the operating presence of the room, with the computer and rig area carrying most of the visible interaction weight.
 
 A large navigable apartment is excluded from the required first-slice scope because it would add spatial exploration without proving the core Home-to-Hack systems loop.
+
+During the protected new-player path, Home may be guided and partially constrained.
+
+After the first successful hack returns to Home, Home should open into full player control and present the first equipment fork defined in [Onboarding and First Fork](./onboarding-and-first-fork.md).
 
 ## Spec Feedback
 

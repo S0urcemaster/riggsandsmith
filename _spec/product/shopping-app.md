@@ -23,6 +23,7 @@ It defines what the player can buy or improve and how shopping participates in p
 - [Global Resources](./state/global-resources.md)
 - [Dice Physics](./dice-physics.md)
 - [Rig Operation](./rig-operation.md)
+- [Onboarding and First Fork](./onboarding-and-first-fork.md)
 
 ## Exports
 
@@ -55,6 +56,12 @@ Known-risk items make their police heat consequence readable before purchase.
 Unknown-risk items show that risk exists, but the exact police heat consequence is revealed later at the next Home entry after the following Hack resolves.
 
 Additional rig models may be introduced later, but the first slice does not require rig shopping.
+
+The first meaningful Shopping App decision after onboarding should be the first equipment fork defined in [Onboarding and First Fork](./onboarding-and-first-fork.md).
+
+That fork may include an improvement to Loser's Rig.
+
+That improvement is not the same as buying a completely separate rig model.
 
 ## Spec Feedback
 
