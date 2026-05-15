@@ -2,6 +2,8 @@
 
 This section defines product-specific rules for how an agent should work with this specification.
 
+Focused specification work is defined in [Focused Spec Work Protocol](./work-protocol.md).
+
 ## Rule 1: Product Definitions Must Respect Lore
 
 Product definitions must not contradict the lore.
