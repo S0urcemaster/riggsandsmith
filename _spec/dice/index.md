@@ -44,15 +44,21 @@ The current product-level die properties are:
 1. mass
 2. inertia
 3. max speed
-4. guidance demand
-5. field generation
-6. heat buildup
-7. damage tolerance
-8. response speed
+4. field generation
+5. heat buildup
+6. damage tolerance
+7. response speed
+8. quality
 9. signature profile
 10. unbreakable
 
-The first eight properties are general physical forces.
+The first seven properties are general physical forces.
+
+`quality` is a product-level value that connects price, manufacturing condition, running behavior, and hidden operational risk.
+
+`guidance demand` is not an authored base die property.
+
+It is a derived operating value calculated from quality, speed behavior, mass, inertia, material behavior, damage, and current rig operation.
 
 `signature profile` is an algorithm-facing operational property that describes how visible, dirty, or traceable a die's field is during Hack.
 
@@ -83,7 +89,7 @@ Useful player-facing die labels currently include:
 - fast
 - slow response
 - strong field
-- high guidance demand
+- high derived guidance demand
 - heat-prone
 - durable
 - fragile

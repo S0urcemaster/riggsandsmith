@@ -365,7 +365,7 @@ Acceptance checks:
 - Each rig exposes active slots, top speed, guidance, cooling, stability, and any perks.
 - Each rig exposes its field energy control range or throttle behavior.
 - Each rig exposes its available die manipulators.
-- The build view shows when installed dice create high energy load, high guidance demand, high heat pressure, or high signature pressure.
+- The build view shows when installed dice create high energy load, high derived guidance demand, high heat pressure, or high signature pressure.
 - A rig perk is visible before it affects the build.
 - A rig perk clearly names the force or material family it modifies.
 - A mismatched rig and dice build exposes at least one warning before Hack begins.

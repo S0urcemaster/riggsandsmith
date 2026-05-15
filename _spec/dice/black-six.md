@@ -84,10 +84,10 @@ These values are direction-setting until final numeric balance is established.
 - material family: dirty high-output material
 - field generation: very high
 - max speed: modest to high
-- guidance demand: moderate to high
 - heat buildup: high
 - damage tolerance: low to modest
 - response speed: modest
+- quality: low to modest
 - signature profile: very high
 - special property: none
 

@@ -80,6 +80,16 @@ Final money values are tuning data.
 
 The factor is the more stable design value because it expresses how expensive one item should feel compared with another item at the same progression point.
 
+Die quality should be one of the strongest inputs into die price factor.
+
+A high-quality die should usually cost more than a low-quality die with similar physical forces.
+
+Within the same broad quality level, the shop may still contain good and bad offers.
+
+This preserves bargain hunting and bad purchases instead of making price a perfect truth display.
+
+Low-quality dice may be cheap enough to tempt the player during financial pressure, but they should carry real operational risk.
+
 For the first Die Manipulator shop items, the initial factors are defined in [Rig Operation](./rig-operation.md):
 
 - `accelerate`: `1.0`

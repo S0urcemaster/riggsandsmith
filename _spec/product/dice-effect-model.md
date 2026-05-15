@@ -46,6 +46,7 @@ When a die is installed in a rig and used against a target machine, its properti
 - response to player actions
 - collapse and damage consequences
 - composition value with other dice
+- price and quality pressure
 
 The first algorithm may be simple, but it should keep these channels explicit so that a terminal simulation can expose balance problems and a later agent can tune the correct source.
 
@@ -188,16 +189,31 @@ Tuning levers:
 
 Balance warning signs:
 
-- If the highest max-speed die is always best, make guidance demand, heat, or low field generation matter more.
+- If the highest max-speed die is always best, make derived guidance demand, heat, or low field generation matter more.
 - If low max-speed dice are always dead weight, give dense or stable dice stronger low-speed output roles.
 
-### Guidance Demand
+### Derived Guidance Demand
 
 Guidance demand is how much magnetic control the rig must provide to keep the die stable.
 
+It is not an authored base die property.
+
+The algorithm derives it from authored die values and current operating conditions.
+
+The minimum derivation inputs should be:
+
+- quality
+- current speed ratio
+- max speed
+- mass
+- inertia
+- material family
+- damage or defect state
+- active manipulator pressure
+
 Primary positive effects:
 
-- high demand can justify strong output, high speed, or unusual field behavior
+- high derived demand can justify strong output, high speed, low price, or unusual field behavior
 - creates meaningful rig-fit decisions
 
 Primary negative effects:
@@ -344,7 +360,7 @@ Primary positive effects:
 
 Primary negative effects:
 
-- fast response often pairs with light mass, high guidance demand, or lower raw output
+- fast response often pairs with light mass, high derived guidance demand, or lower raw output
 - fast response may create more visible modulation or signature when pushed
 
 Algorithm-facing effect channels:
@@ -364,7 +380,71 @@ Tuning levers:
 Balance warning signs:
 
 - If response speed is only a UI label, make it change action deltas or event-window success.
-- If high-response dice dominate, reduce their raw field output or raise guidance demand.
+- If high-response dice dominate, reduce their raw field output or raise derived guidance demand.
+
+### Quality
+
+Quality is the die's manufacturing, preservation, calibration, and running condition as a priced object.
+
+It is a direct price-adjacent property.
+
+A high-quality die should usually cost more than a low-quality die with similar physical forces.
+
+Within a quality band, the shop may still contain good and bad offers.
+
+This means quality should strongly influence price, but price should not perfectly reveal every offer's real value.
+
+Primary positive effects:
+
+- improves running smoothness under speed
+- lowers derived guidance demand or slows guidance failure
+- lowers wobble-driven heat and instability
+- reduces ejection, rattling, misalignment, and cross-load events
+- makes expensive rigs feel fluent when paired with good dice
+
+Primary negative effects:
+
+- low quality makes a die cheap for a reason
+- low quality can destabilize an otherwise strong setup
+- low quality can damage or endanger other installed dice through shared instability, bad suspension behavior, or violent ejection
+- low quality may hide defects until the die is pushed under real Hack pressure
+
+Algorithm-facing effect channels:
+
+- modifies derived `guidance demand`
+- modifies passive `instability`
+- modifies wobble-driven `heat`
+- modifies `die_damage` chance for itself and, in severe failures, adjacent or co-installed dice
+- modifies `collapse_risk` when speed, guidance gap, or acceleration stress is high
+- modifies shop price factor
+
+Tuning levers:
+
+- `quality_price_weight`
+- `low_quality_guidance_penalty_weight`
+- `low_quality_instability_weight`
+- `low_quality_heat_weight`
+- `low_quality_ejection_chance`
+- `low_quality_cross_damage_weight`
+- `quality_hidden_defect_chance`
+
+Balance warning signs:
+
+- If low-quality dice are always efficient bargains, increase guidance, instability, ejection, or cross-damage risk.
+- If low-quality dice are never worth buying, lower their price factor or make some low-quality offers physically strong enough to tempt desperate play.
+- If high-quality dice feel invisible, make smooth operation visibly reduce noise, warning spikes, or support pressure.
+
+Design rule:
+
+Low quality should usually imply higher derived guidance demand.
+
+This may be shown directly in technical views or left partially discoverable through play, warnings, rattling behavior, ejections, or unexpected instability.
+
+Late-game rule:
+
+A cheap low-quality die should be able to make an expensive setup risky.
+
+If the player is in a financial bind and buys a bad die for a high-end rig, the build may still become dangerous because the cheap die can add instability, overload guidance, eject violently, or damage other more expensive dice.
 
 ### Signature Profile
 
@@ -452,7 +532,8 @@ The algorithm should calculate these build checks before or during Hack:
 4. `field_output`: sum of die output after speed, damage, and support modifiers.
 5. `signature_gap`: expected signature beyond rig masking and target tolerance.
 6. `response_profile`: expected ability to correct, brake, retune, or exploit windows.
-7. `fallback_protection`: whether the build preserves Loser's Die or another protected fallback die.
+7. `quality_risk`: expected instability, ejection, or cross-damage from low-quality dice under the planned speed.
+8. `fallback_protection`: whether the build preserves Loser's Die or another protected fallback die.
 
 These checks should feed both Home warnings and Hack behavior.
 
@@ -511,6 +592,8 @@ These metrics should be compared across at least:
 - a high-speed build
 - a dirty high-output build
 - a stable-control build
+- a high-quality expensive build
+- a low-quality bargain build
 
 ## First-Slice Balance Intent
 
@@ -546,6 +629,19 @@ Stable-control builds should:
 - produce less spectacular gains
 - remain useful as support for risky dice
 
+High-quality builds should:
+
+- run smoother
+- support higher usable speed
+- reduce surprise instability
+- cost enough that the player can be forced to compromise during financial pressure
+
+Low-quality bargain builds should:
+
+- be tempting when money is tight
+- create visible or discoverable rough operation
+- risk ejection, instability, or damage beyond the cheap die itself
+
 ## Behavior Contract: Tunable Die Effects
 
 Die properties produce traceable Hack effects that can be tuned after simulation evidence.
@@ -555,6 +651,7 @@ Acceptance checks:
 - Each algorithm-facing die property maps to at least one Hack state channel.
 - Each Hack state channel influenced by dice can be traced back to one or more die properties.
 - Each property has at least one named tuning lever.
+- Quality affects both price expectation and at least one operational risk channel.
 - Terminal simulation output exposes enough state deltas to identify why a run became profitable, dangerous, or collapsed.
 - A balance change can be made by adjusting a narrow tuning lever rather than rewriting the whole Hack algorithm.
 

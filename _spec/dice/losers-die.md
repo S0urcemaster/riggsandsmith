@@ -68,10 +68,10 @@ It preserves recovery without matching the earning potential or strategic depth 
 - material family: stable control material
 - field generation: low
 - max speed: low to modest
-- guidance demand: low
 - heat buildup: low to modest
 - damage tolerance: high through unbreakable failure behavior
 - response speed: modest
+- quality: modest
 - signature profile: low
 - special property: unbreakable
 

@@ -64,10 +64,10 @@ These values are direction-setting until final numeric balance is established.
 - material family: light fast material
 - field generation: low to modest
 - max speed: high
-- guidance demand: modest
 - heat buildup: low to modest
 - damage tolerance: low to modest
 - response speed: high
+- quality: low to modest
 - signature profile: low to modest
 - special property: none
 
@@ -92,6 +92,10 @@ This should be treated as a temporary operational push or overdrive margin, not 
 The lesson is:
 
 Cheap fragile dice can improve a build, but they make damage and support quality matter.
+
+Needle Glass should introduce quality as a price-and-risk concept.
+
+It is useful because it is affordable and fast, but its low-to-modest quality means it can run rough, demand support, and become dangerous when pushed.
 
 ## Player-Facing Content
 

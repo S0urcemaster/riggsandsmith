@@ -24,19 +24,32 @@ The first slice should use these core forces for dice material behavior:
 1. mass
 2. inertia
 3. max speed
-4. guidance demand
-5. field generation
-6. heat buildup
-7. damage tolerance
-8. response speed
+4. field generation
+5. heat buildup
+6. damage tolerance
+7. response speed
 
 These forces may be represented numerically, as labeled tiers, or through clear UI language.
 
 They should remain few enough that the player can estimate a build without solving a hidden spreadsheet.
 
+Quality is a separate die value.
+
+It describes how well-made, well-preserved, and cleanly running the die is as an object.
+
+It should correlate with price more directly than the physical forces do.
+
+Low quality usually means rough operation, hidden defects, poor fit, unstable behavior under speed, or increased demand on rig support.
+
+High quality usually means the die runs cleaner, holds guidance better, and can be pushed with less unwanted wobble, ejection, or cross-load.
+
+Quality should not replace the physical forces.
+
+It is a price-and-condition axis that modifies how safely those forces can be used.
+
 Signature profile is handled as an algorithm-facing operational property in the Dice Effect Model.
 
-It is not one of the first eight core physical forces, but it should be exposed when it materially affects suspicion, casino heat, police heat, or target traceability.
+It is not one of the core physical forces, but it should be exposed when it materially affects suspicion, casino heat, police heat, or target traceability.
 
 ## Mass
 
@@ -81,6 +94,20 @@ A low-mass high-speed die can be excellent for fast response while still produci
 ## Guidance Demand
 
 Guidance demand describes how much magnetic control the rig must provide to keep the die stable.
+
+It is a derived operating value rather than an authored base die property.
+
+The product should derive it from:
+
+- quality
+- max speed and current operating speed
+- mass
+- inertia
+- material family
+- current damage or defects
+- active manipulator pressure
+
+Low quality should usually be the clearest cause of unexpectedly high derived guidance demand.
 
 Light or very fast dice often need strong guidance because they are easy to disturb at high speed.
 
@@ -162,7 +189,7 @@ The player should be able to learn and estimate these relationships:
 - high max speed plus low mass creates fast modulation with weaker raw field power
 - high inertia plus high field generation creates steady pressure but poor reaction to sudden target changes
 - low inertia plus high max speed creates quick response but needs reliable guidance
-- high guidance demand plus weak rig slots creates instability even if the die itself is valuable
+- high derived guidance demand plus weak rig slots creates instability even if the die itself is valuable
 - high heat buildup plus low damage tolerance creates a fragile high-risk die
 - high damage tolerance plus high heat buildup creates a die that can be pushed, but not forever
 
@@ -225,7 +252,7 @@ Useful labels include:
 - fast
 - slow response
 - strong field
-- high guidance demand
+- high derived guidance demand
 - heat-prone
 - durable
 - fragile
@@ -248,11 +275,11 @@ Acceptance checks:
 - Each die exposes material or material-family information.
 - Each material family has a readable strength and tradeoff.
 - Heavy or dense dice visibly tend toward stronger field generation and higher energy or heat cost.
-- Light or fast dice visibly tend toward higher speed or response and higher guidance demand.
+- Light or fast dice visibly tend toward higher speed or response and higher derived guidance demand.
 - Heat visibly increases die damage or corruption risk.
 - If a die is unbreakable, the player can read that overload may eject or disrupt the die instead of permanently destroying it.
 - High inertia visibly improves steadiness or pressure continuity but slows player correction.
-- Weak rig guidance combined with high guidance demand visibly worsens stability or heat.
+- Weak rig guidance combined with high derived guidance demand visibly worsens stability or heat.
 - The player can compare two dice and predict at least one major operational difference before running a hack.
 
 ## Behavior Contract: Combination Clarity

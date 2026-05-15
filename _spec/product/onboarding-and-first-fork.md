@@ -161,6 +161,10 @@ It teaches that dice can be damaged while still giving the player a useful early
 
 Its early use case is pairing with Loser's Die: Needle Glass opens speed and response potential, while Loser's Die may still limit shared speed unless it is actively pushed or the rig is improved.
 
+Needle Glass should also introduce quality as a price-and-risk concept.
+
+It is useful because it is affordable and fast, but its low-to-modest quality means it can run rough, demand support, and become dangerous when pushed.
+
 ### Rig Function Upgrade
 
 This option gives the player a new active tool during Hack.
