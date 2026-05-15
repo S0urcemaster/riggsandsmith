@@ -35,6 +35,7 @@ This avoids maintaining separate duplicate definitions for the same die in lore 
 
 1. [Loser's Die](./losers-die.md)
 2. [Black Six](./black-six.md)
+3. [Needle Glass](./needle-glass.md)
 
 ## Current Die Properties
 

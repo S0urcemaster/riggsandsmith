@@ -130,3 +130,9 @@ That entry is the canonical source for its specific lore identity, product ident
 Black Six is defined in the [Dice Directory](../dice/black-six.md).
 
 That entry is the canonical source for its specific lore identity, product identity, properties, and player-facing text.
+
+### Needle Glass
+
+Needle Glass is defined in the [Dice Directory](../dice/needle-glass.md).
+
+That entry is the canonical source for its specific lore identity, product identity, properties, and player-facing text.

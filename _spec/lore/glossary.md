@@ -50,6 +50,14 @@ It can create short aggressive payout opportunities, but it leaves a loud field 
 
 Its full source entry is [Black Six](../dice/black-six.md).
 
+## Needle Glass
+
+Needle Glass is a cheap light-fast fate die suited to early second-slot learning.
+
+It is quick and useful for timing, but fragile enough to teach that dice can be damaged or broken.
+
+Its full source entry is [Needle Glass](../dice/needle-glass.md).
+
 ## Fate Constant
 
 The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.

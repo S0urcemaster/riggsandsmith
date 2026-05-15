@@ -153,11 +153,29 @@ Its role is build expansion.
 
 It should produce new field behavior and new tradeoffs rather than only increasing a single power number.
 
+The preferred first second-die candidate is [Needle Glass](../dice/needle-glass.md).
+
+Needle Glass should be cheap, fast, and fragile.
+
+It teaches that dice can be damaged while still giving the player a useful early reason to care about the second slot.
+
+Its early use case is pairing with Loser's Die: Needle Glass opens speed and response potential, while Loser's Die may still limit shared speed unless it is actively pushed or the rig is improved.
+
 ### Rig Function Upgrade
 
 This option gives the player a new active tool during Hack.
 
-It may be a function such as `turbo`, a stronger acceleration mode, a brake, a cooling pulse, a masking pulse, or another compact manipulator.
+For the first fork, this option should be framed as buying a Die Manipulator.
+
+The first Die Manipulator shop set is:
+
+- `accelerate`
+- `brake`
+- `cool`
+
+If the starting rig already has `accelerate`, the shop may show it as owned, included, or available as an upgraded acceleration module.
+
+It may later expand into functions such as `turbo`, a stronger acceleration mode, a cooling pulse, a masking pulse, or another compact manipulator.
 
 Its role is active agency.
 
@@ -166,6 +184,8 @@ It should reward timing and judgment, but it should cost pressure, charge, coold
 If the option is `turbo`, it should mean a short burst of stronger die acceleration or field drive.
 
 `turbo` should be powerful only for a limited window and should worsen at least one pressure state.
+
+Manipulator opening prices should use the factor model defined in [Rig Operation](./rig-operation.md).
 
 ## Root Balancing Requirement
 

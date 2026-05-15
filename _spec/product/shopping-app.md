@@ -32,6 +32,7 @@ It defines what the player can buy or improve and how shopping participates in p
 - darknet acquisition framing
 - known-risk and unknown-risk shopping rule
 - first-slice rig shopping exclusion
+- shop price factor rule
 
 ## Definition
 
@@ -62,6 +63,30 @@ The first meaningful Shopping App decision after onboarding should be the first 
 That fork may include an improvement to Loser's Rig.
 
 That improvement is not the same as buying a completely separate rig model.
+
+## Price Factor Rule
+
+Shop item prices should be authored first as relative price factors.
+
+The implementation may then convert the factor into a pleasant round money value.
+
+The preferred first conversion is:
+
+`price = price factor * base shop price`
+
+The base shop price may start at a round value such as `$100`.
+
+Final money values are tuning data.
+
+The factor is the more stable design value because it expresses how expensive one item should feel compared with another item at the same progression point.
+
+For the first Die Manipulator shop items, the initial factors are defined in [Rig Operation](./rig-operation.md):
+
+- `accelerate`: `1.0`
+- `brake`: `1.0`
+- `cool`: `1.5`
+
+Other early items should receive comparable factors before they receive final money prices.
 
 ## Spec Feedback
 

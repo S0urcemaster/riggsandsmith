@@ -236,6 +236,24 @@ The first manipulator set is:
 - brake
 - cool
 
+These manipulators are also the first named rig-function shop items.
+
+Their balancing price should be authored as a factor first and converted into a round money price later by the Shopping App price scale.
+
+Initial manipulator price factors are:
+
+| manipulator | price factor |
+| --- | ---: |
+| accelerate | 1.0 |
+| brake | 1.0 |
+| cool | 1.5 |
+
+The factor expresses relative opening value, not final money.
+
+For example, a shop implementation may multiply the factor by a round base value such as `$100`, then adjust the base value during tuning.
+
+Future manipulators and other shop items should also receive comparable price factors before final money values are locked.
+
 ### Accelerate
 
 Accelerate pushes the selected die to spin faster for a short time or until the next state change.
@@ -243,6 +261,14 @@ Accelerate pushes the selected die to spin faster for a short time or until the 
 It increases field output or response opportunity.
 
 It also increases heat, energy load, instability, signature, or red-zone pressure.
+
+Accelerate changes operating speed, not the die's permanent max speed.
+
+If the selected die is currently the slowest active die and therefore limits shared rig speed, accelerate may temporarily let the build operate closer to that die's limit.
+
+A stronger or upgraded accelerate behavior may briefly create an overdrive margin above normal safe operation, but that should sharply increase heat, instability, damage risk, or red-zone pressure.
+
+This lets a fast second die such as Needle Glass make Loser's Die feel limiting until the player actively pushes Loser's Die or improves the rig.
 
 ### Brake
 
