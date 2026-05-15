@@ -36,6 +36,10 @@ Loser's Die is the first named fate die tied to John Riggs's rigging life.
 
 It is weak but stubborn, suited to modest recovery work on simple machines rather than spectacular probability breaks.
 
+When overloaded, it usually jumps out of its seating instead of being permanently destroyed.
+
+This makes it a rare unbreakable die, though not the only unbreakable die in the world.
+
 ## Fate Constant
 
 The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.

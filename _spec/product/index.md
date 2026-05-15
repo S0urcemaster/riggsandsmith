@@ -117,6 +117,10 @@ Loser's Die remains in the player's inventory across all outcomes.
 
 The permanence of Loser's Die is a product-level continuity rule.
 
+Loser's Die has the unbreakable property.
+
+When it is overloaded, it should jump out of its seating or stable suspension rather than being permanently destroyed.
+
 The fallback die ensures that the player can always return to a small viable hack loop after damage, loss, collapse, or poor play.
 
 The fallback die should support modest earnings against simple target machines.
@@ -138,6 +142,7 @@ The player can always recover into a small viable hack loop with Loser's Die and
 Acceptance checks:
 
 - After any hack result, Loser's Die remains in the player's inventory.
+- When Loser's Die is overloaded, it ejects or disrupts the operation instead of being permanently destroyed.
 - After any hack result, Loser's Rig remains available.
 - If all other practical dice are damaged, lost, or unusable, the player can still equip Loser's Die.
 - Loser's Rig can run with Loser's Die.

@@ -108,6 +108,26 @@ Low damage tolerance makes the die powerful only if the player protects it throu
 
 Damage tolerance should not erase the meaning of heat; it should change how much danger the die can absorb before consequences begin.
 
+## Unbreakable Dice
+
+Some dice have an unbreakable property.
+
+An unbreakable die can still overload, fail, eject, lose sync, interrupt a hack, or create consequences.
+
+The property means that overload does not permanently destroy the die as an inventory component.
+
+Unbreakable dice are rare.
+
+The property can exist outside Loser's Die, but it should be especially uncommon among strong, high-output, or high-value dice.
+
+Unbreakable should not mean safe.
+
+It should convert some permanent loss risk into disruptive failure, recovery cost, lost opportunity, or other immediate consequence.
+
+For the first slice, Loser's Die has this property.
+
+When Loser's Die is overloaded, it should jump out of its seating or stable suspension rather than being destroyed.
+
 ## Response Speed
 
 Response speed describes how quickly the die can react to player action or target-machine changes.
@@ -195,6 +215,7 @@ Useful labels include:
 - heat-prone
 - durable
 - fragile
+- unbreakable
 - resonant
 - dirty
 
@@ -215,6 +236,7 @@ Acceptance checks:
 - Heavy or dense dice visibly tend toward stronger field generation and higher energy or heat cost.
 - Light or fast dice visibly tend toward higher speed or response and higher guidance demand.
 - Heat visibly increases die damage or corruption risk.
+- If a die is unbreakable, the player can read that overload may eject or disrupt the die instead of permanently destroying it.
 - High inertia visibly improves steadiness or pressure continuity but slows player correction.
 - Weak rig guidance combined with high guidance demand visibly worsens stability or heat.
 - The player can compare two dice and predict at least one major operational difference before running a hack.

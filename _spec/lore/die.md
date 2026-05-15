@@ -137,4 +137,14 @@ Stronger targets call for stronger dice, better rig support, or more demanding f
 
 In the rig scene, a die like this would be easy to underestimate because it does not promise spectacular runs.
 
+Loser's Die has one rare protective quality: when it is badly overloaded, it does not usually shatter, burn out, or become permanently ruined.
+
+Instead, it jumps out of its seating or is thrown out of stable suspension.
+
+This makes the failure violent and disruptive, but recoverable.
+
+The property is not unique in the world, but it is rare.
+
+Some other dice are also effectively unbreakable in this way, but the trait is especially uncommon among strong or high-output dice.
+
 For Riggs, its importance comes from familiarity, reliability, and the fact that it is still there when better options are gone.
