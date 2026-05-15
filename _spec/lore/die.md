@@ -124,3 +124,9 @@ The product may represent named dice as unique components while still allowing o
 Loser's Die is defined in the [Dice Directory](../dice/losers-die.md).
 
 That entry is the canonical source for its specific lore identity, product identity, properties, and player-facing text.
+
+### Black Six
+
+Black Six is defined in the [Dice Directory](../dice/black-six.md).
+
+That entry is the canonical source for its specific lore identity, product identity, properties, and player-facing text.

@@ -34,6 +34,7 @@ This avoids maintaining separate duplicate definitions for the same die in lore 
 ## Individual Dice
 
 1. [Loser's Die](./losers-die.md)
+2. [Black Six](./black-six.md)
 
 ## Current Die Properties
 

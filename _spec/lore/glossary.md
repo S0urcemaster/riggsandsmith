@@ -42,6 +42,14 @@ This makes it a rare unbreakable die, though not the only unbreakable die in the
 
 Its full source entry is [Loser's Die](../dice/losers-die.md).
 
+## Black Six
+
+Black Six is a named dirty high-output fate die with a bad reputation in the rig scene.
+
+It can create short aggressive payout opportunities, but it leaves a loud field trace and raises attention risk.
+
+Its full source entry is [Black Six](../dice/black-six.md).
+
 ## Fate Constant
 
 The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.
