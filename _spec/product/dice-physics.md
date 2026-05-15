@@ -48,6 +48,12 @@ Lower mass usually creates weaker raw field generation.
 
 Inertia describes how strongly the die resists changes to its rotation and field state.
 
+Inertia is a separate die property from mass.
+
+It may correlate with mass, but it is not the same property.
+
+Implementation may author inertia directly or derive it from material-family behavior.
+
 High inertia makes a die steadier under pressure.
 
 High inertia also makes the die slower to brake, correct, or retune in response to target-machine behavior.

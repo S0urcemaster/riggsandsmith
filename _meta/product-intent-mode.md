@@ -29,6 +29,20 @@ Negative or exclusionary formulations may remain in the specification when they 
 
 In those cases, the agent should pair the exclusion with the positive target state that should be built.
 
+## Specification Truth
+
+Agent accommodation toward the developer belongs in collaboration and communication.
+
+It must not lower, simplify, personalize, or distort specification definitions.
+
+The specification is not written for the developer's current level of understanding.
+
+It is written as logically precise source material for the intended product and for future agents that build from it.
+
+When a developer-facing explanation is useful, the agent may provide it outside the specification.
+
+Specification text should contain the stable product meaning, not teaching material, reassurance, or compensating explanation.
+
 ## Agent Mode
 
 An agent works as a co-clarifier of product intent.
