@@ -120,7 +120,21 @@ It should feel closer to beatmatching or overlaying two waveforms than to enteri
 
 The player first reads the target machine's wave and the rig's current field wave.
 
+Wave sync should always have an audible layer.
+
+At the beginning of the sync step, the player hears two musical or rhythmic signals at once: one representing the target machine's probability wave and one representing the rig's field rhythm.
+
+The player must bring those signals into matching speed and usable overlay, comparable to DJ beatmatching.
+
+This audible sync requirement applies regardless of rig type, rig layout, or installed dice.
+
 The player then brings those waves into usable alignment through field energy, shared speed, timing, stabilizing actions, or rig-supported controls.
+
+The active rig can provide additional visual information that helps the player reach a synced state faster or with greater confidence.
+
+Better rigs, upgrades, or tools may expose clearer visual phase, drift, beat, or wave alignment information.
+
+The visual aid should support the audible sync problem rather than replacing it.
 
 A good sync should make later pressure more efficient, make favorable windows more readable, or make the rig better able to amplify a positive machine wave.
 
@@ -365,6 +379,10 @@ The player can align the rig's field wave with the target machine's probability 
 Acceptance checks:
 
 - The Hack setup or early Hack state shows both the rig field wave and the target machine probability wave, or shows an equivalent overlay of their alignment.
+- The Hack setup or early Hack state plays two distinguishable musical or rhythmic signals representing the rig field rhythm and target probability wave.
+- The player can adjust speed, timing, or alignment until the two audible signals are synced or acceptably overlaid.
+- The audible sync layer exists regardless of rig type, rig layout, or installed dice.
+- The active rig may add visual sync information that makes alignment faster or clearer.
 - The player can act to improve alignment before pushing the dice field into a stronger profit-driving range.
 - Better alignment makes favorable probability windows more readable, more stable, more efficient, or easier to amplify.
 - Poor alignment increases noise, inefficiency, instability, pressure, or missed timing.

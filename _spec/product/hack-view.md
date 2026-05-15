@@ -139,6 +139,16 @@ The player should be able to see the target machine's probability wave and the r
 
 The intended feeling is similar to matching two waveforms before increasing pressure.
 
+This sync should also be audible.
+
+At the beginning of the sync step, the player hears two musical or rhythmic signals at once: one for the target machine's probability wave and one for the rig's field rhythm.
+
+The player must bring those signals into matching speed and usable overlay, comparable to DJ beatmatching.
+
+This audible sync layer is always present regardless of rig type, rig layout, or installed dice.
+
+The active rig supplies additional visual information that can help the player reach sync faster or with more confidence.
+
 Once the rig is acceptably synced to the machine, the player can drive the dice field toward a more profitable range through field energy and available rig actions.
 
 Perfect sync should not be mandatory for every hack attempt, but better sync should make the run more controllable or profitable.
@@ -252,6 +262,12 @@ The player can improve the operating alignment between the target machine probab
 Acceptance checks:
 
 - The target machine wave and rig field wave, or an equivalent alignment display, are visible during the opening or early Hack state.
+- Two distinguishable musical or rhythmic signals are audible during the opening or early Hack state.
+- One audible signal represents the target machine probability wave.
+- One audible signal represents the rig field rhythm.
+- The player can adjust speed, timing, or alignment until the two audible signals are synced or acceptably overlaid.
+- The audible sync layer exists regardless of rig type, rig layout, or installed dice.
+- The active rig provides additional visual sync information that can help the player reach sync faster or with more confidence.
 - The player can take an action or adjust controls to improve their sync relationship.
 - Improved sync makes favorable timing windows more readable, more stable, more efficient, or easier to exploit.
 - Poor sync makes the operation noisier, less efficient, more unstable, or harder to time.
