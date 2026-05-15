@@ -53,6 +53,12 @@ The persistence boundary between global resources and live operational pressure 
 
 Catch count, Catch triggers, run ending, and first-slice scoring are defined in [Catch and Run End](./state/catch-and-run-end.md).
 
+Home as the central preparation view is defined in [Home](./home.md).
+
+Target selection is defined in [Target Selection](./target-selection.md).
+
+Shopping is defined in [Shopping App](./shopping-app.md).
+
 ## Dice Rule
 
 Dice must not be only passive stat bonuses.
@@ -138,78 +144,6 @@ Acceptance checks:
 - At least one simple target machine remains viable for Loser's Die.
 - Successful fallback runs produce modest earnings.
 - Fallback runs preserve recovery without matching the earning potential or strategic depth of stronger builds.
-
-## Home Definition
-
-It is the central operating interface of the game.
-
-Home also carries thematic location meaning, but in the first product definition its binding function is the operating interface where the next hack is prepared.
-
-Home is the product view most closely associated with John Riggs as the ordinary working programmer.
-
-Its visual expression may include clutter, pressure, and improvised technical density, but it should still feel comparatively adapted to normal life.
-
-Home should therefore read as controlled, habitual, and lived-in even when it is chaotic.
-
-Inside Home, the computer is the dominant visible element.
-
-Within Home, the player uses a small set of computer apps as the main operating tools for the next decision.
-
-These apps should include at minimum:
-
-- the Rigging App
-- the Targeting App
-- the Shopping App
-
-The first slice presents Home through the operating presence of the room, with the computer and rig area carrying most of the visible interaction weight.
-
-A large navigable apartment is excluded from the required first-slice scope because it would add spatial exploration without proving the core Home-to-Hack systems loop.
-
-## Target Selection Definition
-
-For the first product slice, target selection should be represented primarily as a list of individual slot machines with different difficulty levels.
-
-The casino around them may exist as framing fiction or decorative presentation, but the actionable target in the first slice is the machine, not the full venue.
-
-From the Targeting App in Home, the player selects which machine the next hack will target.
-
-That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
-
-Target selection should account for casino heat.
-
-Some lucrative casinos or machines should have a casino-heat tolerance threshold.
-
-When the player's casino heat exceeds that threshold, those targets should become unavailable or unsafe enough that they are excluded from normal selection.
-
-At higher casino heat, available work should shift toward casinos, machines, or conditions with greater operational risk.
-
-The first target set should include a simple low-yield slot machine that can be attacked with Loser's Rig and Loser's Die.
-
-This simple target should provide a reliable recovery path with limited profit and limited strategic depth.
-
-## Shopping App Definition
-
-The Shopping App is part of the Home decision layer.
-
-It represents darknet acquisition.
-
-It is the place where the player can spend money to acquire or improve illegal operational tools before the next hack.
-
-The first slice Shopping App should support at minimum:
-
-- buying dice
-- buying upgrades
-- buying die modifications
-
-The Shopping App should therefore express progression through equipment access rather than through abstract unlock language alone.
-
-Shopping entries should distinguish known-risk items from unknown-risk items.
-
-Known-risk items make their police heat consequence readable before purchase.
-
-Unknown-risk items show that risk exists, but the exact police heat consequence is revealed later at the next Home entry after the following Hack resolves.
-
-Additional rig models may be introduced later, but the first slice does not require rig shopping.
 
 ## Hack Definition
 
