@@ -38,8 +38,8 @@ Examples:
 
 - `_builds/terminal-sim/` defines the terminal simulation build path.
 - `terminal-sim/` may contain the concrete terminal simulation implementation.
-- `_builds/web-react/` defines the web React build path.
-- `web-react/` may contain the concrete web React implementation.
+- `_builds/dev-build/` defines the development build path.
+- `dev-build/` contains the concrete development build implementation.
 
 Parallel build directories may duplicate small amounts of setup when that keeps each build path easier to run, inspect, and compare.
 
@@ -62,14 +62,14 @@ This means `_builds` should carry the implementation path itself, not only the s
 
 When implementation work should follow a specific variant, the instruction should explicitly name the file, for example:
 
-- use `_builds/web-react/index.md`
+- use `_builds/dev-build/index.md`
 - use `_builds/terminal-sim/index.md`
 - use `_builds/godot/index.md`
 - use `_builds/terminal-prototype/index.md`
 
 When stepwise execution is desired, the instruction should name both the build path and the step, for example:
 
-- use `_builds/web-react/index.md` and execute `_builds/web-react/steps/002-core-state.md`
+- use `_builds/dev-build/index.md` and execute `_builds/dev-build/steps/003-hack-machine-play-probe.md`
 - use `_builds/terminal-sim/index.md` and execute `_builds/terminal-sim/steps/003-autoruns.md`
 - use `_builds/godot/index.md` and execute `_builds/godot/steps/001-foundation.md`
 
@@ -77,7 +77,7 @@ When stepwise execution is desired, the instruction should name both the build p
 
 The currently defined build paths are:
 
-- [Web React Build](./web-react/index.md)
+- [Development Build](./dev-build/index.md)
 - [Terminal Simulation Build](./terminal-sim/index.md)
 
 ## Expected Content of a Build File

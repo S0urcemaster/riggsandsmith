@@ -1,27 +1,33 @@
-# Web React Build
+# Development Build
 
 ## Definition
 
-This build path defines a web-based implementation of the product using React.
+This build path defines the local development client used to probe and refine the product specification.
 
-It is intended for a playable vertical slice that prioritizes rapid iteration, readable state flow, and a strong interface-centered presentation.
+It is currently a web-based implementation using React, TypeScript, and Vite.
+
+Its primary purpose is specification discovery through playable, inspectable prototypes.
+
+It should help reveal missing rules, ambiguous interactions, weak balance assumptions, and unclear build requirements before a later final implementation run.
 
 ## Status
 
-This build path is available for selection.
+This build path is active as the current concrete development build.
 
-It is an early implementation path for product validation, not yet a final production commitment.
+The concrete implementation directory is `dev-build`.
+
+This is not a final production commitment.
 
 ## Intended Use
 
-Use this build path when the goal is to build and test the product as an interface-driven systems game in the browser.
+Use this build path when the goal is to build and test product behavior in the browser in order to improve `_spec`.
 
 This path is especially suitable for:
 
-- validating the core game loop quickly
-- iterating on rig configuration and run resolution
+- validating individual product mechanics quickly
+- iterating on rig configuration, target behavior, and run resolution
 - making systemic relationships visible in a readable UI
-- testing the vertical slice without requiring a game engine
+- testing unclear specification areas without requiring a game engine
 
 ## Technology Stack
 
@@ -52,7 +58,19 @@ The preferred direction is:
 
 ## Build Scope
 
-The first meaningful scope for this build path is a playable vertical slice with:
+The current implemented scope is a specification probe for the post-sync Hack machine play phase.
+
+It includes:
+
+- one live Hack test page
+- a sine-wave target machine probability oscillator
+- neutral line and favorable-zone display
+- bank bias, rig bias, field energy, tier fit, noise, and decision latency controls
+- a lever action that resolves after target decision latency
+- a result log with press time, resolve time, effective wave value, and money result
+- visible debug state for correction demand and favorable-window estimate
+
+The next broader scope for this build path is a playable vertical slice with:
 
 - one home/prep flow
 - one rig configuration surface
@@ -74,9 +92,11 @@ When this build path is active, the agent should:
 
 - read `_spec` first and treat it as the product truth
 - use this file to choose implementation technology and build direction
+- preserve `dev-build` as the concrete implementation directory unless explicitly redirected
 - prefer bounded build steps over one large undivided implementation pass
 - keep product logic readable and testable
 - make spec tension explicit if the selected technology path pushes against product meaning
+- record discovered specification gaps in `_spec` or in the active build step when they are not yet product-stable
 
 ## Open Decisions
 
@@ -86,3 +106,4 @@ The following implementation choices remain open inside this build path:
 - test strategy for domain logic and UI behavior
 - precise persistence shape for local save data
 - whether the run phase should be represented on one screen or as multiple staged views
+- which probe observations should become stable product rules before the vertical slice expands

@@ -6,14 +6,14 @@ Define and implement the minimal game state needed to support the vertical slice
 
 ## Depends On
 
-- `_builds/web-react/index.md`
-- `_builds/web-react/steps/001-foundation.md`
+- `_builds/dev-build/index.md`
+- `_builds/dev-build/steps/001-foundation.md`
 - `_spec/product/index.md`
 - `_spec/product/game-loop.md`
 
 ## Inputs
 
-- the active web React build definition
+- the active development build definition
 - the foundation scaffold
 - the current product definitions for state and loop
 

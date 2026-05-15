@@ -2,16 +2,16 @@
 
 ## Purpose
 
-Establish the technical foundation for the web React build path so later product work can proceed with low friction.
+Establish the technical foundation for the development build path so later product work can proceed with low friction.
 
 ## Depends On
 
 - `_spec/index.md`
-- `_builds/web-react/index.md`
+- `_builds/dev-build/index.md`
 
 ## Inputs
 
-- the active web React build definition
+- the active development build definition
 - the current product specification
 
 ## Task

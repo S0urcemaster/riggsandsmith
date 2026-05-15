@@ -8,7 +8,7 @@ This step is meant to expose product ambiguities around timing, tier fit, bank a
 
 ## Depends On
 
-- `_builds/web-react/index.md`
+- `_builds/dev-build/index.md`
 - `_spec/product/hack-view.md`
 - `_spec/product/rig-operation.md`
 - `_spec/product/target-selection.md`
@@ -16,7 +16,7 @@ This step is meant to expose product ambiguities around timing, tier fit, bank a
 
 ## Output
 
-The initial implementation lives in `frontend`.
+The initial implementation lives in `dev-build`.
 
 It provides:
 
@@ -39,7 +39,7 @@ Observed issues should be fed back into `_spec` before the probe is broadened in
 
 ## Run
 
-From `frontend`:
+From `dev-build`:
 
 ```sh
 npm install

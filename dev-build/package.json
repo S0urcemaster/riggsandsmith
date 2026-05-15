@@ -1,9 +1,9 @@
 {
-  "name": "riggsandsmith-spec-probe",
+  "name": "riggsandsmith-dev-build",
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "Browser-based specification probe for the Riggs & Smith hack machine play phase.",
+  "description": "Local development build for Riggs & Smith specification probes.",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
     "build": "tsc -b && vite build",
