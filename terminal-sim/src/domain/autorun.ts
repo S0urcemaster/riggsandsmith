@@ -1,12 +1,17 @@
 import { applyHackAction, carryResultToNextHome, resolveHack } from "./hack.ts";
 import { createRng } from "./rng.ts";
-import { createHackState, createInitialGameState } from "./state.ts";
+import { buyShopItem, createHackState, createInitialGameState } from "./state.ts";
 import type { GameState, HackAction, HackState, RunMetrics, StrategyName } from "./types.ts";
 
-export function chooseAction(strategy: StrategyName, hack: HackState): HackAction {
+export function chooseAction(strategy: StrategyName, hack: HackState, game?: GameState): HackAction {
+  const canBrake = game?.rig.manipulators.includes("brake") ?? false;
+  const canCool = game?.rig.manipulators.includes("cool") ?? false;
+
   if (strategy === "cautious") {
     if (hack.profit >= 35 || hack.redZone > 45 || hack.bodyPressure > 55) return "cashOut";
     if (hack.bodyPressure > 35) return "regulateBody";
+    if (canCool && hack.heat > 28) return "coolSlot1";
+    if (canBrake && hack.instability > 24) return "brakeSlot1";
     if (hack.instability > 30 || hack.heat > 35) return "stabilizeChannel";
     return "pushYield";
   }
@@ -14,6 +19,8 @@ export function chooseAction(strategy: StrategyName, hack: HackState): HackActio
   if (strategy === "balanced") {
     if (hack.profit >= 85 || hack.redZone > 68 || hack.heat > 72 || hack.bodyPressure > 72) return "cashOut";
     if (hack.bodyPressure > 58) return "regulateBody";
+    if (canCool && hack.heat > 48) return "coolSlot1";
+    if (canBrake && hack.instability > 44) return "brakeSlot1";
     if (hack.instability > 50 || hack.heat > 55) return "stabilizeChannel";
     return hack.tick % 4 === 2 ? "accelerateSlot1" : "pushYield";
   }
@@ -21,11 +28,15 @@ export function chooseAction(strategy: StrategyName, hack: HackState): HackActio
   if (strategy === "stabilizer") {
     if (hack.profit >= 65 && hack.redZone > 52) return "cashOut";
     if (hack.bodyPressure > 45) return "regulateBody";
+    if (canCool && hack.heat > 24) return "coolSlot1";
+    if (canBrake && hack.instability > 20) return "brakeSlot1";
     if (hack.tick % 2 === 1 || hack.instability > 24 || hack.heat > 30) return "stabilizeChannel";
     return "pushYield";
   }
 
   if (hack.profit >= 160 || hack.redZone > 88 || hack.heat > 90 || hack.bodyPressure > 88) return "cashOut";
+  if (canCool && hack.heat > 82) return "coolSlot1";
+  if (canBrake && hack.instability > 76) return "brakeSlot1";
   if (hack.tick % 5 === 1) return "accelerateSlot2";
   return "pushYield";
 }
@@ -42,7 +53,7 @@ export function simulateOneHack(options: {
   const maxTicks = options.maxTicks ?? 18;
 
   while (hack.status === "running" && hack.tick < maxTicks) {
-    hack = applyHackAction(game, hack, chooseAction(options.strategy, hack), rng);
+    hack = applyHackAction(game, hack, chooseAction(options.strategy, hack, game), rng);
   }
 
   if (hack.status === "running") {
@@ -59,6 +70,7 @@ export function simulateMany(options: {
   strategy: StrategyName;
   diceIds?: string[];
   targetId?: string;
+  openingItemId?: string;
 }): RunMetrics {
   const profits: number[] = [];
   let collapses = 0;
@@ -68,7 +80,18 @@ export function simulateMany(options: {
   let rigDamage = 0;
 
   for (let index = 0; index < options.runs; index += 1) {
-    const game = createInitialGameState({ diceIds: options.diceIds, targetId: options.targetId });
+    let game = createInitialGameState({ diceIds: options.diceIds, targetId: options.targetId });
+    if (options.openingItemId) {
+      game = {
+        ...game,
+        player: {
+          ...game.player,
+          onboardingComplete: true,
+          money: 300
+        }
+      };
+      game = buyShopItem(game, options.openingItemId).game;
+    }
     const resolved = simulateOneHack({
       game,
       strategy: options.strategy,

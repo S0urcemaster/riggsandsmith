@@ -7,7 +7,8 @@
   "scripts": {
     "play": "node src/cli.ts play",
     "autorun": "node src/cli.ts autorun",
-    "compare": "node src/cli.ts compare"
+    "compare": "node src/cli.ts compare",
+    "firstfork": "node src/cli.ts firstfork"
   },
   "engines": {
     "node": ">=24"

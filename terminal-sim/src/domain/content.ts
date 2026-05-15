@@ -1,4 +1,6 @@
-import type { DieDefinition, RigDefinition, TargetDefinition } from "./types.ts";
+import type { DieDefinition, RigDefinition, ShopItem, TargetDefinition } from "./types.ts";
+
+export const BASE_SHOP_PRICE = 100;
 
 export const LOSERS_RIG: RigDefinition = {
   id: "losers-rig",
@@ -22,25 +24,25 @@ export const DICE: Record<string, DieDefinition> = {
     mass: 3,
     inertia: 4,
     maxSpeed: 6,
-    guidanceDemand: 3,
     fieldGeneration: 3,
     heatBuildup: 2,
     damageTolerance: 7,
     responseSpeed: 4,
+    quality: 5,
     signature: 2
   },
   "needle-glass": {
     id: "needle-glass",
-    name: "Needle Glass Die",
+    name: "Needle Glass",
     materialFamily: "light-fast",
     mass: 1,
     inertia: 2,
     maxSpeed: 9,
-    guidanceDemand: 6,
     fieldGeneration: 3,
     heatBuildup: 3,
     damageTolerance: 4,
     responseSpeed: 8,
+    quality: 3,
     signature: 3
   },
   "lead-heart": {
@@ -50,26 +52,74 @@ export const DICE: Record<string, DieDefinition> = {
     mass: 7,
     inertia: 7,
     maxSpeed: 5,
-    guidanceDemand: 5,
     fieldGeneration: 7,
     heatBuildup: 6,
     damageTolerance: 8,
     responseSpeed: 2,
+    quality: 6,
     signature: 5
   },
-  "black-market-six": {
-    id: "black-market-six",
-    name: "Black-Market Six",
+  "black-six": {
+    id: "black-six",
+    name: "Black Six",
     materialFamily: "dirty-high-output",
     mass: 4,
     inertia: 3,
     maxSpeed: 7,
-    guidanceDemand: 5,
     fieldGeneration: 8,
     heatBuildup: 7,
     damageTolerance: 4,
     responseSpeed: 5,
+    quality: 3,
     signature: 8
+  }
+};
+
+export const SHOP_ITEMS: Record<string, ShopItem> = {
+  "needle-glass": {
+    id: "needle-glass",
+    name: "Needle Glass",
+    type: "die",
+    dieId: "needle-glass",
+    priceFactor: 1,
+    knownPoliceRisk: 1,
+    description: "Fast, cheap, fragile second-slot die. Teaches quality risk."
+  },
+  brake: {
+    id: "brake",
+    name: "Brake Manipulator",
+    type: "dieManipulator",
+    manipulator: "brake",
+    priceFactor: 1,
+    knownPoliceRisk: 1,
+    description: "Slows a selected die to cut heat and instability at output cost."
+  },
+  cool: {
+    id: "cool",
+    name: "Cool Manipulator",
+    type: "dieManipulator",
+    manipulator: "cool",
+    priceFactor: 1.5,
+    knownPoliceRisk: 2,
+    description: "Direct slot cooling with a higher opening price."
+  },
+  "guidance-kit": {
+    id: "guidance-kit",
+    name: "Loser's Rig Guidance Kit",
+    type: "rigUpgrade",
+    priceFactor: 1,
+    knownPoliceRisk: 1,
+    rigUpgrade: { guidanceStrength: 1, stabilityControl: 1 },
+    description: "Makes the starting rig hold rough dice more reliably."
+  },
+  "black-six": {
+    id: "black-six",
+    name: "Black Six",
+    type: "die",
+    dieId: "black-six",
+    priceFactor: 2.5,
+    knownPoliceRisk: 4,
+    description: "Dirty high-output die. Strong, loud, and expensive early."
   }
 };
 

@@ -1,5 +1,5 @@
 import { CASINO_HEAT_MAX, POLICE_HEAT_MAX } from "../domain/content.ts";
-import { buildWarnings, calculateSharedSpeed } from "../domain/state.ts";
+import { availableShopItems, buildWarnings, calculateSharedSpeed, derivedGuidanceDemand, shopPrice } from "../domain/state.ts";
 import type { GameState, HackResult, HackState, RunMetrics } from "../domain/types.ts";
 
 const bar = (value: number, max = 100, width = 18) => {
@@ -15,14 +15,18 @@ export function renderHome(game: GameState): string {
   const diceLines = game.dice
     .map((die, index) => {
       const damage = game.player.dieDamage[die.id] ?? 0;
-      return `  Slot ${index + 1}: ${die.name} (${die.materialFamily}, max speed ${die.maxSpeed}, field ${die.fieldGeneration}, heat ${die.heatBuildup}, damage ${damage})`;
+      const guidance = derivedGuidanceDemand(die, calculateSharedSpeed(game), damage);
+      return `  Slot ${index + 1}: ${die.name} (${die.materialFamily}, max ${die.maxSpeed}, field ${die.fieldGeneration}, quality ${die.quality}, derived guidance ${guidance}, damage ${damage})`;
     })
     .join("\n");
+  const shopLines = game.player.onboardingComplete
+    ? availableShopItems(game).map((item) => `  ${item.id}: $${shopPrice(item)} | ${item.name} | ${item.description}`)
+    : ["  Shop locked until first successful payout."];
 
   return [
     "HOME / Rig Bench",
     "================",
-    `Day ${game.player.day} | Money $${game.player.money} | Extracted $${game.player.totalExtracted} | Catches ${game.player.catchCount}/3`,
+    `Day ${game.player.day} | Money $${game.player.money} | Extracted $${game.player.totalExtracted} | Catches ${game.player.catchCount}/3 | ${game.player.onboardingComplete ? "Full control" : "Protected first target"}`,
     `Casino heat ${bar(game.player.casinoHeat, CASINO_HEAT_MAX)} | Police heat ${bar(game.player.policeHeat, POLICE_HEAT_MAX)}`,
     "",
     `${game.rig.name}: slots ${game.rig.activeSlots}, top speed ${game.rig.topSpeed}, shared speed limit ${calculateSharedSpeed(game)}`,
@@ -34,7 +38,10 @@ export function renderHome(game: GameState): string {
     `Target: ${game.target.name} | payout ${game.target.payoutScale} | volatility ${game.target.volatility} | tolerance ${game.target.tolerance}`,
     "",
     "Build read:",
-    ...buildWarnings(game).map((warning) => `  - ${warning}`)
+    ...buildWarnings(game).map((warning) => `  - ${warning}`),
+    "",
+    "Shop:",
+    ...shopLines
   ].join("\n");
 }
 
@@ -53,14 +60,14 @@ export function renderHack(game: GameState, hack: HackState): string {
     `Suspicion    ${bar(hack.suspicion)}`,
     "",
     "Rig dice:",
-    ...game.dice.map((die, index) => `  ${index + 1}. ${die.name} | speed ${hack.dieSpeeds[index].toFixed(1)}/${Math.min(game.rig.topSpeed, die.maxSpeed)} | field ${die.fieldGeneration}`),
+    ...game.dice.map((die, index) => `  ${index + 1}. ${die.name} | speed ${hack.dieSpeeds[index].toFixed(1)}/${Math.min(game.rig.topSpeed, die.maxSpeed)} | field ${die.fieldGeneration} | quality ${die.quality}`),
     "",
     `Last deltas: ${hack.lastDeltas.length > 0 ? hack.lastDeltas.join(" | ") : "none yet"}`,
     "",
     "Recent events:",
     ...hack.eventLog.map((event) => `  - ${event}`),
     "",
-    "Actions: [p]ush yield, [s]tabilize, [b]reathe, [a1] accelerate slot 1, [a2] accelerate slot 2, [c]ash out"
+    `Actions: [p]ush yield, [s]tabilize, [b]reathe, [a1]/[a2] accelerate${game.rig.manipulators.includes("brake") ? ", [br1]/[br2] brake" : ""}${game.rig.manipulators.includes("cool") ? ", [co1]/[co2] cool" : ""}, [c]ash out`
   ].join("\n");
 }
 

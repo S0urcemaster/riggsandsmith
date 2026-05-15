@@ -14,6 +14,7 @@ import type {
   HackState,
   ResolvedDay
 } from "./types.ts";
+import { derivedGuidanceDemand } from "./state.ts";
 
 const clamp = (value: number, min = 0, max = 100) => Math.max(min, Math.min(max, value));
 const round = (value: number) => Math.round(value * 10) / 10;
@@ -63,15 +64,41 @@ export function applyHackAction(game: GameState, hack: HackState, action: HackAc
   if (action === "accelerateSlot1" || action === "accelerateSlot2") {
     const slot = action === "accelerateSlot1" ? 0 : 1;
     const die = game.dice[slot];
-    if (die) {
-      next.dieSpeeds[slot] = clamp(next.dieSpeeds[slot] + 1.5, 1, Math.min(game.rig.topSpeed, die.maxSpeed));
+    if (die && game.rig.manipulators.includes("accelerate")) {
+      const overdrive = die.quality <= 3 ? 0.4 : 0;
+      next.dieSpeeds[slot] = clamp(next.dieSpeeds[slot] + 1.5, 1, Math.min(game.rig.topSpeed, die.maxSpeed + overdrive));
       next.profit += die.fieldGeneration * game.target.payoutScale * 1.2;
       next.heat += die.heatBuildup * 1.2;
-      next.instability += Math.max(1, die.guidanceDemand - game.rig.guidanceStrength * 0.55);
+      next.instability += Math.max(1, derivedGuidanceDemand(die, next.dieSpeeds[slot], game.player.dieDamage[die.id] ?? 0) - game.rig.guidanceStrength * 0.55);
       next.redZone += 5;
       next.signature += die.signature * 0.8;
       next.bodyPressure += 2;
       next.eventLog.push(`${die.name} accelerated in slot ${slot + 1}.`);
+    }
+  }
+
+  if (action === "brakeSlot1" || action === "brakeSlot2") {
+    const slot = action === "brakeSlot1" ? 0 : 1;
+    const die = game.dice[slot];
+    if (die && game.rig.manipulators.includes("brake")) {
+      next.dieSpeeds[slot] = clamp(next.dieSpeeds[slot] - 1.3, 1, Math.min(game.rig.topSpeed, die.maxSpeed));
+      next.heat -= 3 + die.heatBuildup * 0.4;
+      next.instability -= 4 + game.rig.stabilityControl * 0.4;
+      next.redZone -= 2;
+      next.profit += game.target.minimumYield * 0.1;
+      next.eventLog.push(`${die.name} braked in slot ${slot + 1}.`);
+    }
+  }
+
+  if (action === "coolSlot1" || action === "coolSlot2") {
+    const slot = action === "coolSlot1" ? 0 : 1;
+    const die = game.dice[slot];
+    if (die && game.rig.manipulators.includes("cool")) {
+      next.heat -= 7 + game.rig.coolingCapacity * 0.6;
+      next.signature += 1.5;
+      next.bodyPressure += 1;
+      next.profit += game.target.minimumYield * 0.05;
+      next.eventLog.push(`${die.name} cooled in slot ${slot + 1}; the cooling pulse leaves a trace.`);
     }
   }
 
@@ -159,7 +186,10 @@ export function carryResultToNextHome(game: GameState, result: HackResult): Reso
 }
 
 function applyPassivePressure(game: GameState, hack: HackState, rng: Rng): void {
-  const totalGuidanceDemand = game.dice.reduce((sum, die) => sum + die.guidanceDemand, 0);
+  const totalGuidanceDemand = game.dice.reduce(
+    (sum, die, index) => sum + derivedGuidanceDemand(die, hack.dieSpeeds[index], game.player.dieDamage[die.id] ?? 0),
+    0
+  );
   const totalHeat = game.dice.reduce((sum, die, index) => sum + die.heatBuildup * (hack.dieSpeeds[index] / die.maxSpeed), 0);
   const totalSignature = game.dice.reduce((sum, die, index) => sum + die.signature * (hack.dieSpeeds[index] / die.maxSpeed), 0);
   const guidanceGap = Math.max(0, totalGuidanceDemand - game.rig.guidanceStrength * game.rig.activeSlots);
@@ -169,10 +199,25 @@ function applyPassivePressure(game: GameState, hack: HackState, rng: Rng): void 
   hack.profit += Math.max(game.target.minimumYield * 0.15, buildOutput(game, hack) * 0.45);
   hack.heat += Math.max(0.6, totalHeat - coolingRelief) + jitter * 0.2;
   hack.instability += Math.max(0.4, guidanceGap * 0.5 + game.target.volatility * 0.35 - game.rig.stabilityControl * 0.18);
+  hack.instability += lowQualityRattle(game, hack, rng);
   hack.redZone += (hack.profit / 140) * game.target.redZoneTightness + game.target.volatility * 0.2;
   hack.signature += Math.max(0.2, totalSignature - game.rig.signatureMasking) * 0.4;
   hack.suspicion += (hack.signature * game.target.suspicionSensitivity) / 20 + hack.redZone / 90;
   hack.bodyPressure += 1.4 + game.target.volatility * 0.25 + hack.redZone / 130;
+}
+
+function lowQualityRattle(game: GameState, hack: HackState, rng: Rng): number {
+  return game.dice.reduce((sum, die, index) => {
+    if (die.quality > 3) return sum;
+    const speedRatio = hack.dieSpeeds[index] / die.maxSpeed;
+    if (speedRatio < 0.72) return sum;
+    if (rng.chance((0.08 + speedRatio * 0.1) * ((4 - die.quality) / 2))) {
+      hack.heat += 1.5;
+      hack.eventLog.push(`${die.name} rattles under speed.`);
+      return sum + 2.5;
+    }
+    return sum;
+  }, 0);
 }
 
 function buildOutput(game: GameState, hack: HackState): number {

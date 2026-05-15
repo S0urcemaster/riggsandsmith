@@ -3,7 +3,7 @@ import { stdin as input, stdout as output } from "node:process";
 import { simulateMany } from "./domain/autorun.ts";
 import { applyHackAction, carryResultToNextHome, resolveHack } from "./domain/hack.ts";
 import { createRng, randomSeed } from "./domain/rng.ts";
-import { createHackState, createInitialGameState } from "./domain/state.ts";
+import { buyShopItem, createHackState, createInitialGameState } from "./domain/state.ts";
 import type { HackAction, StrategyName } from "./domain/types.ts";
 import { clearScreen, renderHack, renderHome, renderMetrics, renderResult } from "./terminal/render.ts";
 
@@ -24,8 +24,15 @@ async function play(): Promise<void> {
   while (true) {
     clearScreen();
     console.log(renderHome(game));
-    const start = (await lines.question("\nPress enter to start Hack, or q to quit: ")).trim().toLowerCase();
+    const start = (await lines.question("\nPress enter to start Hack, buy <item>, or q to quit: ")).trim().toLowerCase();
     if (start === "q") break;
+    if (start.startsWith("buy ")) {
+      const purchase = buyShopItem(game, start.slice(4).trim());
+      game = purchase.game;
+      console.log(`\n${purchase.message}`);
+      await lines.question("\nPress enter to continue.");
+      continue;
+    }
 
     let hack = createHackState(game);
     while (hack.status === "running") {
@@ -42,8 +49,26 @@ async function play(): Promise<void> {
     }
 
     const result = resolveHack(game, hack);
+    if (!game.player.onboardingComplete && (result.status !== "cashedOut" || result.profit <= 0)) {
+      clearScreen();
+      console.log(renderResult(result));
+      console.log("\nProtected first steps: no lasting consequences. Repeat the first target until the first payout lands.");
+      await lines.question("\nPress enter to retry.");
+      continue;
+    }
+
     const resolved = carryResultToNextHome(game, result);
     game = resolved.game;
+    if (!game.player.onboardingComplete) {
+      game = {
+        ...game,
+        player: {
+          ...game.player,
+          onboardingComplete: true,
+          money: Math.max(game.player.money, 100)
+        }
+      };
+    }
 
     clearScreen();
     console.log(renderResult(result));
@@ -93,12 +118,30 @@ function compare(): void {
   console.log("Current read: greed raises average profit only when collapse and heat variance remain survivable.");
 }
 
+function firstFork(): void {
+  const runs = readNumber("runs", 200);
+  const seed = readNumber("seed", 42);
+  const strategy = readStrategy();
+  const openings = ["guidance-kit", "needle-glass", "brake", "cool", "black-six"];
+
+  console.log(`First-fork comparison over ${runs} runs per opening (${strategy}, seed ${seed}).\n`);
+  for (const opening of openings) {
+    console.log(`Opening: ${opening}`);
+    console.log(renderMetrics(simulateMany({ runs, seed, strategy, openingItemId: opening })));
+    console.log("");
+  }
+}
+
 function mapAction(value: string): HackAction | undefined {
   if (value === "p" || value === "push") return "pushYield";
   if (value === "s" || value === "stabilize") return "stabilizeChannel";
   if (value === "b" || value === "breath" || value === "breathe") return "regulateBody";
   if (value === "a1") return "accelerateSlot1";
   if (value === "a2") return "accelerateSlot2";
+  if (value === "br1") return "brakeSlot1";
+  if (value === "br2") return "brakeSlot2";
+  if (value === "co1") return "coolSlot1";
+  if (value === "co2") return "coolSlot2";
   if (value === "c" || value === "cash") return "cashOut";
   return undefined;
 }
@@ -184,7 +227,9 @@ if (command === "play") {
   autorun();
 } else if (command === "compare") {
   compare();
+} else if (command === "firstfork") {
+  firstFork();
 } else {
-  console.log("Usage: npm run play | npm run autorun -- --runs 100 --strategy balanced --seed 42 | npm run compare");
+  console.log("Usage: npm run play | npm run autorun -- --runs 100 --strategy balanced --seed 42 | npm run compare | npm run firstfork");
   process.exitCode = 1;
 }

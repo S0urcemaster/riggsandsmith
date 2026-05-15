@@ -4,6 +4,10 @@ export type HackAction =
   | "regulateBody"
   | "accelerateSlot1"
   | "accelerateSlot2"
+  | "brakeSlot1"
+  | "brakeSlot2"
+  | "coolSlot1"
+  | "coolSlot2"
   | "cashOut";
 
 export type HackStatus = "running" | "cashedOut" | "collapsed";
@@ -25,11 +29,11 @@ export type DieDefinition = {
   mass: number;
   inertia: number;
   maxSpeed: number;
-  guidanceDemand: number;
   fieldGeneration: number;
   heatBuildup: number;
   damageTolerance: number;
   responseSpeed: number;
+  quality: number;
   signature: number;
 };
 
@@ -67,6 +71,7 @@ export type PlayerState = {
   catchCount: number;
   rigDamage: number;
   dieDamage: Record<string, number>;
+  onboardingComplete: boolean;
 };
 
 export type GameState = {
@@ -74,6 +79,26 @@ export type GameState = {
   rig: RigDefinition;
   dice: DieDefinition[];
   target: TargetDefinition;
+  purchasedItems: string[];
+};
+
+export type ShopItemType = "die" | "dieManipulator" | "rigUpgrade";
+
+export type ShopItem = {
+  id: string;
+  name: string;
+  type: ShopItemType;
+  priceFactor: number;
+  knownPoliceRisk: number;
+  description: string;
+  dieId?: string;
+  manipulator?: Manipulator;
+  rigUpgrade?: Partial<
+    Pick<
+      RigDefinition,
+      "guidanceStrength" | "coolingCapacity" | "energyEfficiency" | "stabilityControl" | "signatureMasking" | "topSpeed"
+    >
+  >;
 };
 
 export type HackState = {
