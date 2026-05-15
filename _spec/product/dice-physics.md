@@ -126,6 +126,8 @@ It should convert some permanent loss risk into disruptive failure, recovery cos
 
 For the first slice, Loser's Die has this property.
 
+Loser's Die is defined in [Loser's Die](../dice/losers-die.md).
+
 When Loser's Die is overloaded, it should jump out of its seating or stable suspension rather than being destroyed.
 
 ## Response Speed

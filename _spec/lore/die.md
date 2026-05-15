@@ -121,30 +121,6 @@ The product may represent named dice as unique components while still allowing o
 
 ### Loser's Die
 
-Loser's Die is the first named fate die tied to John Riggs's rigging life.
+Loser's Die is defined in the [Dice Directory](../dice/losers-die.md).
 
-It is ordinary, low-status, and weak by serious rig-scene standards.
-
-It is the kind of die that remains with someone who has little leverage, little money, and no better access.
-
-Its field character is weak but stubborn.
-
-Under load, Loser's Die tends to produce small recoverable bends rather than dramatic breaks in probability.
-
-It can help a cheap rig pull modest value from simple machines.
-
-Stronger targets call for stronger dice, better rig support, or more demanding field compositions.
-
-In the rig scene, a die like this would be easy to underestimate because it does not promise spectacular runs.
-
-Loser's Die has one rare protective quality: when it is badly overloaded, it does not usually shatter, burn out, or become permanently ruined.
-
-Instead, it jumps out of its seating or is thrown out of stable suspension.
-
-This makes the failure violent and disruptive, but recoverable.
-
-The property is not unique in the world, but it is rare.
-
-Some other dice are also effectively unbreakable in this way, but the trait is especially uncommon among strong or high-output dice.
-
-For Riggs, its importance comes from familiarity, reliability, and the fact that it is still there when better options are gone.
+That entry is the canonical source for its specific lore identity, product identity, properties, and player-facing text.

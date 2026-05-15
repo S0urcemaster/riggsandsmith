@@ -1,27 +1,7 @@
 # Dice Content
 
-This file contains in-game text for dice.
+Concrete individual die text is owned by the [Dice Directory](../dice/index.md).
 
-Dice content includes die names, short descriptions, field behavior text, risk text, modification text, and damage or corruption messages.
+When a die has an entry there, its player-facing text should be maintained in that entry rather than duplicated here.
 
-## Loser's Die Description
-
-Status: placeholder
-
-Use:
-Shown in inventory, rigging, shop comparison, or fallback recovery context.
-
-Context:
-The player inspects Loser's Die.
-
-Text:
-TBD
-
-Intent:
-The player should understand that Loser's Die is weak, familiar, and always available as fallback.
-
-Tone:
-modest, intimate, technical
-
-Variables:
-none
+Loser's Die content is defined in [Loser's Die](../dice/losers-die.md).

@@ -113,6 +113,8 @@ The product should give the player one permanent fallback die.
 
 For the first slice, this fallback die is Loser's Die.
 
+Loser's Die is defined in [Loser's Die](../dice/losers-die.md).
+
 Loser's Die remains in the player's inventory across all outcomes.
 
 The permanence of Loser's Die is a product-level continuity rule.

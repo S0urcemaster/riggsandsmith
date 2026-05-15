@@ -40,6 +40,8 @@ When overloaded, it usually jumps out of its seating instead of being permanentl
 
 This makes it a rare unbreakable die, though not the only unbreakable die in the world.
 
+Its full source entry is [Loser's Die](../dice/losers-die.md).
+
 ## Fate Constant
 
 The fate constant describes the deeper probabilistic order of reality against which a fate die can work slightly while under load.
