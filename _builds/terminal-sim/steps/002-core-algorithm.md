@@ -9,6 +9,7 @@ Implement a first inspectable hack algorithm that expresses the product's risk, 
 - `_builds/terminal-sim/index.md`
 - `_builds/terminal-sim/steps/001-foundation.md`
 - `_spec/product/hack-view.md`
+- `_spec/product/dice-effect-model.md`
 
 ## Inputs
 
@@ -60,6 +61,7 @@ Record any ambiguity around:
 - how quickly pressure should escalate
 - how Loser's Rig's two slots should shape the first algorithm
 - how dice should modify pressure and profit
+- which die property channel caused any observed balance failure
 - how shared speed should affect output and pressure
 - how modest Loser's Die's recovery earnings should be
 - how collapse, damage, suspicion, and catch pressure relate

@@ -2,6 +2,8 @@
 
 This file defines the first product layer for material-driven die behavior.
 
+Algorithm-facing property effects and tuning rules are defined in [Dice Effect Model](./dice-effect-model.md).
+
 The goal is not full physical simulation.
 
 The goal is a small set of physical principles that the player can learn, estimate, and combine.
@@ -31,6 +33,10 @@ The first slice should use these core forces for dice material behavior:
 These forces may be represented numerically, as labeled tiers, or through clear UI language.
 
 They should remain few enough that the player can estimate a build without solving a hidden spreadsheet.
+
+Signature profile is handled as an algorithm-facing operational property in the Dice Effect Model.
+
+It is not one of the first eight core physical forces, but it should be exposed when it materially affects suspicion, casino heat, police heat, or target traceability.
 
 ## Mass
 

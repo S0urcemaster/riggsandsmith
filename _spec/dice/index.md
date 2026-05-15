@@ -29,6 +29,7 @@ This avoids maintaining separate duplicate definitions for the same die in lore 
 - current die property list
 - current material-family list
 - current readable die labels
+- algorithm-facing die effect model
 
 ## Individual Dice
 
@@ -46,9 +47,12 @@ The current product-level die properties are:
 6. heat buildup
 7. damage tolerance
 8. response speed
-9. unbreakable
+9. signature profile
+10. unbreakable
 
 The first eight properties are general physical forces.
+
+`signature profile` is an algorithm-facing operational property that describes how visible, dirty, or traceable a die's field is during Hack.
 
 `unbreakable` is a rare special property rather than a normal material force.
 
@@ -66,6 +70,8 @@ The current material families are:
 
 Material families are defined in [Dice Physics](../product/dice-physics.md).
 
+Algorithm-facing property effects are defined in [Dice Effect Model](../product/dice-effect-model.md).
+
 ## Current Readable Labels
 
 Useful player-facing die labels currently include:
@@ -82,6 +88,8 @@ Useful player-facing die labels currently include:
 - unbreakable
 - resonant
 - dirty
+- quiet
+- loud
 
 ## Entry Shape
 

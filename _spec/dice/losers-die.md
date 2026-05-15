@@ -72,6 +72,7 @@ It preserves recovery without matching the earning potential or strategic depth 
 - heat buildup: low to modest
 - damage tolerance: high through unbreakable failure behavior
 - response speed: modest
+- signature profile: low
 - special property: unbreakable
 
 ## First-Slice Behavior
