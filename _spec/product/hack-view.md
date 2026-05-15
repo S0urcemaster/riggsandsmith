@@ -71,6 +71,9 @@ The first Hack view should keep at minimum these live elements visible:
 - the target machine probability wave or equivalent target-wave state
 - the rig field wave or equivalent rig-wave state
 - the current sync relationship between target wave and rig wave
+- the machine play phase state after sync when the target requires timed play
+- the target machine's neutral line, favorable zone, or equivalent timing threshold
+- the target machine's decision latency or an equivalent prediction aid
 - the deployed rig representation with visible dice slots and module states
 - the current field energy level or throttle state
 - current profit or extractable gain
@@ -155,6 +158,43 @@ Perfect sync should not be mandatory for every hack attempt, but better sync sho
 
 Poor sync should make later pressure noisier, riskier, less efficient, or harder to read.
 
+## Machine Play Phase
+
+After the player reaches acceptable wave sync, the Hack may enter the target machine's play phase.
+
+The machine play phase is where the synced rig is used against the machine's actual decision cycle.
+
+For the simplest slot machine, this phase should show a probability oscillator as a clear sine wave.
+
+The display should include a middle or neutral line.
+
+The machine's bank advantage should pull the effective oscillation below that line, so that the unaided machine is biased against the player.
+
+The player triggers a machine action such as pressing the lever.
+
+Each machine has a decision latency between the player's trigger and the moment that trigger becomes effective inside the machine.
+
+The player must therefore read the oscillator and trigger early enough that, at the effective moment, the probability wave is in the favorable half above the neutral line.
+
+If the effective moment lands in the favorable half, the Hack proceeds to the machine's win decision.
+
+If the effective moment misses the favorable half, the player loses money or receives another negative Hack consequence.
+
+The rig should make this task easier when the build fits the target.
+
+Rig support may raise the effective wave, widen the favorable half, reduce drift or noise, show better prediction, or make the decision latency easier to account for.
+
+A same-tier, fully equipped rig attacking a same-tier machine should need relatively little correction during this phase.
+
+An under-tiered rig, incomplete rig, or mismatched build should demand more correction through tighter timing, less stable waves, noisier displays, shorter favorable windows, or higher pressure growth.
+
+Higher-tier rigs may also manipulate the machine's win decision after the favorable timing condition is reached.
+
+This means the player should be able to read two linked but distinct questions:
+
+1. Did the action land in the favorable wave window.
+2. How strongly can the rig influence the resulting win decision.
+
 ## Field Energy Throttle
 
 The Hack view should expose a control for regulating the active energy level of the rig's dice field.
@@ -176,6 +216,12 @@ The Hack view should operate in short live decision intervals.
 It does not need to be twitch-action, but it should feel time-pressured.
 
 A good first prototype can therefore use repeated short ticks, pulses, or event windows in which state changes and the player must respond.
+
+Machine decision latency should be part of this timing model.
+
+The player should usually act on a near-future predicted wave state rather than only on the current frame of the oscillator.
+
+Decision latency should be readable, learnable, or previewed enough that missed timing feels like a consequence of information, build fit, pressure, or player judgment rather than arbitrary delay.
 
 ## Build Expression Rule
 
@@ -272,6 +318,23 @@ Acceptance checks:
 - Improved sync makes favorable timing windows more readable, more stable, more efficient, or easier to exploit.
 - Poor sync makes the operation noisier, less efficient, more unstable, or harder to time.
 - A stale blueprint can cause the live sync problem to differ from the Home simulation.
+
+### Play Machine Cycle
+
+The player can exploit the target machine's post-sync decision cycle through timed action.
+
+Acceptance checks:
+
+- The Hack exposes a post-sync machine play phase for targets that require timed play.
+- The simplest target machine presents a sine-wave probability oscillator.
+- The oscillator display shows a neutral line and a favorable zone above that line.
+- The target's bank advantage shifts the effective probability behavior below the fair middle without rig help.
+- The player can trigger a machine action such as pressing the lever.
+- The action resolves after the target machine's decision latency.
+- The player can read or learn that latency well enough to predict the effective wave position.
+- Landing above the neutral line at the effective moment proceeds to or improves the machine win decision.
+- Missing the favorable half causes money loss or another visible negative consequence.
+- Rig quality, rig tier fit, equipment, and field energy visibly change timing ease, wave position, wave stability, prediction clarity, or win-decision manipulation.
 
 ### Control Field Energy
 

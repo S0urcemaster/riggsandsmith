@@ -161,3 +161,27 @@ The lowest max speed among installed active dice can limit the build's maximum u
 ## Shared Rig Speed
 
 Shared rig speed is the one active rotation speed at which the rig operates all installed active dice during a hack.
+
+## Machine Tier
+
+Machine tier is the target machine's operational difficulty class.
+
+It describes how demanding the machine is to couple, read, time, and manipulate during Hack.
+
+## Rig Tier
+
+Rig tier is the rig's operational capability class.
+
+It describes which machine tiers the rig can attack directly and how much live correction the player must provide during Hack.
+
+## Machine Play Phase
+
+Machine play phase is the Hack phase after wave sync in which the player acts on the target machine's decision cycle.
+
+In the simplest slot-machine form, the player times a lever action against a visible probability wave and the machine resolves the action after its own decision latency.
+
+## Decision Latency
+
+Decision latency is the delay between the player's machine action and the moment that action becomes effective inside the target machine.
+
+Decision latency belongs to the target machine and must be readable or learnable enough that the player can predict the effective outcome moment.

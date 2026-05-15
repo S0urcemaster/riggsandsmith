@@ -527,13 +527,15 @@ Balance warning signs:
 The algorithm should calculate these build checks before or during Hack:
 
 1. `shared_speed_limit`: minimum of rig top speed and all active die max speeds.
-2. `guidance_gap`: total or slot-level guidance demand beyond rig support.
-3. `thermal_gap`: expected heat buildup beyond rig cooling and heat tolerance.
-4. `field_output`: sum of die output after speed, damage, and support modifiers.
-5. `signature_gap`: expected signature beyond rig masking and target tolerance.
-6. `response_profile`: expected ability to correct, brake, retune, or exploit windows.
-7. `quality_risk`: expected instability, ejection, or cross-damage from low-quality dice under the planned speed.
-8. `fallback_protection`: whether the build preserves Loser's Die or another protected fallback die.
+2. `tier_fit`: whether the active rig is same-tier with the target machine, one tier below it, or outside normal viable capability.
+3. `guidance_gap`: total or slot-level guidance demand beyond rig support.
+4. `thermal_gap`: expected heat buildup beyond rig cooling and heat tolerance.
+5. `field_output`: sum of die output after speed, damage, and support modifiers.
+6. `signature_gap`: expected signature beyond rig masking and target tolerance.
+7. `response_profile`: expected ability to correct, brake, retune, predict latency, or exploit windows.
+8. `machine_play_window`: expected size, readability, stability, and bank-biased position of the target machine's favorable timing window.
+9. `quality_risk`: expected instability, ejection, or cross-damage from low-quality dice under the planned speed.
+10. `fallback_protection`: whether the build preserves Loser's Die or another protected fallback die.
 
 These checks should feed both Home warnings and Hack behavior.
 
@@ -546,12 +548,15 @@ The first inspectable algorithm may use this shape:
 1. Read active rig, active dice, target machine, current hack state, and selected player action.
 2. Calculate speed ratios for each active die.
 3. Calculate die output from field generation, speed ratio, damage penalty, and target resistance.
-4. Apply passive pressure from heat, guidance gap, signature, red-zone proximity, and target volatility.
-5. Apply the selected action as a visible delta.
-6. Apply rig compensation from guidance, cooling, stability control, energy efficiency, and signature masking.
-7. Convert high body pressure or instability into mistake chance.
-8. Convert high pressure into collapse chance.
-9. On cash-out or collapse, convert operational state into money, heat, damage, and consequences.
+4. Calculate target machine tier fit, bank advantage, decision latency, and current probability-wave state.
+5. Apply passive pressure from heat, guidance gap, signature, red-zone proximity, tier mismatch, and target volatility.
+6. Apply the selected action as a visible delta.
+7. If the action triggers the machine play cycle, resolve it at the effective moment after decision latency.
+8. Apply rig support to the machine play phase through wave bias, timing-window width, stability, prediction clarity, or win-decision manipulation where the rig supports it.
+9. Apply rig compensation from guidance, cooling, stability control, energy efficiency, and signature masking.
+10. Convert high body pressure or instability into mistake chance.
+11. Convert high pressure into collapse chance.
+12. On cash-out or collapse, convert operational state into money, heat, damage, and consequences.
 
 The algorithm should stay small enough that a failed autorun can be inspected by reading the state deltas.
 

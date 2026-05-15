@@ -29,18 +29,39 @@ This die is strong, heavy, hot, fast, dirty, or guidance-hungry. Does this rig h
 The first slice should define rigs through these properties:
 
 1. active slots
-2. rig top speed
-3. guidance strength
-4. energy efficiency
-5. field energy control
-6. cooling capacity
-7. heat tolerance
-8. stability control
-9. signature masking
-10. rig perks
-11. die manipulators
+2. rig tier
+3. rig top speed
+4. guidance strength
+5. energy efficiency
+6. field energy control
+7. cooling capacity
+8. heat tolerance
+9. stability control
+10. signature masking
+11. rig perks
+12. die manipulators
 
 These properties should remain readable in Home before the player commits to a Hack.
+
+## Rig Tier
+
+Rig tier defines the operational machine class a rig can attack.
+
+A rig can attack machines of its own tier.
+
+A rig can also attack machines one tier above its own tier, but only as an under-tiered hack that requires more player correction and creates narrower, noisier, or riskier timing windows.
+
+A machine more than one tier above the rig is outside normal hack capability and requires a higher-tier rig before it can be selected as a viable target.
+
+Rig tier should not replace the detailed operating properties of the rig.
+
+Two rigs of the same tier can still differ through slots, speed, guidance, cooling, stability, masking, perks, and manipulators.
+
+A fully equipped rig attacking a machine of the same tier should require relatively little live correction during the machine play phase.
+
+This low-attention state is an intended reward for good rig building.
+
+An under-tiered rig, an incomplete rig, or a mismatched dice build should require more active correction from the player to complete the same kind of Hack successfully.
 
 ## Active Slots
 
@@ -145,6 +166,32 @@ Wave sync should not become a large separate simulation game that replaces the H
 It should be a compact first step in rig work that establishes whether the rig is properly coupled to the machine before the player drives the dice field into a profitable range.
 
 Blueprint simulation can teach or preview the expected wave shape, but live sync may still differ when the blueprint is stale, incomplete, or the machine behaves differently on site.
+
+## Machine Play Support
+
+After wave sync, the rig supports the player during the target machine's play phase.
+
+The simplest machine play phase uses a visible probability oscillator.
+
+The rig should be able to bias or stabilize that oscillator so that favorable moments become easier to hit.
+
+This support may appear as:
+
+- raising the effective probability wave toward or above the neutral line
+- widening the favorable timing window
+- reducing wave noise or drift
+- making decision latency easier to read
+- providing clearer prediction of the wave position at the effective outcome moment
+- holding a favorable phase longer under field energy
+
+These effects should remain readable as rig influence rather than as arbitrary luck.
+
+Higher-tier rigs may additionally manipulate the target machine's win decision after the favorable timing condition is reached.
+
+This creates two readable layers of advantage:
+
+1. helping the player reach the favorable half of the machine cycle
+2. improving the resolved win decision once that favorable condition has been reached
 
 ## Cooling Capacity
 
@@ -362,14 +409,31 @@ The player can judge whether a rig fits a dice build before starting Hack.
 
 Acceptance checks:
 
-- Each rig exposes active slots, top speed, guidance, cooling, stability, and any perks.
+- Each rig exposes active slots, rig tier, top speed, guidance, cooling, stability, and any perks.
 - Each rig exposes its field energy control range or throttle behavior.
 - Each rig exposes its available die manipulators.
 - The build view shows when installed dice create high energy load, high derived guidance demand, high heat pressure, or high signature pressure.
+- The build or target-commit view shows whether the selected machine is same-tier, one tier above the rig, or too far above the rig for normal selection.
 - A rig perk is visible before it affects the build.
 - A rig perk clearly names the force or material family it modifies.
 - A mismatched rig and dice build exposes at least one warning before Hack begins.
 - A well-matched rig and dice build exposes at least one readable advantage before Hack begins.
+- A same-tier, well-equipped rig exposes reduced correction pressure during Hack.
+- An under-tiered or incomplete rig exposes increased correction pressure, narrower timing windows, noisier displays, or higher operational risk.
+
+## Behavior Contract: Rig Tier Fit
+
+The player can understand whether a rig is operationally capable of attacking a selected machine tier.
+
+Acceptance checks:
+
+- Each target machine exposes a machine tier before Hack commitment.
+- Each rig exposes a rig tier before Hack commitment.
+- A rig can attack a machine of its own tier.
+- A rig can attack a machine one tier above its own tier as an under-tiered hack.
+- A machine more than one tier above the rig is not selectable as a normal viable target unless a higher-tier rig is equipped.
+- Under-tiered hacks visibly demand more manual correction, create stricter timing, increase pressure, or reduce information clarity.
+- A well-equipped same-tier rig visibly reduces the amount of live correction required during the machine play phase.
 
 ## Behavior Contract: Rig Compensation
 
@@ -414,6 +478,26 @@ Acceptance checks:
 - Poor alignment increases noise, inefficiency, instability, pressure, or missed timing.
 - A stale or incomplete blueprint can cause the live target wave or machine interface to differ from the simulated expectation.
 - Wave sync remains a compact operational step and does not replace the main Hack pressure loop.
+
+## Behavior Contract: Machine Play Support
+
+The rig helps the player exploit the target machine's decision cycle after wave sync.
+
+Acceptance checks:
+
+- After acceptable wave sync, the Hack can enter a machine play phase.
+- The simplest machine play phase shows a readable probability oscillator.
+- The simplest oscillator can be implemented as a sine wave.
+- The display exposes a neutral or middle line and whether the effective wave state is favorable or unfavorable.
+- Bank advantage shifts the machine's effective probability behavior below the fair middle without rig influence.
+- The player can trigger a machine action such as a lever press.
+- The target machine applies that action after its own decision latency.
+- The player must time the action by predicting the wave state at the effective moment, not only by reading the current wave state.
+- If the wave is favorable at the effective moment, the hack reaches or improves the machine's win decision.
+- If the wave is unfavorable at the effective moment, the player loses money or receives a negative Hack consequence.
+- Rig support can raise the effective wave, widen the favorable window, stabilize the phase, reduce noise, or make decision latency easier to read.
+- Higher-tier rig capability can also improve the win decision after the favorable timing condition has been met.
+- The player can distinguish between failing the timing condition and failing or only partially improving the subsequent win decision.
 
 ## Behavior Contract: Die Manipulator Keypad
 

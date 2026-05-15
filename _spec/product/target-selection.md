@@ -39,6 +39,12 @@ From the Targeting App in Home, the player selects which machine the next hack w
 
 That choice defines the next operational objective and the machine to which the portable rig will later be attached on site.
 
+Each actionable machine should have a machine tier.
+
+Machine tier describes the target's operational difficulty during Hack, including sync difficulty, wave readability, timing strictness, decision latency, bank advantage, volatility, and resistance to rig manipulation.
+
+The Targeting App should expose enough tier and fit information for the player to understand whether the current rig is comfortably matched, under-tiered, or blocked before committing to the Hack.
+
 Target selection should account for casino heat.
 
 Some lucrative casinos or machines should have a casino-heat tolerance threshold.
@@ -50,6 +56,12 @@ At higher casino heat, available work should shift toward casinos, machines, or 
 The first target set should include a simple low-yield slot machine that can be attacked with Loser's Rig and Loser's Die.
 
 This simple target should provide a reliable recovery path with limited profit and limited strategic depth.
+
+The simplest fallback machine should use a readable sinusoidal probability wave during its machine play phase.
+
+Its bank advantage should shift the effective neutral line so that the machine is statistically unfavorable without rig influence.
+
+Its decision latency should be simple enough for the player to learn, but present enough that the player must trigger the lever by predicting the future wave position rather than reacting only to the current display.
 
 ## Spec Feedback
 
